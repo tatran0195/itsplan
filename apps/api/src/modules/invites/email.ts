@@ -1,6 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { db, notificationDelivery, getInstanceEmailConfig } from '@repo/db';
 import { trustedOrigins } from '@repo/auth';
+import { renderMemberInvitationEmail } from '@repo/email';
 import { hasEmailProvider } from '@repo/mailer';
 import { and, eq, sql } from 'drizzle-orm';
 import type { InviteRow } from './service';
@@ -28,6 +29,14 @@ export async function enqueueInviteEmail(
   const projectName = project.name.replace(/[\r\n]+/g, ' ');
   const url = new URL(`/invite/${invite.token}`, trustedOrigins[0]).toString();
 
+  const rendered = await renderMemberInvitationEmail({
+    acceptUrl: url,
+    days: 7,
+    inviterName: inviter,
+    organizationName: projectName,
+    role,
+  }).catch(() => null);
+
   await db.transaction(async (tx) => {
     await tx.execute(
       sql`select pg_advisory_xact_lock(${INVITE_EMAIL_LOCK_NAMESPACE}, ${invite.id})`,
@@ -52,11 +61,13 @@ export async function enqueueInviteEmail(
       channel: 'email',
       recipient: invite.email,
       payload: {
-        subject: `You were invited to ${projectName} on It's a Plan`,
+        subject: rendered?.subject ?? `You were invited to ${projectName} on It's a Plan`,
         text:
+          rendered?.text ??
           `${inviter} invited you to join ${projectName} as ${role}.\n\n` +
-          'Open the invitation to sign in or create an account. ' +
-          'If you did not expect this invitation, you can ignore this email.',
+            'Open the invitation to sign in or create an account. ' +
+            'If you did not expect this invitation, you can ignore this email.',
+        html: rendered?.html,
         url,
         emailSource: 'instance',
         idempotencyKey: `project-invite/${invite.id}/${randomUUID()}`,

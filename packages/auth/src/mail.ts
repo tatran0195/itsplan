@@ -1,5 +1,8 @@
+import { createLogger } from '@repo/logger';
 import { sendEmail, emailBody } from '@repo/mailer';
 import { getInstanceEmailConfig } from '@repo/db';
+
+const logger = createLogger({ module: 'auth' });
 
 // Authentication email: password reset, address verification, magic link. It uses
 // the instance mail provider configured in god mode, which is separate from the
@@ -14,19 +17,22 @@ export async function sendAuthEmail(input: {
   subject: string;
   text: string;
   url?: string;
+  html?: string;
 }): Promise<boolean> {
   const config = await getInstanceEmailConfig();
   if (!config) {
-    console.warn('[auth] no email provider configured, dropping mail:', input.subject);
+    logger.warn({ subject: input.subject }, 'no email provider configured, dropping mail');
     return false;
   }
-  const { text, html } = emailBody(input.text, input.url);
+  const { text, html } = input.html
+    ? { text: input.text, html: input.html }
+    : emailBody(input.text, input.url);
   const result = await sendEmail(config, {
     to: input.to,
     subject: input.subject,
     text,
     html,
   });
-  if (!result.ok) console.error('[auth] email send failed:', result.error);
+  if (!result.ok) logger.error({ error: result.error }, 'email send failed');
   return result.ok;
 }

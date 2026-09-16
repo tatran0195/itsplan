@@ -16,6 +16,8 @@
     "@better-auth/passkey": "1.6.27",
     "@repo/crypto": "workspace:*",
     "@repo/db": "workspace:*",
+    "@repo/email": "workspace:*",
+    "@repo/logger": "workspace:*",
     "@repo/mailer": "workspace:*",
     "better-auth": "1.6.27",
     "drizzle-orm": "^0.45.2"

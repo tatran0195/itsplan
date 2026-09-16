@@ -31,6 +31,8 @@
     "@repo/auth": "workspace:*",
     "@repo/crypto": "workspace:*",
     "@repo/db": "workspace:*",
+    "@repo/email": "workspace:*",
+    "@repo/logger": "workspace:*",
     "@repo/mailer": "workspace:*",
     "@repo/net": "workspace:*",
     "@tiptap/pm": "3.30.5",

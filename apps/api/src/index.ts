@@ -1,3 +1,4 @@
+import { logger } from '@repo/logger';
 import { app } from './app';
 import { startBackgroundJobs } from './background';
 
@@ -7,6 +8,6 @@ app.listen(Number(process.env.API_PORT ?? 3000));
 
 startBackgroundJobs();
 
-console.log(`🦊 API running at http://${app.server?.hostname}:${app.server?.port}`);
+logger.info(`🦊 API running at http://${app.server?.hostname}:${app.server?.port}`);
 
 export type { App } from './app';

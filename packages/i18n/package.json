@@ -1,0 +1,37 @@
+{
+  "name": "@repo/i18n",
+  "license": "AGPL-3.0-only",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./locales": "./src/locales.ts",
+    "./react": "./src/react.ts",
+    "./standalone": "./src/standalone.ts",
+    "./email": "./src/email.ts",
+    "./site": "./src/site.ts",
+    "./messages": "./src/paraglide/messages.js",
+    "./runtime": "./src/paraglide/runtime.js"
+  },
+  "scripts": {
+    "setup": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide --strategy cookie preferredLanguage baseLocale --output-structure message-modules --emit-ts-declarations",
+    "clean": "git clean -xdf .cache .turbo dist node_modules src/paraglide",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@inlang/paraglide-js": "2.25.0"
+  },
+  "peerDependencies": {
+    "react": "^19.2.8"
+  },
+  "devDependencies": {
+    "@repo/tsconfig": "workspace:*",
+    "@types/node": "^22.20.1",
+    "@types/react": "^19.2.18",
+    "react": "^19.2.8",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.11"
+  }
+}

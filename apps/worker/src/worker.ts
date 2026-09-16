@@ -1,4 +1,7 @@
+import { createLogger } from '@repo/logger';
 import { workerConfig } from './config';
+
+const logger = createLogger({ service: 'worker' });
 import { deliver } from './delivery';
 import { processNotificationDeliveries } from './notification-delivery';
 import { equalJitterBackoffMs } from './backoff';
@@ -35,7 +38,7 @@ async function tick(): Promise<void> {
   if (++ticksSinceCleanup >= cfg.cleanupEveryTicks) {
     ticksSinceCleanup = 0;
     const removed = await cleanupOldDeliveries();
-    if (removed > 0) console.log(`[worker] cleaned up ${removed} old deliveries`);
+    if (removed > 0) logger.info(`cleaned up ${removed} old deliveries`);
   }
   if (++ticksSinceTelemetry >= TELEMETRY_CHECK_EVERY_TICKS) {
     ticksSinceTelemetry = 0;
@@ -43,7 +46,7 @@ async function tick(): Promise<void> {
     try {
       await processTelemetry();
     } catch (error) {
-      console.error('[worker] telemetry send failed:', error);
+      logger.error(error, 'telemetry send failed');
     }
   }
 }

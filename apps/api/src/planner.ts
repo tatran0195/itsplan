@@ -1,4 +1,5 @@
 import { Elysia } from 'elysia';
+import { createLogger } from '@repo/logger';
 import { HttpError, pgErrorCode } from './shared/lib';
 import { authContext } from './shared/auth-context';
 import { projectRoutes } from './modules/projects';
@@ -45,6 +46,8 @@ import { telegramRoutes } from './modules/telegram';
 import { syncRoutes } from './modules/sync';
 import { linkPreviewRoutes } from './modules/link-previews';
 
+const logger = createLogger({ module: 'planner' });
+
 // The planner API: projects and their columns, issue types, labels, AI agents,
 // custom fields, issues, attachments, saved views, and actions. Mounted on the
 // main app in ./index.ts.
@@ -80,7 +83,7 @@ export const planner = new Elysia({ name: 'planner' })
     }
     // The message stays in the log only. drizzle puts the failed statement and its
     // parameters in it, and the public routes would hand that to anyone.
-    console.error('[planner] unhandled error:', error);
+    logger.error(error, 'unhandled error');
     set.status = 500;
     return { error: 'Internal server error' };
   })

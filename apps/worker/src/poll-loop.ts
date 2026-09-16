@@ -1,3 +1,5 @@
+import { logger } from '@repo/logger';
+
 export interface WorkerHandle {
   stop: () => void;
 }
@@ -19,7 +21,7 @@ export function startPollLoop(
     try {
       await tick();
     } catch (error) {
-      console.error(`[${name}] tick failed:`, error);
+      logger.error(error, `[${name}] tick failed`);
     }
     if (stopped) return;
     timer = setTimeout(loop, intervalMs());

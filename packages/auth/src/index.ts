@@ -18,6 +18,7 @@ import {
   isOidcUsable,
 } from './instance';
 import { sendAuthEmail } from './mail';
+import { renderEmailVerificationEmail } from '@repo/email';
 
 // Frontend origins allowed to call the auth handler. Mandatory config: cookies, the
 // WebAuthn relying party and the cookie domain are all derived from it, so a deploy
@@ -298,10 +299,14 @@ export const auth = betterAuth({
     // revokeOtherSessions for the same reason.
     revokeSessionsOnPasswordReset: true,
     sendResetPassword: async ({ user, url }) => {
+      const email = await renderEmailVerificationEmail({ url }).catch(() => null);
       await sendAuthEmail({
         to: user.email,
-        subject: 'Reset your password',
-        text: 'Use the link below to set a new password. Ignore this email if you did not ask for it.',
+        subject: email?.subject ?? 'Reset your password',
+        text:
+          email?.text ??
+          'Use the link below to set a new password. Ignore this email if you did not ask for it.',
+        html: email?.html,
         url,
       });
     },
@@ -315,10 +320,12 @@ export const auth = betterAuth({
     sendVerificationEmail: async ({ user, url }) => {
       const settings = await getAuthSettings();
       if (!settings.requireEmailVerification) return;
+      const email = await renderEmailVerificationEmail({ url }).catch(() => null);
       await sendAuthEmail({
         to: user.email,
-        subject: 'Confirm your email address',
-        text: 'Use the link below to confirm this address and finish signing up.',
+        subject: email?.subject ?? 'Confirm your email address',
+        text: email?.text ?? 'Use the link below to confirm this address and finish signing up.',
+        html: email?.html,
         url,
       });
     },
@@ -604,10 +611,13 @@ export const auth = betterAuth({
         if (!settings.magicLink) {
           throw new APIError('FORBIDDEN', { message: 'Magic links are disabled on this instance' });
         }
+        const rendered = await renderEmailVerificationEmail({ url }).catch(() => null);
         await sendAuthEmail({
           to: email,
-          subject: 'Your sign-in link',
-          text: 'Use the link below to sign in. It works once and expires shortly.',
+          subject: rendered?.subject ?? 'Your sign-in link',
+          text:
+            rendered?.text ?? 'Use the link below to sign in. It works once and expires shortly.',
+          html: rendered?.html,
           url,
         });
       },

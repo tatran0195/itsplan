@@ -47,7 +47,8 @@ async function sendNotificationEmail(input: SendInput): Promise<SendResult> {
           ? null
           : { smtp: input.config.smtp, resend: input.config.resend };
   if (!config) return { ok: false, retryable: false, error: 'email not configured' };
-  const { text, html } = emailBody(input.payload.text, input.payload.url);
+  const text = input.payload.text;
+  const html = input.payload.html || emailBody(input.payload.text, input.payload.url).html;
   return sendEmail(config, {
     to: input.recipient,
     subject: input.payload.subject ?? '',

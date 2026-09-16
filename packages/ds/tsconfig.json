@@ -1,0 +1,10 @@
+{
+  "extends": "@repo/tsconfig/react.json",
+  "compilerOptions": {
+    "paths": {
+      "@repo/design-system/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".cache", ".turbo"]
+}

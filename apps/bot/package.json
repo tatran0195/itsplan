@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@repo/db": "workspace:*",
+    "@repo/logger": "workspace:*",
     "drizzle-orm": "^0.45.2",
     "grammy": "^1.45.1"
   },

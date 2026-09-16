@@ -1,10 +1,13 @@
-// The languages the interface ships with. `en` is the source language: every key
-// exists in `messages/en.json`, and a missing translation falls back to it.
-export const LOCALES = ['en', 'uk', 'ru', 'zh-CN', 'ar', 'fr', 'pt-BR', 'id', 'es-ES'] as const;
+import {
+  DEFAULT_LOCALE,
+  isRtl,
+  isSupportedLocale,
+  LOCALES,
+  type Direction,
+  type Locale,
+} from '@repo/i18n/locales';
 
-export type Locale = (typeof LOCALES)[number];
-
-export const DEFAULT_LOCALE: Locale = 'en';
+export { DEFAULT_LOCALE, LOCALES, type Direction, type Locale };
 
 // Read on the server to render the first paint in the right language. Written by
 // the language switcher next to the account preference, so a signed-out screen
@@ -14,38 +17,20 @@ export const LOCALE_COOKIE = 'NEXT_LOCALE';
 // Each language named in itself, which is what a person scanning the list looks for.
 export const LOCALE_LABELS: Record<Locale, string> = {
   en: 'English',
-  uk: 'Українська',
-  ru: 'Русский',
-  'zh-CN': '简体中文',
-  ar: 'العربية (المصرية)',
-  fr: 'Français',
-  'pt-BR': 'Português (Brasil)',
-  id: 'Bahasa Indonesia',
-  'es-ES': 'Español (España)',
+  ja: '日本語',
 };
 
 export const LOCALE_FLAGS: Record<Locale, string> = {
   en: '🇬🇧',
-  uk: '🇺🇦',
-  ru: '🇷🇺',
-  'zh-CN': '🇨🇳',
-  ar: '🇪🇬',
-  fr: '🇫🇷',
-  'pt-BR': '🇧🇷',
-  id: '🇮🇩',
-  'es-ES': '🇪🇸',
+  ja: '🇯🇵',
 };
 
 export function isLocale(value: string | undefined | null): value is Locale {
-  return value != null && (LOCALES as readonly string[]).includes(value);
+  return value != null && isSupportedLocale(value);
 }
-
-// The languages written right to left. Listed rather than derived from
-// `Intl.Locale`, so adding a language is a deliberate choice of direction.
-const RTL_LOCALES: readonly Locale[] = ['ar'];
 
 // Set on <html> during the server render, so the first paint is already mirrored
 // and the layout does not flip after hydration.
 export function localeDirection(locale: Locale): 'ltr' | 'rtl' {
-  return RTL_LOCALES.includes(locale) ? 'rtl' : 'ltr';
+  return isRtl(locale) ? 'rtl' : 'ltr';
 }

@@ -1,7 +1,10 @@
+import { createLogger } from '@repo/logger';
 import { intEnv } from '#shared/lib';
 import { agentRunConfig } from '#modules/agents/core/run-queue';
 import { processAgentRuns } from '#modules/agents/core/run-poller';
 import { sweepStaleIssues } from '#modules/issues/auto-archive';
+
+const logger = createLogger({ module: 'background' });
 
 // The api's background jobs, started by index.ts rather than assembled into the app,
 // so importing the app in a test starts nothing. Several api replicas run them without
@@ -20,7 +23,7 @@ export function startBackgroundJobs(): void {
 
 async function autoArchive(): Promise<void> {
   const archived = await sweepStaleIssues();
-  if (archived > 0) console.log(`[background] auto-archived ${archived} stale issues`);
+  if (archived > 0) logger.info(`auto-archived ${archived} stale issues`);
 }
 
 function startLoop(name: string, job: () => Promise<void>, intervalMs: () => number): void {
@@ -28,7 +31,7 @@ function startLoop(name: string, job: () => Promise<void>, intervalMs: () => num
     try {
       await job();
     } catch (error) {
-      console.error(`[background] ${name} failed:`, error);
+      logger.error(error, `${name} failed`);
     }
     setTimeout(tick, intervalMs()).unref();
   };

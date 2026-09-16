@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import '@repo/ds/globals.css';
+
+@source '../../../../packages/ds/src/**/*.{ts,tsx}';
 /* The upstream Inter build, not the Fontsource one: Google Fonts strips the
    character variants, and cv05/cv08/zero are what make l, I, 1 and 0 tell
    apart at the 12–14px this UI is mostly set in. It also carries the opsz
