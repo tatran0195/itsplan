@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { X } from 'lucide-react';
@@ -21,7 +23,7 @@ import {
   useDeleteSkillReference,
 } from '@/services/agentSkills.service';
 import { SkillFileList, type SkillFileEntry } from './SkillFileList';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The key used for the SKILL.md file in the explorer and the drafts map. Reference
 // files use their own relative path.

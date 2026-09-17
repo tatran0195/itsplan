@@ -1,3 +1,5 @@
+'use client';
+
 import { type useSortable } from '@dnd-kit/sortable';
 import { Trash2 } from 'lucide-react';
 import type { Checklist } from '@/lib/api/endpoints/checklists';
@@ -5,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { CHECKLIST_TITLE_MAX } from '../../utils/checklists';
 import IssueChecklistEditableText from './IssueChecklistEditableText';
 import IssueChecklistGrip from './IssueChecklistGrip';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 type Sortable = ReturnType<typeof useSortable>;
 

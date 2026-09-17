@@ -6,7 +6,7 @@ import IssueImageAnnotatorCanvas from './IssueImageAnnotatorCanvas';
 import IssueImageAnnotatorToolbar from './IssueImageAnnotatorToolbar';
 import Modal from '@/components/common/overlay/Modal';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Marks an image up in a fullscreen dialog and hands the result back as a PNG;
 // what happens to that file is the caller's call.

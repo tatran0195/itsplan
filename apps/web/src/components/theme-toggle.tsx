@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
+import { useSession } from '@/lib/auth-client';
 import { useUpdateAccountPreferences } from '@/services/preferences.service';
 
 // Toggles between the light and dark theme. The choice is saved to the account, the
@@ -17,6 +18,7 @@ export function ThemeToggle() {
   const t = useTranslations('common');
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { data: session } = useSession();
   const update = useUpdateAccountPreferences();
   useEffect(() => setMounted(true), []);
 
@@ -33,7 +35,9 @@ export function ThemeToggle() {
           onClick={() => {
             const next = isDark ? 'light' : 'dark';
             setTheme(next);
-            update.mutate({ theme: next });
+            if (session) {
+              update.mutate({ theme: next });
+            }
           }}
         >
           {mounted && (isDark ? <Sun /> : <Moon />)}

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useRenameAgentThread } from '@/services/aiAgents.service';
 import { Input } from '@/components/ui/input';
 

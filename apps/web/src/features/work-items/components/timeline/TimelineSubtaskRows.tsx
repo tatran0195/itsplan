@@ -1,5 +1,7 @@
+'use client';
+
 import { CornerDownRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { issueColor, type Maps } from '@/utils/project';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';

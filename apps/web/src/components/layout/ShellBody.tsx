@@ -1,5 +1,7 @@
+'use client';
+
 import type { ReactNode } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import PageSkeleton from '@/components/common/skeleton/PageSkeleton';
 
 // The Shell's content area. It renders the routed page once the project is

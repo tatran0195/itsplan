@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Check, Minus } from 'lucide-react';
 import { useTeam, useTeamProjectOptionsQuery, useUpdateTeamMcp } from '@/services/teams.service';
 import SectionPageView from '@/components/common/page/SectionPageView';

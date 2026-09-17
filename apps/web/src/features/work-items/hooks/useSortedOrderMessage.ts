@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { SortField } from '@/utils/viewTypes';
 
 // Why an issue cannot be reordered inside its group: the view is sorted by a

@@ -1,6 +1,8 @@
+'use client';
+
 import { useEffect, useMemo } from 'react';
 import { useEditor, EditorContent, type Editor } from '@tiptap/react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import EditorLinkPreview from '@/components/common/editor/EditorLinkPreview';
 import { openLinkOnModifierClick } from '@/components/common/editor/modifierClickLink';
 import { createLinkKeyboardHandlers } from '@/components/common/editor/linkKeyboardHandlers';

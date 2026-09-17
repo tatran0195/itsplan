@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Issue } from '@/lib/api/endpoints/issues';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';

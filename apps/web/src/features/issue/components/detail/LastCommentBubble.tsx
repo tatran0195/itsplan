@@ -1,6 +1,8 @@
+'use client';
+
 import { useEffect, useState, type RefObject } from 'react';
 import { X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import Avatar from '@/components/common/Avatar';
 import { useRelativeTime } from '@/context/relativeTimeContext';
 import { cn } from '@/lib/utils';

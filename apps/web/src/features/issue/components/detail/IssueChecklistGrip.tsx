@@ -1,6 +1,8 @@
+'use client';
+
 import { type useSortable } from '@dnd-kit/sortable';
 import { GripVertical } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Taken from useSortable's own return type: dnd-kit does not export the listener
 // map type from its package root, and reaching into its dist/ internals for it

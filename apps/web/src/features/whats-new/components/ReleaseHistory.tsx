@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { ExternalLink, RefreshCw } from 'lucide-react';
 import type { UpdateStatus } from '@/lib/api/endpoints/updates';
 import TakeoverScreen from '@/components/common/page/TakeoverScreen';

@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, ChevronDown, Layers, Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { View } from '@/lib/api/endpoints/views';
 import { cn } from '@/lib/utils';
 import { ViewIcon } from '@/utils/viewIcons';

@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Bot, User } from 'lucide-react';
 import type { Assignee } from '@/lib/api/endpoints/projects';
@@ -6,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { cn } from '@/lib/utils';
 import { useCreateComment, useUpdateComment } from '../../services/comments.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The comment box, for a new comment or for editing one: a plain markdown textarea
 // with an @-mention menu. Typing "@" opens a menu of the project's members and

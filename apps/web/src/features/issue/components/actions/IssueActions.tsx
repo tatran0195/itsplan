@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import type { ActionDef } from '@/lib/api/endpoints/actions';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
@@ -10,7 +12,7 @@ import { useDeleteIssue, useIssueQuery, useUpdateIssue } from '@/services/issues
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';
 import SubtaskDisposalChoice from './SubtaskDisposalChoice';
 import type { ReactNode } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The project's manual actions whose condition matches this issue, in saved
 // order. Shared by the issue detail Actions block and the context menu.

@@ -1,6 +1,8 @@
+'use client';
+
 import { useMemo, useState } from 'react';
 import { Plus, Search, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { WidgetType } from '@/utils/dashboardWidgets';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';

@@ -1,7 +1,9 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { type Editor } from '@tiptap/react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { Attachment } from '@/lib/api/endpoints/attachments';
 import type {

@@ -1,10 +1,12 @@
+'use client';
+
 import { FolderKanban } from 'lucide-react';
 import type { TeamProjectOption } from '@/lib/api/endpoints/teams';
 import type { AgentFormValue } from '../../utils/agentForm';
 import { AgentCapabilityList } from './AgentCapabilityList';
 import { AgentEmptyNotice } from './AgentEmptyNotice';
 import { AgentFormSection } from './AgentFormSection';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The projects of the team the agent works in. Membership is what lets its key reach a
 // project, so this is where an operator attaches and detaches one; an agent with none

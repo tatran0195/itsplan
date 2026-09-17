@@ -10,7 +10,7 @@ import {
   useLinkDocumentIssue,
   useUnlinkDocumentIssue,
 } from '@/features/documents/services/documents.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { usePersistedOpen } from '../../hooks/usePersistedOpen';
 import IssueSectionHeading from './IssueSectionHeading';
 

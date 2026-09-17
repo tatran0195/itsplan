@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { MessageCircle, Star, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { formatShortDate } from '@/utils/dates';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';

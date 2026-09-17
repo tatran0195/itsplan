@@ -1,3 +1,5 @@
+'use client';
+
 import { type CSSProperties, useRef, useState } from 'react';
 import { Direction } from 'radix-ui';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
@@ -30,7 +32,7 @@ import {
   PROPERTIES_W,
   propertiesWidthKey,
 } from '../../utils/propertiesWidth';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The body of a issue — title, description, markdown custom fields, the
 // Properties grid, attachments, and the activity feed. Shared by the side panel

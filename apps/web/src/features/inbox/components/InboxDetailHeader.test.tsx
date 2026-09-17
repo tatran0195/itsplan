@@ -2,11 +2,12 @@ import assert from 'node:assert/strict';
 import { afterEach, beforeEach, describe, it } from 'node:test';
 import { act } from 'react';
 import type { Root } from 'react-dom/client';
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider } from '@repo/i18n/react';
 import { JSDOM } from 'jsdom';
-import inbox from '../../../../messages/en/inbox.json';
-import issue from '../../../../messages/en/issue.json';
+import { messages } from '@repo/i18n';
 import InboxDetailHeader from './InboxDetailHeader';
+
+const { inbox, issue } = messages.en;
 
 const replacedGlobals = [
   'window',

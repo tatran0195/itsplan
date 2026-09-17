@@ -1,7 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { usePermissions } from '@/hooks/usePermissions';
 import type { PermissionAction, PermissionResource } from '@/lib/api/endpoints/roles';
 

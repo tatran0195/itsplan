@@ -5,7 +5,7 @@ import { ANNOTATION_COLORS, type AnnotationTool } from '../utils/annotations';
 import EditorToolbarButton from '@/components/common/editor/EditorToolbarButton';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 const TOOLS: { id: AnnotationTool; icon: LucideIcon }[] = [
   { id: 'marker', icon: Highlighter },

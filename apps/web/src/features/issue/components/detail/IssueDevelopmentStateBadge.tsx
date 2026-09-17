@@ -1,3 +1,5 @@
+'use client';
+
 import {
   GitBranch,
   GitMerge,
@@ -6,7 +8,7 @@ import {
   GitPullRequestClosed,
   GitPullRequestDraft,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { DevelopmentLink } from '@/lib/api/endpoints/git';
 import { Badge } from '@/components/ui/badge';
 import { issueDevelopmentBadgeClassName } from './issueDevelopmentBadgeStyles';

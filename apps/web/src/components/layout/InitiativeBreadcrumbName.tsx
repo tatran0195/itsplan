@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { usePermissions } from '@/hooks/usePermissions';
 import { useInitiativeQuery, useUpdateInitiative } from '@/services/initiatives.service';
 import { Input } from '@/components/ui/input';

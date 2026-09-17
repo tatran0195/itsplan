@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { MemberKind } from '@/lib/api/endpoints/members';
 import { useSearchTerm } from '@/hooks/useSearchTerm';
 import { useTeamProjectMembersQuery } from '@/services/teams.service';

@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { Clock, Hash } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { formatMinutes, parseMinutes, parsePoints } from '@/utils/estimate';
 import { Input } from '@/components/ui/input';
 import { Pill } from '@/components/common/fields/Pill';

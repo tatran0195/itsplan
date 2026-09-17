@@ -1,9 +1,11 @@
+'use client';
+
 import { CircleDashed } from 'lucide-react';
 import type { IssueType } from '@/lib/api/endpoints/issueTypes';
 import { colorDot } from './colorDot';
 import { Pill } from './Pill';
 import PopoverPick from './PopoverPick';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export default function TypeSelect({
   issueTypes,

@@ -1,6 +1,8 @@
+'use client';
+
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Stands in for a list, a table or a feed while its query loads: one bar per row.
 // `className` styles the stack (its padding inside the surrounding container),

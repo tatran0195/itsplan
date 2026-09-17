@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import type { Webhook, WebhookDelivery } from '@/lib/api/endpoints/webhooks';
 import { formatDateTime } from '@/utils/dates';

@@ -1,3 +1,5 @@
+'use client';
+
 import { Shield } from 'lucide-react';
 import {
   Select,
@@ -8,7 +10,7 @@ import {
 } from '@/components/ui/select';
 import type { AgentFormValue } from '../../utils/agentForm';
 import { AgentFormSection } from './AgentFormSection';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Who may give an external agent work: its owner alone, or any member of the team. What
 // the agent may do once it has the work is the role its membership carries in each

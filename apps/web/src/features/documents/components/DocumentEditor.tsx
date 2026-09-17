@@ -5,7 +5,7 @@ import type { Editor } from '@tiptap/react';
 import type { ProjectDocument, ProjectDocumentSummary } from '@/lib/api/endpoints/documents';
 import { useRelativeTime } from '@/context/relativeTimeContext';
 import { useSession } from '@/lib/auth-client';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useDocumentCommentMarks } from '../hooks/useDocumentCommentMarks';
 import { useDocumentCollaboration } from '../hooks/useDocumentCollaboration';
 import DocumentCommentsPanel from './DocumentCommentsPanel';

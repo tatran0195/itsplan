@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import { usePaging } from '@/hooks/usePaging';
 import ListPager from '@/components/common/ListPager';

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { NotificationSettings } from '@/lib/api/endpoints/notificationSettings';
 import { useUpdateNotificationSettings } from '@/services/teams.service';
 

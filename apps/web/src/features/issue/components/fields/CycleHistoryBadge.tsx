@@ -1,7 +1,7 @@
 'use client';
 
 import { History } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useIssueCyclesQuery } from '@/services/issues.service';
 import { formatShortDate } from '@/utils/dates';
 import { CYCLE_STATUS_META } from '@/utils/cycleMeta';

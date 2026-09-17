@@ -21,7 +21,7 @@ import {
   Underline,
   Undo2,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import DocumentBlockTypeMenu from './DocumentBlockTypeMenu';
 import DocumentImageMenu from './DocumentImageMenu';
 import DocumentTextColorMenu from './DocumentTextColorMenu';

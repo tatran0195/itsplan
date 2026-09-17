@@ -1,0 +1,50 @@
+{
+  "none": "権限が付与されていません",
+  "grantedCount": "{count, plural, other {# 件の権限が付与されています}}",
+  "resources": {
+    "work_items": "ワークアイテム",
+    "initiatives": "イニシアチブ",
+    "cycles": "サイクル",
+    "dashboards": "ダッシュボード",
+    "documents": "ドキュメント",
+    "views": "ワークアイテムビュー",
+    "members_invite": "招待",
+    "members_manage": "メンバー管理",
+    "states": "ステータス",
+    "issue_types": "イシュー種別",
+    "labels": "ラベル",
+    "ai_agents": "AIエージェント",
+    "integrations": "インテグレーション",
+    "agent_skills": "エージェントスキル",
+    "agent_tools": "エージェントツール",
+    "custom_fields": "カスタム項目",
+    "issue_templates": "イシューテンプレート",
+    "workflow_config": "ワークフロー設定",
+    "actions": "アクション",
+    "webhooks": "Webhook",
+    "note_boards": "ノートボード",
+    "danger_zone": "危険ゾーン"
+  },
+  "actions": {
+    "create": "作成",
+    "edit": "編集",
+    "read": "閲覧",
+    "delete": "削除"
+  },
+  "groups": {
+    "workItems": "ワークアイテム",
+    "dashboards": "ダッシュボード",
+    "documents": "ドキュメント",
+    "notes": "ノート",
+    "ai": "AI",
+    "configuration": "設定",
+    "members": "メンバー",
+    "project": "プロジェクト",
+    "other": "その他"
+  },
+  "resourceColumn": "リソース",
+  "allowed": "許可",
+  "notAllowed": "不許可",
+  "accessHeading": "このプロジェクトへのアクセス権",
+  "joined": "参加: {date}"
+}

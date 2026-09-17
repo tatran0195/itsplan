@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Notification } from '@/lib/api/endpoints/notifications';
 import ListSkeleton from '@/components/common/skeleton/ListSkeleton';
 import InboxListItem from './InboxListItem';

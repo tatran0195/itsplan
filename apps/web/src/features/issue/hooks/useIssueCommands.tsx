@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, type ReactNode } from 'react';
 import { toast } from 'sonner';
 import {
@@ -26,7 +28,7 @@ import { usePermissions } from '@/hooks/usePermissions';
 import { useSession } from '@/lib/auth-client';
 import { useShell } from '@/context/shellContext';
 import { colorDot } from '@/components/common/fields/colorDot';
-import { useFormatter, useTranslations } from 'next-intl';
+import { useFormatter, useTranslations } from '@repo/i18n/react';
 import { PRIORITY_FIELDS } from '@/components/common/fields/priorityFields';
 import { usePriorityLabel } from '@/hooks/usePriorityLabel';
 import type { Command, CommandSection } from '@/utils/commands';

@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { DndContext, closestCenter, type DragEndEvent } from '@dnd-kit/core';
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
@@ -12,7 +14,7 @@ import { useCreateChecklist, useReorderChecklists } from '../../services/checkli
 import IssueChecklistAddInput from './IssueChecklistAddInput';
 import IssueChecklistCard from './IssueChecklistCard';
 import IssueSectionHeading from './IssueSectionHeading';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The issue's checklists: lists of small steps that do not warrant subtasks of
 // their own. The tally counts every item of every checklist, so the heading says

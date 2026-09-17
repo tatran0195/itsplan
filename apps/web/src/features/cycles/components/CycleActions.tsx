@@ -10,7 +10,7 @@ import {
   SkipForward,
   Trash2,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Cycle } from '@/lib/api/endpoints/cycles';
 import { cyclesPath } from '@/utils/paths';
 import { usePermissions } from '@/hooks/usePermissions';

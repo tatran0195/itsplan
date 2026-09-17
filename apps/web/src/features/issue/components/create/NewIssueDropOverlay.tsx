@@ -1,5 +1,7 @@
+'use client';
+
 import { Paperclip } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Covers the whole modal while files are dragged over it, stating where they
 // land. pointer-events-none so the drag events keep reaching the modal below.

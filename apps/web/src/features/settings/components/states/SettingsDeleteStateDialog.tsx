@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Column } from '@/lib/api/endpoints/columns';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';

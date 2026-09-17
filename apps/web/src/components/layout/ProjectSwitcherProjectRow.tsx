@@ -1,5 +1,7 @@
+'use client';
+
 import { Check, Clock3, Star } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Project } from '@/lib/api/endpoints/projects';
 import { formatDateTime } from '@/utils/dates';
 import { Badge } from '@/components/ui/badge';

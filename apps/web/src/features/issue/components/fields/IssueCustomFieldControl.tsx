@@ -1,3 +1,5 @@
+'use client';
+
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import type { Assignee } from '@/lib/api/endpoints/projects';
 import type { IssueFieldValue, IssueFieldValueInput } from '@/lib/api/endpoints/issues';
@@ -17,7 +19,7 @@ import Avatar from '@/components/common/Avatar';
 import MemberSelect from './MemberSelect';
 import InlineUrlField from './InlineUrlField';
 import InlineTextField from './InlineTextField';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Radix Select forbids an empty-string item value, so "(none)" options use this
 // sentinel and map back to '' / null on change.

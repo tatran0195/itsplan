@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { KEY_MAX_LENGTH } from '@/utils/projectKey';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';

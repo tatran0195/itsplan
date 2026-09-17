@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { Eye } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Project } from '@/lib/api/endpoints/projects';
 import { useUpdateProjectPreferences } from '@/services/projects.service';
 import { EmptyState } from '@/components/common/page/EmptyState';

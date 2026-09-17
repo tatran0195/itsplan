@@ -2,7 +2,7 @@
 
 import { type ElementType } from 'react';
 import { CalendarClock, Clock, MailOpen, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The menu primitives to render with. DropdownMenu and ContextMenu expose the same
 // component API, so the same item list backs both the "…" button and the row's

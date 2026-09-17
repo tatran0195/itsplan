@@ -1,0 +1,53 @@
+{
+  "add": "フィルターを追加",
+  "remove": "フィルターを削除",
+  "valuePlaceholder": "値",
+  "noOptions": "選択肢がありません",
+  "selected": "{count} 件選択中",
+  "operators": {
+    "is": "一致する",
+    "is_not": "一致しない",
+    "before": "より前",
+    "after": "より後",
+    "is_set": "設定されている",
+    "is_not_set": "設定されていない",
+    "contains": "含む",
+    "not_contains": "含まない"
+  },
+  "boolean": {
+    "true": "True",
+    "false": "False"
+  },
+  "cycleStatus": {
+    "active": "進行中のサイクル",
+    "upcoming": "今後のサイクル"
+  },
+  "initiativeStatus": {
+    "active": "進行中のイニシアチブ",
+    "planned": "計画中のイニシアチブ",
+    "proposed": "提案中のイニシアチブ"
+  },
+  "fields": {
+    "status": "ステータス",
+    "statusType": "ステータス種別",
+    "assignee": "担当者",
+    "delegate": "委任先",
+    "priority": "優先度",
+    "type": "種別",
+    "initiative": "イニシアチブ",
+    "cycle": "サイクル",
+    "labels": "ラベル",
+    "dueDate": "期限",
+    "startDate": "開始日",
+    "created": "作成日時",
+    "updated": "更新日時"
+  },
+  "unset": {
+    "assignee": "担当者なし",
+    "delegate": "委任先なし",
+    "type": "種別なし",
+    "initiative": "イニシアチブなし",
+    "cycle": "サイクルなし",
+    "member": "値なし"
+  }
+}

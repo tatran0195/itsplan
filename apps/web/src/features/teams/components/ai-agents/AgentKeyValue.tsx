@@ -1,7 +1,9 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, Copy, Eye, EyeOff } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Bullets stand in for the hidden part of the key: a fixed count, so the key's real
 // length stays private.

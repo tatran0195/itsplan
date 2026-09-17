@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Ban,
   Bot,
@@ -27,7 +29,7 @@ import { cn } from '@/lib/utils';
 import SettingsIconButton from '../SettingsIconButton';
 import { useSettingsCan } from '../../context/settingsPermission';
 import { formatUtc, parseScheduleInput } from '../../utils/cronSchedule';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export function SettingsScheduleRow({
   schedule,

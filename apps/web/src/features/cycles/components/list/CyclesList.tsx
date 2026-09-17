@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Cycle } from '@/lib/api/endpoints/cycles';
 import type { CyclesView } from '@/utils/paths';
 import { Button } from '@/components/ui/button';

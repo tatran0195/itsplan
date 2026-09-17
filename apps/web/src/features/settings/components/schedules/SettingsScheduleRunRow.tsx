@@ -1,3 +1,5 @@
+'use client';
+
 import { useId, useState } from 'react';
 import { Ban, ChevronDown, ChevronRight } from 'lucide-react';
 import type { AgentScheduleRun } from '@/lib/api/endpoints/agentSchedules';
@@ -6,7 +8,7 @@ import { AgentContextSize } from '@/components/common/agent-chat/AgentContextSiz
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { SettingsScheduleRunBlock } from './SettingsScheduleRunBlock';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export function SettingsScheduleRunRow({
   run,

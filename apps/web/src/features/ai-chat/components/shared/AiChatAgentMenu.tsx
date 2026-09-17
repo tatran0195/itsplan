@@ -1,7 +1,7 @@
 'use client';
 
 import { Bot, Check } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import {
   DropdownMenuContent,

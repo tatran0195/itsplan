@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useLoadedAgentThreads } from '@/services/aiAgents.service';
 import { useProjectAgents } from '@/hooks/useProjectAgents';
 import type { ChatSession } from './useChatSessions';

@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { StateType } from '@/lib/api/endpoints/columns';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 

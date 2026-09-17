@@ -1,6 +1,8 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import { MessagesSquare, Plus, Search } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { usePermissions } from '@/hooks/usePermissions';
 import { useHotkeyLabel } from '@/context/useHotkeys';
 import { Button } from '@/components/ui/button';

@@ -1,7 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InstanceScimGroup } from '@/lib/api/endpoints/scim';
 import Modal from '@/components/common/overlay/Modal';
 import { Button } from '@/components/ui/button';

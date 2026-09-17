@@ -1,7 +1,9 @@
+'use client';
+
 import { useMemo } from 'react';
 import GridLayout, { useContainerWidth, verticalCompactor, type Layout } from 'react-grid-layout';
 import { Direction } from 'radix-ui';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import { cn } from '@/lib/utils';
 import {

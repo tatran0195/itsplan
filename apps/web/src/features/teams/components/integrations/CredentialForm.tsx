@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import type {
@@ -11,7 +13,7 @@ import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useCreateCredential, useUpdateCredential } from '@/services/integrations.service';
 import { IntegrationIcon } from '@/components/common/IntegrationIcon';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 type FieldValue = string | boolean;
 

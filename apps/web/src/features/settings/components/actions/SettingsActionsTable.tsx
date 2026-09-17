@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { ActionDef } from '@/lib/api/endpoints/actions';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';

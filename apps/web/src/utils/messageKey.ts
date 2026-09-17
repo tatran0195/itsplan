@@ -1,4 +1,4 @@
-import type { useTranslations } from 'next-intl';
+import type { useTranslations } from '@repo/i18n/react';
 
 // A translator read as a plain string lookup. Message keys are typed against the
 // English catalogue (see global.d.ts), which cannot express a key composed from a

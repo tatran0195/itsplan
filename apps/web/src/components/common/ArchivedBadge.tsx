@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 
 // The "Archived" marker shown next to an archived issue's title wherever one can
 // still be listed (search results, an issue's links).

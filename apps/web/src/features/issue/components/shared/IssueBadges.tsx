@@ -1,5 +1,7 @@
+'use client';
+
 import type { ReactNode } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { formatShortDate } from '@/utils/dates';
 import { usePriorityLabel } from '@/hooks/usePriorityLabel';
 import { cn } from '@/lib/utils';

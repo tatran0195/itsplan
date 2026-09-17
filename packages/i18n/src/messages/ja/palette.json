@@ -1,0 +1,14 @@
+{
+  "placeholder": "コマンドを入力するか検索…",
+  "noResults": "該当する結果がありません。",
+  "issues": "イシュー",
+  "searching": "検索中…",
+  "selectAllIssues": "すべてのイシューを選択",
+  "newIssue": "新規イシュー",
+  "newInitiative": "新規イニシアチブ",
+  "newProject": "新規プロジェクト",
+  "toggleChat": "AIチャットの表示/非表示",
+  "board": "ボード",
+  "commands": "コマンド",
+  "switchProject": "プロジェクトを切り替え"
+}

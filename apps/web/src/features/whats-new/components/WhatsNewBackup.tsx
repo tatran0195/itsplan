@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { BackupInfo } from '@/lib/api/endpoints/updates';
 import { formatDate } from '@/utils/dates';
 import CodeBlock from '@/components/common/CodeBlock';

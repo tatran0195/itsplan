@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { toast } from 'sonner';
 import type { InviteRow } from '@/lib/api/endpoints/invites';
 import type { MemberKind } from '@/lib/api/endpoints/members';

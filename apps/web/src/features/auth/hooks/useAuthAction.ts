@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Runs an auth action while tracking pending + error, and redirects into the
 // planner on success. `setError` is exposed so a form can report client-side

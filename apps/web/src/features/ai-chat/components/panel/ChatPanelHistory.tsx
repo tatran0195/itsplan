@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { History } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import * as PopoverPrimitive from '@radix-ui/react-popover';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { InputGroupButton } from '@/components/ui/input-group';

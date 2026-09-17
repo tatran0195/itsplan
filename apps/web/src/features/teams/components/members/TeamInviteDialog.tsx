@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from 'react';
 import { Mail, Users } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InviteTeamRole } from '@/lib/api/endpoints/invites';
 import type { TeamRole } from '@/lib/api/endpoints/teams';
 import { ApiError } from '@/lib/api/core/client';

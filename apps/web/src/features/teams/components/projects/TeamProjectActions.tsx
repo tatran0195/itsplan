@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Copy, LogOut, Pencil, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { MemberRole } from '@/lib/api/endpoints/members';
 import type { TeamProject, TeamRole } from '@/lib/api/endpoints/teams';
 import { useSession } from '@/lib/auth-client';

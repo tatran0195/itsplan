@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { FilterCondition, FilterValue } from '@/utils/filters';
 import type { FieldSpec } from '@/utils/filterFields';

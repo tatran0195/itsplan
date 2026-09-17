@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react';
 import { MessageSquareOff } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import { AgentContextSize } from '@/components/common/agent-chat/AgentContextSize';
 import { InputGroupButton } from '@/components/ui/input-group';

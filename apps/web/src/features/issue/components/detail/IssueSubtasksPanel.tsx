@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
@@ -17,7 +19,7 @@ import { usePersistedOpen } from '../../hooks/usePersistedOpen';
 import { useSetIssueParent } from '../../services/subtasks.service';
 import IssueSectionHeading from './IssueSectionHeading';
 import IssueRefRow from './IssueRefRow';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The issue's place in the subtask hierarchy: the parent it hangs under, or the
 // subtasks it has with how many of them are done. The two never show together —

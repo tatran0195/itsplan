@@ -10,7 +10,7 @@ import { useProjectAgents } from '@/hooks/useProjectAgents';
 import { SettingsResourceProvider } from './context/settingsPermission';
 import { SettingsHeaderAddButton } from './components/crud/SettingsHeaderAddButton';
 import SettingsSchedules from './components/schedules/SettingsSchedules';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 const section = settingsSection('schedules');
 

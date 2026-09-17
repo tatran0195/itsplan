@@ -1,7 +1,9 @@
+'use client';
+
 import { DndContext } from '@dnd-kit/core';
 import { toast } from 'sonner';
 import { ChevronDown, Eye } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import {
   buildGroups,
   buildMaps,

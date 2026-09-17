@@ -1,5 +1,7 @@
+'use client';
+
 import { CircleDashed } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Assignee } from '@/lib/api/endpoints/projects';
 import Avatar from '@/components/common/Avatar';
 import { Pill } from '@/components/common/fields/Pill';

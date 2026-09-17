@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { LabelGroup } from '@/lib/api/endpoints/labels';
 import { colorDot } from '@/components/common/fields/colorDot';
 import Modal from '@/components/common/overlay/Modal';

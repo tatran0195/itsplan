@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { APP_NAME } from '@/utils/app';
 import AppLogo from '@/components/common/AppLogo';
 

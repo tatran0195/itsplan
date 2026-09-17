@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { CustomField, CustomFieldType, MemberScope } from '@/lib/api/endpoints/customFields';
 import { cn } from '@/lib/utils';
 import Modal from '@/components/common/overlay/Modal';

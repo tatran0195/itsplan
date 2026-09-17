@@ -1,5 +1,7 @@
+'use client';
+
 import { ChevronsLeftRight, Pin, PinOff, Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { type IssueGroup } from '@/utils/project';
 import { usePermissions } from '@/hooks/usePermissions';
 import { cn } from '@/lib/utils';

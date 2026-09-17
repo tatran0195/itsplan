@@ -1,3 +1,5 @@
+'use client';
+
 import { useMemo, type ReactNode } from 'react';
 import type { Label, LabelGroup } from '@/lib/api/endpoints/labels';
 import { groupLabels } from '@/utils/labels';
@@ -7,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import LabelPickerSection from './LabelPickerSection';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The label selector shared by the issue fields and the filter bar. Type-ahead (a
 // letter jumps to the matching row) comes from the underlying menu.

@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Why a card cannot enter a column: it is at the work-in-progress limit its
 // settings enforce. Names the column and the limit, so the reader knows what to

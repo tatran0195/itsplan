@@ -1,3 +1,5 @@
+'use client';
+
 import { CirclePlus, Plus } from 'lucide-react';
 import type { IssueLinkInputKind } from '@/lib/api/endpoints/issues';
 import { Button } from '@/components/ui/button';
@@ -13,7 +15,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { CREATE_LINK_RELATIONS, LINK_RELATIONS, LINK_RELATION_ICONS } from '@/utils/issueLinks';
 import { useLinkRelationLabel } from '@/hooks/useLinkRelationLabel';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The relations themselves link an issue found through the search dialog; the
 // submenu below them names the relation for an issue created on the spot.

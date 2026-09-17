@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InstanceUserKind } from '@/lib/api/endpoints/god';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import { usePaging } from '@/hooks/usePaging';

@@ -1,5 +1,7 @@
+'use client';
+
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export default function DocumentDeleteDialog({
   onClose,

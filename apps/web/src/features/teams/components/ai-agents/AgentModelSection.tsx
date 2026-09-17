@@ -13,7 +13,7 @@ import { AgentFormSection } from './AgentFormSection';
 import { AgentEmptyNotice } from './AgentEmptyNotice';
 import AgentCredentialField from './AgentCredentialField';
 import AgentModelField from './AgentModelField';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Which provider key the agent runs on and which model of that provider. Only
 // internal agents have it. With no provider key on the team both pickers are

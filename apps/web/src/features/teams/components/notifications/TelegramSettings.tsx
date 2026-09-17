@@ -1,9 +1,11 @@
+'use client';
+
 import { Label } from '@/components/ui/label';
 import SettingsSection from '@/components/common/page/SettingsSection';
 import EnabledSwitch from '@/components/common/inputs/EnabledSwitch';
 import SecretInput from '@/components/common/inputs/SecretInput';
 import type { TelegramForm } from '../../hooks/useTelegramForm';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The bot the team delivers through. The token is optional: left empty, the team
 // sends through the instance bot that members connect their Telegram account to.

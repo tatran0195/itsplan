@@ -1,7 +1,7 @@
 'use client';
 
 import { Pencil, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Worklog } from '@/lib/api/endpoints/worklogs';
 import { formatShortDate } from '@/utils/dates';
 import { formatMinutes } from '@/utils/estimate';

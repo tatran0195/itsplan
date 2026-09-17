@@ -1,5 +1,7 @@
+'use client';
+
 import { Radio } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import { cn } from '@/lib/utils';
 import { formatDurationShort } from '@/utils/dates';

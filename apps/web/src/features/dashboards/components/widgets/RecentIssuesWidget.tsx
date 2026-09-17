@@ -1,6 +1,8 @@
+'use client';
+
 import { useMemo } from 'react';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useShell } from '@/context/shellContext';
 import { issuePath } from '@/utils/paths';
 import { formatShortDate } from '@/utils/dates';

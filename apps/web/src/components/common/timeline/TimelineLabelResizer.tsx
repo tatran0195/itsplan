@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import ResizeGrip from '@/components/common/ResizeGrip';
 
 // The grip on the right edge of a timeline's label column: dragging it sets how

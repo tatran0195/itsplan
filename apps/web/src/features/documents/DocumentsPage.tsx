@@ -25,7 +25,7 @@ import { documentBelongsToTab, type DocumentListTab } from './utils/documentList
 import { documentAncestors } from './utils/documentTree';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import { useDocumentNavigation, useRecentDocuments } from '@/hooks/useDocumentNavigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 const listDefaults: { search: string; tab: DocumentListTab } = { search: '', tab: 'public' };
 

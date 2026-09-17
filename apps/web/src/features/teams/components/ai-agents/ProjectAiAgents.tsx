@@ -1,5 +1,7 @@
+'use client';
+
 import { MessageSquarePlus, Shield } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useProjectAgents } from '@/hooks/useProjectAgents';
 import { useShell } from '@/context/shellContext';
 import { useIntegrationCatalogQuery } from '@/services/integrations.service';

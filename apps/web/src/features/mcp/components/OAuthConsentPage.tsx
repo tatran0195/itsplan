@@ -2,7 +2,7 @@
 
 import { useSearchParams } from 'next/navigation';
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { API_URL } from '@/lib/api/core/client';
 
 type ConsentResponse = { redirectURI?: string; message?: string };

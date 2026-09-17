@@ -1,7 +1,9 @@
+'use client';
+
 import { useId } from 'react';
 import { SettingsSuggestionsInput, type InputSuggestion } from './SettingsSuggestionsInput';
 import { parseScheduleInput } from '../../utils/cronSchedule';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // `value` is what the preset writes into the input, and `parseScheduleInput` reads
 // English phrases — so only the label is translated.

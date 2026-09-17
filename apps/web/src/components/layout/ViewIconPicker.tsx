@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { cn } from '@/lib/utils';
 import { ViewIcon, VIEW_ICON_NAMES, VIEW_ICONS } from '@/utils/viewIcons';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';

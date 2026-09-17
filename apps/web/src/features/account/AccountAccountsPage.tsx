@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import FullPageView from '@/components/common/page/FullPageView';
 import AccountGoogleConnection from './components/accounts/AccountGoogleConnection';
 import AccountTelegramConnection from './components/accounts/AccountTelegramConnection';

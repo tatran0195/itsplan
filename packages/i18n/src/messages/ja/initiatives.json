@@ -1,0 +1,166 @@
+{
+  "title": "イニシアチブ",
+  "newInitiative": "新規イニシアチブ",
+  "notFound": "イニシアチブが見つかりません。",
+  "options": "イニシアチブの操作",
+  "showDescription": "説明を表示",
+  "noDescription": "説明はありません。",
+  "noOwner": "オーナーなし",
+  "startDate": "開始日",
+  "targetDate": "目標日",
+  "progress": "進捗",
+  "activity": "アクティビティ",
+  "noActivity": "アクティビティはまだありません。",
+  "noIssuesLinked": "リンクされたイシューはまだありません。",
+  "inProgress": "進行中",
+  "emptyTitle": "イニシアチブがまだありません",
+  "emptyDescription": "イニシアチブは、共通の目標のもとに関連するイシューをまとめる機能です。",
+  "emptyTabDescription": "イニシアチブはステータスに応じて各タブに移動します。",
+  "emptyTab": {
+    "active": "進行中のイニシアチブはありません",
+    "planned": "計画中のイニシアチブはありません",
+    "proposed": "提案中のイニシアチブはありません",
+    "completed": "完了したイニシアチブはありません"
+  },
+  "tabs": {
+    "active": "進行中",
+    "planned": "計画中",
+    "proposed": "提案中",
+    "completed": "完了",
+    "all": "すべてのイニシアチブ"
+  },
+  "detailTabs": {
+    "overview": "概要",
+    "progress": "進捗",
+    "issues": "イシュー"
+  },
+  "columns": {
+    "name": "名前",
+    "priority": "優先度",
+    "owner": "オーナー",
+    "target": "目標",
+    "progress": "進捗",
+    "health": "健全性"
+  },
+  "status": {
+    "proposed": "提案中",
+    "planned": "計画中",
+    "active": "進行中",
+    "completed": "完了",
+    "canceled": "キャンセル"
+  },
+  "stateGroups": {
+    "backlog": "バックログ",
+    "unstarted": "未着手",
+    "started": "進行中",
+    "completed": "完了",
+    "canceled": "キャンセル"
+  },
+  "health": {
+    "on_track": "順調",
+    "at_risk": "注意",
+    "off_track": "遅延",
+    "unknown": "更新なし"
+  },
+  "healthInfo": {
+    "trigger": "健全性の計算方法",
+    "title": "健全性",
+    "description": "経過時間と完了した作業量を比較します。自動的に更新されます。",
+    "legend": {
+      "on_track": "スケジュール通りに作業が進んでいます。",
+      "at_risk": "スケジュールに対してやや遅れが生じています。",
+      "off_track": "大幅に遅れているか、目標期日を過ぎています。",
+      "unknown": "十分なデータがありません（イシューまたは目標期日が未設定）。"
+    },
+    "howCalculated": "計算方法",
+    "workDone": "完了した作業",
+    "timeElapsed": "経過時間",
+    "trail": "時間の経過に対する遅れ幅",
+    "trailOnTrack": "遅れが10%以内",
+    "trailAtRisk": "遅れが10〜25%",
+    "trailOffTrack": "遅れが25%超"
+  },
+  "timeline": {
+    "title": "タイムライン",
+    "started": "開始",
+    "target": "目標",
+    "remaining": "残り",
+    "overdue": "{days} 日超過",
+    "dueToday": "本日期限",
+    "left": "残り {days} 日",
+    "timeElapsed": "経過時間",
+    "workDone": "完了した作業",
+    "noTargetDate": "目標期日を設定するとペースを追跡できます。"
+  },
+  "form": {
+    "titlePlaceholder": "Q3 ローンチ",
+    "descriptionPlaceholder": "このイニシアチブの目的は何ですか？",
+    "create": "イニシアチブを作成",
+    "creating": "作成中…",
+    "editTitle": "イニシアチブを編集",
+    "save": "変更を保存"
+  },
+  "pagination": {
+    "range": "{total} 件中 {from}–{to} 件",
+    "previous": "前のページ",
+    "next": "次のページ"
+  },
+  "select": {
+    "label": "イニシアチブ",
+    "search": "イニシアチブにリンク…",
+    "empty": "イニシアチブがありません。",
+    "none": "イニシアチブなし",
+    "create": "イニシアチブを作成"
+  },
+  "feed": {
+    "system": "システム",
+    "createdInitiative": "イニシアチブを作成しました",
+    "createdIssue": "イシューを作成しました",
+    "renamed": "名前を「{title}」に変更しました",
+    "descriptionUpdated": "説明を更新しました",
+    "descriptionCleared": "説明を削除しました",
+    "statusSet": "ステータスを {status} に設定しました",
+    "statusMoved": "ステータスを {from} から {to} に移動しました",
+    "prioritySet": "優先度を {priority} に設定しました",
+    "priorityRemoved": "優先度を解除しました",
+    "ownerSet": "オーナーを {name} に設定しました",
+    "ownerRemoved": "オーナー {name} を解除しました",
+    "assigneeSet": "担当者を {name} に割り当てました",
+    "assigneeRemoved": "担当者 {name} を解除しました",
+    "delegateSet": "委任先を {name} に設定しました",
+    "delegateRemoved": "委任先 {name} を解除しました",
+    "targetDateSet": "目標期日を {date} に設定しました",
+    "targetDateRemoved": "目標期日を解除しました",
+    "startDateSet": "開始日を {date} に設定しました",
+    "startDateRemoved": "開始日を解除しました",
+    "dueDateSet": "期限を {date} に設定しました",
+    "dueDateRemoved": "期限を解除しました",
+    "labelAdded": "ラベル {label} を追加しました",
+    "labelRemoved": "ラベル {label} を削除しました",
+    "typeSet": "種別を {type} に設定しました",
+    "typeRemoved": "種別を解除しました",
+    "linked": "{name} にリンクしました",
+    "unlinked": "イニシアチブとのリンクを解除しました"
+  },
+  "attachments": {
+    "title": "添付ファイル",
+    "add": "追加",
+    "uploading": "アップロード中…",
+    "empty": "添付ファイルはまだありません。",
+    "emptyHint": "ファイルをここにドロップするか、「追加」からアップロードしてください。",
+    "dropToUpload": "ファイルをドロップしてアップロード",
+    "uploadFailed": "アップロードに失敗しました",
+    "open": "{name} を開く",
+    "download": "ダウンロード",
+    "downloadFile": "{name} をダウンロード",
+    "deleteFile": "{name} を削除"
+  },
+  "documents": {
+    "title": "ドキュメント",
+    "add": "ドキュメントをリンク",
+    "empty": "リンクされたドキュメントはまだありません。",
+    "loadFailed": "リンクされたドキュメントを読み込めませんでした。再試行してください。",
+    "untitled": "無題",
+    "remove": "{title} のリンクを解除"
+  }
+}

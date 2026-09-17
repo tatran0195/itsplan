@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, CircleDashed, Plus, Target } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { usePermissions } from '@/hooks/usePermissions';
 import { useInitiativeOptionsQuery } from '@/services/initiatives.service';
 import InitiativeDialog from '@/components/common/overlay/InitiativeDialog';

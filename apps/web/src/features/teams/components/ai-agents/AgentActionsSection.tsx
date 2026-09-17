@@ -7,7 +7,7 @@ import { grantedToolCount, groupInOrder } from '../../utils/agentForm';
 import { AgentFormSection } from './AgentFormSection';
 import { AgentActionRow } from './AgentActionRow';
 import { AgentListSearch, SEARCH_THRESHOLD } from './AgentListSearch';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // What the agent may do in the project, grouped by the feature each action belongs to
 // and filterable by label and description. Read-only actions are always granted; the

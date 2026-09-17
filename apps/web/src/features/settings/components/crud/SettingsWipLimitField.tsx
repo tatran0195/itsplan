@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Gauge } from 'lucide-react';
 import type { WipMode } from '@/lib/api/endpoints/columns';
 import { cn } from '@/lib/utils';

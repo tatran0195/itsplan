@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import type { DevelopmentLink } from '@/lib/api/endpoints/git';
 import { usePersistedOpen } from '../../hooks/usePersistedOpen';
@@ -6,7 +8,7 @@ import IssueDevelopmentCreateDialog from './IssueDevelopmentCreateDialog';
 import IssueDevelopmentLinkCard from './IssueDevelopmentLinkCard';
 import IssueDevelopmentLinkDialog from './IssueDevelopmentLinkDialog';
 import IssueSectionHeading from './IssueSectionHeading';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export default function IssueDevelopmentPanel({
   issueId,

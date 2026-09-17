@@ -15,7 +15,7 @@ import {
 import { Skeleton } from '@/components/ui/skeleton';
 import { useRelativeTime } from '@/context/relativeTimeContext';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import {
   useDocumentRevisionsQuery,
   useRestoreDocumentRevision,

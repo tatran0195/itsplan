@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import { useAiAgentsQuery, useDeleteAiAgent } from '@/services/aiAgents.service';
@@ -13,7 +15,7 @@ import { TeamAiAgentRow } from './TeamAiAgentRow';
 import { TeamAiAgentSheet } from './TeamAiAgentSheet';
 import { TeamAiAgentRunsSheet } from './TeamAiAgentRunsSheet';
 import { integrationLabel } from '@/utils/integrationLabels';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The agents of a team: bot users that issues can be delegated to in any project the
 // team attaches them to. An external agent is driven through the API; an internal

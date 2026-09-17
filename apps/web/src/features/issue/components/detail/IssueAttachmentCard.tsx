@@ -1,3 +1,5 @@
+'use client';
+
 import { type DragEvent } from 'react';
 import { Download, PenLine, Plus, Trash2 } from 'lucide-react';
 import type { Attachment } from '@/lib/api/endpoints/attachments';
@@ -5,7 +7,7 @@ import { attachmentHtml, isImage, isVideo } from '@/components/common/editor/att
 import { formatSize } from '@/utils/fileSize';
 import AttachmentThumb from '@/components/common/attachments/AttachmentThumb';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 function onDragStart(e: DragEvent<HTMLElement>, a: Attachment) {
   e.dataTransfer.setData('text/html', attachmentHtml(a));

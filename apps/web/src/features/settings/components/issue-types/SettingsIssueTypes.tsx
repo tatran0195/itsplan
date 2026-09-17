@@ -1,6 +1,8 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { Pencil, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { IssueType } from '@/lib/api/endpoints/issueTypes';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import { DEFAULT_COLOR } from '@/utils/project';

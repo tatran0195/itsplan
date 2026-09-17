@@ -1,7 +1,9 @@
+'use client';
+
 import { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A masked input for a secret (SMTP password, API key, bot token). The stored value
 // is never sent to the client, so the field starts empty: when a value is already

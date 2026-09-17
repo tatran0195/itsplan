@@ -1,6 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { initiativesPath } from '@/utils/paths';
 import InitiativeBreadcrumbName from '@/components/layout/InitiativeBreadcrumbName';
 

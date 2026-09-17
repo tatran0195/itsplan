@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Terminal } from 'lucide-react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
@@ -17,7 +19,7 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { parseScheduleInput } from '../../utils/cronSchedule';
 import { SettingsScheduleInput } from './SettingsScheduleInput';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export function SettingsScheduleDialog({
   projectKey,

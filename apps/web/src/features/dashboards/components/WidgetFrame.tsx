@@ -1,6 +1,8 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import { GripVertical, MoreHorizontal, SlidersHorizontal } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { WidgetInstance } from '@/utils/dashboardWidgets';
 import {
   DropdownMenu,

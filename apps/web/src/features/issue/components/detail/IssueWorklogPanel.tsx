@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { IssueDetail } from '@/lib/api/endpoints/issues';
 import { useSession } from '@/lib/auth-client';

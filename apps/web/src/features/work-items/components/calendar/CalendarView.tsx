@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { isSameDay, isSameMonth, startOfMonth } from 'date-fns';
 import {
@@ -7,7 +9,7 @@ import {
   type DragEndEvent,
   type DragStartEvent,
 } from '@dnd-kit/core';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Issue } from '@/lib/api/endpoints/issues';
 import { buildMaps, issueColor, type WorkItemsViewProps } from '@/utils/project';
 import { toDateStr } from '@/utils/dates';

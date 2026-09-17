@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Initiative } from '@/lib/api/endpoints/initiatives';
 import MarkdownEditor from '@/components/common/editor/MarkdownEditor';
 import InitiativeAttachments from './InitiativeAttachments';

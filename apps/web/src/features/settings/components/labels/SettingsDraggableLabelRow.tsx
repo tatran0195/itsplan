@@ -1,6 +1,8 @@
+'use client';
+
 import { useDraggable } from '@dnd-kit/core';
 import { GripVertical } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Label as LabelRow } from '@/lib/api/endpoints/labels';
 import { colorDot } from '@/components/common/fields/colorDot';
 import { SettingsRow } from '../crud/SettingsRow';

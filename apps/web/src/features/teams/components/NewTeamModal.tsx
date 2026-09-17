@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Users } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Team } from '@/lib/api/endpoints/teams';
 import { useCreateTeam } from '@/services/teams.service';
 import Modal from '@/components/common/overlay/Modal';

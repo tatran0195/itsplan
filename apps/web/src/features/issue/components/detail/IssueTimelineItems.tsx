@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import ListSkeleton from '@/components/common/skeleton/ListSkeleton';
 import { useTimelineItemsQuery, type TimelineRange } from '../../services/comments.service';
 import ActivityItemList from './ActivityItemList';

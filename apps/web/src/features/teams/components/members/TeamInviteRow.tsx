@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Check, Copy, Mail, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InviteRow } from '@/lib/api/endpoints/invites';
 import { inviteLink } from '@/utils/paths';
 import { Badge } from '@/components/ui/badge';

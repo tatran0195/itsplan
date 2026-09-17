@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import { useUpdateProject } from '@/services/projects.service';
 import { usePermissions } from '@/hooks/usePermissions';

@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The grip on the right edge of a table column's header cell: dragging it sets
 // that column's width. The starting width is measured from the cell itself, so a

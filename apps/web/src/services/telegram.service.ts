@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import {
   getTelegramAccount,

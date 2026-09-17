@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { Column } from '@/lib/api/endpoints/columns';
 import type { GitSettings } from '@/lib/api/endpoints/git';
 import SettingsCard from '@/components/common/page/SettingsCard';

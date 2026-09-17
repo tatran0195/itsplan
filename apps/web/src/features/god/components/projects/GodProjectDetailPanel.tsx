@@ -1,7 +1,7 @@
 'use client';
 
 import { Users, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InstanceProjectDetail } from '@/lib/api/endpoints/god';
 import { formatDate, formatDateTime } from '@/utils/dates';
 import { useExitOnEscape } from '@/hooks/useExitOnEscape';

@@ -1,6 +1,8 @@
+'use client';
+
 import { useMemo, useState } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { groupInOrder } from '../../utils/agentForm';
 import { AgentListSearch, SEARCH_THRESHOLD } from './AgentListSearch';
 

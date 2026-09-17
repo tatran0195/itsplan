@@ -1,7 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Minus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Assignee } from '@/lib/api/endpoints/projects';
 import type { Initiative } from '@/lib/api/endpoints/initiatives';
 import { initiativePath } from '@/utils/paths';

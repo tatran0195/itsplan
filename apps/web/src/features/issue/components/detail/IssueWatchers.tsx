@@ -1,3 +1,5 @@
+'use client';
+
 import { Check, Eye, EyeOff, LoaderCircle, UserPlus } from 'lucide-react';
 import { useIsMutating } from '@tanstack/react-query';
 import type { Assignee } from '@/lib/api/endpoints/projects';
@@ -21,7 +23,7 @@ import {
   useSetIssueWatching,
   watcherMutationKey,
 } from '../../services/watchers.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Who follows the issue. Everyone can subscribe themselves; members who may edit
 // the issue can also curate the watcher list from the avatar-stack picker.

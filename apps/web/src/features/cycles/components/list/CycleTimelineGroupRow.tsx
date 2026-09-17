@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { colorDot } from '@/components/common/fields/colorDot';
 import type { CycleGroup } from '../../utils/cycleGroups';
 import { CYCLE_GROUP_H } from '../../utils/cycleTimeline';

@@ -1,9 +1,11 @@
+'use client';
+
 import { KeyRound, Pencil, Trash2 } from 'lucide-react';
 import type { IntegrationCredential } from '@/lib/api/endpoints/integrations';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { TableCell, TableRow } from '@/components/ui/table';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One credential as a table row: the integration name and optional account label,
 // the redacted fields as badges, and edit/delete actions gated by permission.

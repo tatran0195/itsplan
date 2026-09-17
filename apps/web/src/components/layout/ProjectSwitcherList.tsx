@@ -1,5 +1,7 @@
+'use client';
+
 import { useState, type Ref } from 'react';
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from '@repo/i18n/react';
 import type { Project } from '@/lib/api/endpoints/projects';
 import type { Team } from '@/lib/api/endpoints/teams';
 import { Command, CommandInput, CommandList } from '@/components/ui/command';

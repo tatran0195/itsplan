@@ -1,6 +1,8 @@
+'use client';
+
 import type { ComponentProps } from 'react';
 import { ChevronsUpDown, Users } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Project } from '@/lib/api/endpoints/projects';
 import ItsAPlanMark from '@/components/brand/ItsAPlanMark';
 import { SidebarMenuButton } from '@/components/ui/sidebar';

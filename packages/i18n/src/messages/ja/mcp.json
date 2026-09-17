@@ -1,0 +1,46 @@
+{
+  "title": "MCPサーバー",
+  "description": "Model Context Protocolを介してAIエージェントをこのプロジェクトに接続します。エージェントはAPIキーで許可された範囲を操作できます。",
+  "disabled": "無効",
+  "offForTeam": "チーム {team} でMCPが無効になっています。",
+  "offForProject": "チーム {team} ではMCPが有効ですが、このプロジェクトでは無効です。",
+  "openTeamSettings": "チームのMCP設定を開く",
+  "askManager": "チームオーナーまたはマネージャーに有効化を依頼してください:",
+  "keyHint": "<link>APIキー</link> ページでキーを作成し、スニペットの <code>{apiKey}</code> を置き換えてください。",
+  "endpoint": "MCPエンドポイント",
+  "clientTabsAria": "クライアント",
+  "addToFile": "<code>{file}</code> に追加",
+  "notes": {
+    "claudeCode": "ターミナルで実行してください。",
+    "vscode": "GitHub Copilotが必要です。",
+    "claudeDesktop": "Claude Desktopはmcp-remoteブリッジを介してリモートサーバーに接続します。Node.jsが必要です。",
+    "other": "Streamable HTTP経由のMCPをサポートする任意のクライアントで使用できます。エンドポイントを指定し、Authorization: Bearer {apiKey} ヘッダーを送信してください。"
+  },
+  "clients": {
+    "other": "その他"
+  },
+  "oauth": {
+    "configuration": "接続方法",
+    "methodTabsAria": "接続方式",
+    "method": "OAuth",
+    "personalKey": "APIキー",
+    "description": "ChatGPTやClaudeなど、OAuthをサポートするMCPクライアントで使用します。Itsaplanアカウントでサインインするため、クライアントにAPIキーを渡す必要はありません。",
+    "discovery": "OAuthディスカバリー",
+    "steps": {
+      "add": "クライアントでMCPアプリを追加します。",
+      "paste": "MCPエンドポイントを貼り付けます。",
+      "choose": "サインイン方法を選択する際に「OAuth」を選択します。",
+      "signIn": "Itsaplanにサインインしてアクセスを承認します。"
+    },
+    "security": "OAuthはPKCE (S256)、動的クライアント登録、およびItsaplanアカウントにスコープされたアクセストークンを使用します。",
+    "consent": {
+      "title": "Itsaplanを承認",
+      "description": "このMCPクライアントがあなたのItsaplanアカウントの権限で操作することを許可します。",
+      "missingCode": "この認可リクエストには同意コードが含まれていません。",
+      "cancel": "キャンセル",
+      "pending": "承認中…",
+      "authorize": "承認する",
+      "failed": "OAuth認可を完了できませんでした。"
+    }
+  }
+}

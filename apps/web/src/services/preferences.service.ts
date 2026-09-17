@@ -1,5 +1,7 @@
+'use client';
+
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { useLocale } from 'next-intl';
+import { useLocale } from '@repo/i18n/react';
 import type { Locale } from '@/i18n/locales';
 import {
   type AccountPreferences,

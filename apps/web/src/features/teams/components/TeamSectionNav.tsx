@@ -16,7 +16,7 @@ import {
   Wrench,
   type LucideIcon,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Team } from '@/lib/api/endpoints/teams';
 import { cn } from '@/lib/utils';
 import { teamSectionPath, type TeamSection } from '@/utils/paths';

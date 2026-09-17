@@ -1,5 +1,7 @@
+'use client';
+
 import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { aiAgentsPath, aiTeamPath } from '@/utils/paths';
 import { AI_AGENTS_SECTION, AI_TEAM_SECTIONS } from '@/utils/settingsSections';
 import { usePermissions } from '@/hooks/usePermissions';

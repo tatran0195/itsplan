@@ -1,0 +1,119 @@
+{
+  "newIssue": "新規イシュー",
+  "pin": "ピン留め",
+  "unpin": "ピン留め解除",
+  "collapse": "折りたたむ",
+  "expand": "展開",
+  "hide": "非表示",
+  "show": "表示",
+  "hiddenColumns": "非表示のカラム",
+  "hiddenGroups": "非表示のグループ",
+  "selectAll": "すべて選択",
+  "deselectAll": "選択を解除",
+  "resizeColumn": "列幅を変更",
+  "viewNamePlaceholder": "すべてのイシュー",
+  "sortedOrder": "イシューは {field} 順に並んでいます。移動するには並び順を「手動」に切り替えてください。",
+  "statusSince": "{date} から現在のステータス",
+  "createdOn": "作成: {date}",
+  "updatedOn": "更新: {date}",
+  "subtasksProgress": "サブタスク {done}/{total}",
+  "subtasksDone": "サブタスク {total} 件中 {done} 件完了",
+  "wip": {
+    "reached": "{column} は上限の {limit} 件に達しています。",
+    "tooltip": "仕掛り制限 (WIP limit): {max}",
+    "count": "{count} / {max}",
+    "filteredCount": "{total} 件中 {shown} 件表示 / 上限 {max}",
+    "filteredTooltip": "現在のフィルターで {shown} 件表示中。上限 {max} はカラム内の全 {total} 件が対象です。"
+  },
+  "columns": {
+    "title": "タイトル",
+    "status": "ステータス",
+    "statusAge": "滞在時間",
+    "priority": "優先度",
+    "type": "種別",
+    "initiative": "イニシアチブ",
+    "cycle": "サイクル",
+    "labels": "ラベル",
+    "estimatePoints": "ポイント",
+    "estimateTime": "見積もり時間",
+    "startDate": "開始日",
+    "dueDate": "期限",
+    "created": "作成日時",
+    "updated": "更新日時"
+  },
+  "calendar": {
+    "previousMonth": "前月",
+    "nextMonth": "翌月",
+    "today": "今日",
+    "moreIssues": "+{count} 件",
+    "issueCount": "{count, plural, other {# 件のイシュー}}",
+    "weekdays": {
+      "sun": "日",
+      "mon": "月",
+      "tue": "火",
+      "wed": "水",
+      "thu": "木",
+      "fri": "金",
+      "sat": "土"
+    },
+    "noDate": {
+      "dueDate": "期限なし",
+      "startDate": "開始日なし",
+      "custom": "日付なし"
+    },
+    "allDated": {
+      "dueDate": "すべての日付が設定されています。",
+      "startDate": "すべての開始日が設定されています。",
+      "custom": "すべての日付が設定されています。"
+    }
+  },
+  "timeline": {
+    "empty": "タイムラインに配置するイシューがまだありません。",
+    "expandGroup": "グループを展開",
+    "collapseGroup": "グループを折りたたむ",
+    "inferredStart": "作成日時から推定された開始日",
+    "inferredStartDraggable": "作成日時から推定された開始日 — ドラッグして設定"
+  },
+  "bulk": {
+    "selected": "{count} 件選択中",
+    "status": "ステータス",
+    "priority": "優先度",
+    "assignee": "担当者",
+    "delegate": "委任先",
+    "initiative": "イニシアチブ",
+    "cycle": "サイクル",
+    "labels": "ラベル",
+    "noAssignee": "担当者なし",
+    "noDelegate": "委任先なし",
+    "noInitiative": "イニシアチブなし",
+    "noCycle": "サイクルなし",
+    "archive": "アーカイブ",
+    "clearSelection": "選択を解除"
+  },
+  "removal": {
+    "archive": {
+      "title": "{count, plural, other {イシューのアーカイブ}}",
+      "confirm": "{count, plural, other {# 件のイシューをアーカイブ}}",
+      "description": "{count, plural, other {選択した # 件のイシューをアーカイブしますか？ボードから除外されますが、後から復元できます。}}"
+    },
+    "delete": {
+      "title": "{count, plural, other {イシューの削除}}",
+      "confirm": "{count, plural, other {# 件のイシューを削除}}",
+      "description": "{count, plural, other {選択した # 件のイシューを削除しますか？}} コメント、アクティビティ、添付ファイルもすべて削除されます。この操作は取り消せません。"
+    }
+  },
+  "share": {
+    "issueTitle": "イシュー",
+    "issueUnavailable": "このイシューは利用できません。",
+    "boardUnavailable": "この共有ボードは利用できません。リンクが取り消された可能性があります。"
+  },
+  "groups": {
+    "noAssignee": "担当者なし",
+    "noDelegate": "委任先なし",
+    "noPriority": "優先度なし",
+    "noType": "種別なし",
+    "noInitiative": "イニシアチブなし",
+    "noCycle": "サイクルなし",
+    "noMember": "値なし"
+  }
+}

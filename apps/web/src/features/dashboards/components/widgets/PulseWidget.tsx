@@ -1,6 +1,8 @@
+'use client';
+
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useSession } from '@/lib/auth-client';
 import { cn } from '@/lib/utils';
 import type { PulseUnit } from '@/lib/api/endpoints/analytics';

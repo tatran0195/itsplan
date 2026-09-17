@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Plus, SquareKanban } from 'lucide-react';
 import { useProjectsQuery } from '@/services/projects.service';
 import { useAccountPreferencesQuery } from '@/services/preferences.service';

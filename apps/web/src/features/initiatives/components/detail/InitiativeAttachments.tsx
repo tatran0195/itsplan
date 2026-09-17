@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import { Download, Plus, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Attachment } from '@/lib/api/endpoints/attachments';
 import { isImage, isVideo } from '@/components/common/editor/attachmentEmbed';
 import AttachmentThumb from '@/components/common/attachments/AttachmentThumb';

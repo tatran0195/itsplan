@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useEffect, useState } from 'react';
 import type { NoteBoard } from '@/lib/api/endpoints/noteBoards';
 import { useShell } from '@/context/shellContext';

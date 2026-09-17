@@ -1,8 +1,10 @@
+'use client';
+
 import { useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import type { Editor } from '@tiptap/react';
 import { MessageSquare, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import {
   addDocumentComment,
   listDocumentComments,

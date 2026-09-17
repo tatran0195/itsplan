@@ -29,19 +29,20 @@ describe('Paraglide message catalogs', () => {
     },
   );
 
-  it.each(
-    INTERFACE_LOCALES.filter(({ code }) => !['en', 'ar'].includes(code)).map(({ code }) => code),
-  )('%s localizes the complete new add-on and managed-consent copy', (locale) => {
-    const catalog = loadCatalog(locale);
-    const firstAddonKey = orderedKeys.indexOf('settings_addons_group_engagement_title');
-    const lastAddonKey = orderedKeys.indexOf('settings_addons_boundary');
-    const localizedKeys = orderedKeys
-      .slice(Math.min(firstAddonKey, lastAddonKey), Math.max(firstAddonKey, lastAddonKey) + 1)
-      .filter((key) => !key.endsWith('_placeholder'))
-      .concat('settings_analytics_cookieconsent_managed');
+  it.each(INTERFACE_LOCALES.filter(({ code }) => code !== 'en').map(({ code }) => code))(
+    '%s localizes the complete new add-on and managed-consent copy',
+    (locale) => {
+      const catalog = loadCatalog(locale);
+      const firstAddonKey = orderedKeys.indexOf('settings_addons_group_engagement_title');
+      const lastAddonKey = orderedKeys.indexOf('settings_addons_boundary');
+      const localizedKeys = orderedKeys
+        .slice(Math.min(firstAddonKey, lastAddonKey), Math.max(firstAddonKey, lastAddonKey) + 1)
+        .filter((key) => !key.endsWith('_placeholder'))
+        .concat('settings_analytics_cookieconsent_managed');
 
-    for (const key of localizedKeys) expect(catalog[key]).not.toBe(english[key]);
-  });
+      for (const key of localizedKeys) expect(catalog[key]).not.toBe(english[key]);
+    },
+  );
 
   it.each(INTERFACE_LOCALES.map(({ code }) => code))(
     '%s contains no external translation-service artifacts',

@@ -1,3 +1,5 @@
+'use client';
+
 import { useRef, useState } from 'react';
 import { Maximize2, X } from 'lucide-react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
@@ -7,7 +9,7 @@ import IssueActionsBar from '../actions/IssueActionsBar';
 import { useExitOnEscape } from '@/hooks/useExitOnEscape';
 import { useExitOnClickOutside } from '../../hooks/useExitOnClickOutside';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The issue detail as a side panel over the project, at the end edge. Expand opens the
 // same issue as a full page; the shared body lives in IssueDetailContent.

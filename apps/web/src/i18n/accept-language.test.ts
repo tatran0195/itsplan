@@ -4,23 +4,11 @@ import { localeFromAcceptLanguage } from './accept-language';
 
 describe('localeFromAcceptLanguage', () => {
   it('uses the preferred supported language', () => {
-    assert.equal(localeFromAcceptLanguage('ru;q=0.4,zh-CN;q=0.9,en;q=0.8'), 'zh-CN');
+    assert.equal(localeFromAcceptLanguage('fr;q=0.4,ja;q=0.9,en;q=0.8'), 'ja');
   });
 
   it('matches a supported base language to a regional browser locale', () => {
-    assert.equal(localeFromAcceptLanguage('uk-UA,uk;q=0.9,en;q=0.8'), 'uk');
-  });
-
-  it('matches a regional Arabic browser locale to the supported base language', () => {
-    assert.equal(localeFromAcceptLanguage('ar-SA,ar;q=0.9,en;q=0.8'), 'ar');
-  });
-
-  it('matches a regional Indonesian browser locale to the supported base language', () => {
-    assert.equal(localeFromAcceptLanguage('id-ID,id;q=0.9,en;q=0.8'), 'id');
-  });
-
-  it('matches a Spanish browser header to the supported locale', () => {
-    assert.equal(localeFromAcceptLanguage('es-ES,es;q=0.9,en;q=0.8'), 'es-ES');
+    assert.equal(localeFromAcceptLanguage('ja-JP,ja;q=0.9,en;q=0.8'), 'ja');
   });
 
   it('uses the fallback for a preferred wildcard', () => {
@@ -28,6 +16,6 @@ describe('localeFromAcceptLanguage', () => {
   });
 
   it('falls back to English when no requested language is supported', () => {
-    assert.equal(localeFromAcceptLanguage('de-DE,ja;q=0.9'), 'en');
+    assert.equal(localeFromAcceptLanguage('de-DE,fr;q=0.9'), 'en');
   });
 });

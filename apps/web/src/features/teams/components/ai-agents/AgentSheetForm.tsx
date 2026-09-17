@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { Sparkles, Wrench } from 'lucide-react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
@@ -37,7 +39,7 @@ import {
   type AgentFormValue,
 } from '../../utils/agentForm';
 import { integrationLabel } from '@/utils/integrationLabels';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The Edit tab of the agent sheet, used for both create and edit. With no agent it
 // creates one; once created (onCreated lifts it to the sheet) the same form switches

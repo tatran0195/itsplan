@@ -1,7 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { PermissionCatalog, Permissions } from '@/lib/api/endpoints/roles';
 import ListSkeleton from '@/components/common/skeleton/ListSkeleton';
 import DisclosureCard from '@/components/common/DisclosureCard';

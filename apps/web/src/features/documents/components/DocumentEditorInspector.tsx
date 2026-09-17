@@ -10,7 +10,7 @@ import {
   SheetTitle,
 } from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import DocumentSidePanel from './DocumentSidePanel';
 
 export default function DocumentEditorInspector({
@@ -39,7 +39,6 @@ export default function DocumentEditorInspector({
   onOpenHistory: () => void;
 }) {
   const t = useTranslations('documents');
-  const locale = useLocale();
   const isMobile = useIsMobile();
 
   if (!open) return null;
@@ -61,10 +60,7 @@ export default function DocumentEditorInspector({
   if (isMobile) {
     return (
       <Sheet open onOpenChange={onOpenChange}>
-        <SheetContent
-          side={locale === 'ar' ? 'left' : 'right'}
-          className="w-[min(94vw,380px)] gap-0 sm:max-w-[380px]"
-        >
+        <SheetContent side="right" className="w-[min(94vw,380px)] gap-0 sm:max-w-[380px]">
           <SheetHeader className="shrink-0 border-b pe-12">
             <SheetTitle>{t('details')}</SheetTitle>
             <SheetDescription className="sr-only">{t('detailsDescription')}</SheetDescription>

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import SettingsCard from '@/components/common/page/SettingsCard';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { MCP_CLIENTS, MCP_URL } from '../utils/clients';

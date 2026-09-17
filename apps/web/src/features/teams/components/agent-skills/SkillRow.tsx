@@ -1,10 +1,12 @@
+'use client';
+
 import { BookText, Pencil, Trash2 } from 'lucide-react';
 import type { AgentSkill } from '@/lib/api/endpoints/agentSkills';
 import GithubIcon from '@/components/common/GithubIcon';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { TableCell, TableRow } from '@/components/ui/table';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One skill as a table row: name and source with the reference-file count below, the
 // description, and edit/delete actions gated by permission.

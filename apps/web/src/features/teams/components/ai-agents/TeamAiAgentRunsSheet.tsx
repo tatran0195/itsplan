@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import type { AgentRun, AiAgent } from '@/lib/api/endpoints/agents';
@@ -17,7 +19,7 @@ import {
 } from '@/components/ui/sheet';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { useAgentSection } from '../../context/agentSection';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Run history for an agent, in a right-side sidebar. Shows the triggered runs (a
 // mention, a delegation, or a member field) queued for the agent, newest first, 25 at

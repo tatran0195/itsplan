@@ -1,5 +1,7 @@
+'use client';
+
 import { AlertTriangle } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { WidgetConfig } from '@/utils/dashboardWidgets';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useWebhookStatsQuery } from '../../services/analytics.service';

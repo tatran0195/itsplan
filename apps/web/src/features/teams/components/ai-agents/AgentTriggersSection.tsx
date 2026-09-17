@@ -1,3 +1,5 @@
+'use client';
+
 import { Fragment } from 'react';
 import { Zap } from 'lucide-react';
 import { useQueries } from '@tanstack/react-query';
@@ -10,7 +12,7 @@ import { isMemberField } from '@/utils/memberFields';
 import type { AgentFormValue } from '../../utils/agentForm';
 import { AgentDelayInput } from './AgentDelayInput';
 import { AgentFormSection } from './AgentFormSection';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A member field an agent can be set into, with the project it belongs to: an agent
 // works in several projects of its team, and each has its own fields.

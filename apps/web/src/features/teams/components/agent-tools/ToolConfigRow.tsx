@@ -1,9 +1,11 @@
+'use client';
+
 import { Trash2, Wrench } from 'lucide-react';
 import type { ConfiguredTool } from '@/lib/api/endpoints/agentTools';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { TableCell, TableRow } from '@/components/ui/table';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One configured tool as a table row: the tool name with the integration and
 // credential it runs on below, the token permissions it needs as badges, and a

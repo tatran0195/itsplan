@@ -1,9 +1,11 @@
+'use client';
+
 import { AtSign, ListChecks, UserRoundCheck } from 'lucide-react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { AgentTriggerChip, TRIGGER_CHIP } from './AgentTriggerChip';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The enabled run triggers for an internal agent (mention, delegation, member
 // fields). Nothing is shown when none are on: an empty cell already says so. The

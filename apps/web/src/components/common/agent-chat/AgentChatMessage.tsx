@@ -11,7 +11,7 @@ import { Message, MessageContent, MessageFooter } from '@/components/ui/message'
 import { MessageScrollerItem } from '@/components/ui/message-scroller';
 import AgentChatToolCalls from './AgentChatToolCalls';
 import AgentChatUserText from './AgentChatUserText';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 type Block = { text: string } | { tools: AiChatToolPart[] };
 

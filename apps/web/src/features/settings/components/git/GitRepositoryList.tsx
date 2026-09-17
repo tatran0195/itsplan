@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { GitRepository } from '@/lib/api/endpoints/git';
 import { useRelativeTime } from '@/context/relativeTimeContext';
 

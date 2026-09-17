@@ -2,7 +2,7 @@
 
 import { Fragment, useMemo, useState } from 'react';
 import { X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type {
   PermissionAction,
   PermissionCatalog,

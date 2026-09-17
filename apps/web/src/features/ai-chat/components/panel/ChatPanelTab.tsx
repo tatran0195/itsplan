@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { LoaderCircle, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { ChatPanelTabRename } from './ChatPanelTabRename';

@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Pencil, Reply, Trash2 } from 'lucide-react';
 import type { FeedItem } from '@/lib/api/endpoints/activity';
@@ -8,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import { useRelativeTime } from '@/context/relativeTimeContext';
 import CommentComposer, { type ComposerContext } from './CommentComposer';
 import { useDeleteComment } from '../../services/comments.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One comment inside a thread card: a line of author, age and the reply button over
 // the rendered markdown body. A feed entry stores the author's name, not their

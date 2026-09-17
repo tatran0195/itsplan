@@ -8,7 +8,7 @@ import { useHistoryScrollRestoration } from '@/hooks/useHistoryScrollRestoration
 import { useIssueBySeqQuery } from '@/services/issues.service';
 import IssueDetailContent from './components/detail/IssueDetailContent';
 import IssueDetailSkeleton from './components/detail/IssueDetailSkeleton';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The full-page issue view (/project/:projectKey/issue/:sequenceNumber), rendered
 // inside the Shell layout. The URL carries the project-scoped number, resolved to

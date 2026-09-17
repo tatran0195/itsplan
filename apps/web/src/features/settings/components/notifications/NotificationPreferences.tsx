@@ -1,3 +1,5 @@
+'use client';
+
 import { type ReactNode } from 'react';
 import { Mail, Send } from 'lucide-react';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -5,7 +7,7 @@ import SettingsSection from '@/components/common/page/SettingsSection';
 import NotificationTelegramAccount from './NotificationTelegramAccount';
 import { NOTIFICATION_EVENTS } from '../../utils/notificationEvents';
 import type { NotificationPreferencesForm } from '../../hooks/useNotificationPreferencesForm';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A member's own notification preferences for the project: for each issue event, a
 // checkbox per channel (email, Telegram). Visible to every member (each edits only

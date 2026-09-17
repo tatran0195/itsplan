@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { MemberRow } from '@/lib/api/endpoints/members';
 import type { Role } from '@/lib/api/endpoints/roles';
 import { Badge } from '@/components/ui/badge';

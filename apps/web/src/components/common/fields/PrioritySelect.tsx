@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { usePriorityLabel } from '@/hooks/usePriorityLabel';
 import { Pill } from './Pill';
 import { PRIORITY_FIELDS } from './priorityFields';

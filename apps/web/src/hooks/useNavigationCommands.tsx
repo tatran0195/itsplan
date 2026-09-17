@@ -1,3 +1,5 @@
+'use client';
+
 import { useRouter } from 'next/navigation';
 import {
   Bell,
@@ -11,7 +13,7 @@ import {
   Target,
   Users,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useSession } from '@/lib/auth-client';
 import {
   aiAgentsPath,

@@ -1,7 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { type Embeddable } from '@/components/common/editor/attachmentEmbed';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Nothing here may take focus: blurring the editor saves the description, and the
 // refetched updatedAt remounts the editor by its key — mid-pick, throwing away the

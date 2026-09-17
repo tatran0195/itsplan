@@ -1,7 +1,7 @@
 'use client';
 
 import { parseISO, differenceInCalendarDays } from 'date-fns';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Initiative } from '@/lib/api/endpoints/initiatives';
 import { formatDate } from '@/utils/dates';
 import HealthBadge from '../shared/HealthBadge';

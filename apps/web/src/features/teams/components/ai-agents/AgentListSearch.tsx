@@ -1,6 +1,8 @@
+'use client';
+
 import { Search, X } from 'lucide-react';
 import { Input } from '@/components/ui/input';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // How many items a checklist has to hold before its filter box is worth showing.
 export const SEARCH_THRESHOLD = 3;

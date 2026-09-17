@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { CircleDot } from 'lucide-react';
 import type { FeedItem } from '@/lib/api/endpoints/activity';
 import { useRelativeTime } from '@/context/relativeTimeContext';

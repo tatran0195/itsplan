@@ -1,0 +1,8 @@
+{
+  "noProjectAccess": "このプロジェクトへのアクセス権がありません。",
+  "projectUnavailable": "このプロジェクトは利用できません。",
+  "noProjects": "プロジェクトがまだありません。作成して始めましょう。",
+  "noProjectsTitle": "プロジェクトがありません",
+  "noProjectsHint": "最初のプロジェクトを作成して、ボード上でイシューの計画を始めましょう。",
+  "createProject": "プロジェクトを作成"
+}

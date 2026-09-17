@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { teamPath } from '@/utils/paths';
 import { useTeamsQuery } from '@/services/teams.service';
 

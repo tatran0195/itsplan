@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { TeamBillingSection } from '@/cloud';
 import type { Team } from '@/lib/api/endpoints/teams';
 import { formatDate } from '@/utils/dates';

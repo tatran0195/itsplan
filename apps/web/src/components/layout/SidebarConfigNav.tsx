@@ -1,5 +1,7 @@
+'use client';
+
 import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Bell, Settings, Users } from 'lucide-react';
 import { membersPath, notificationsPath } from '@/utils/paths';
 import { useSettingsNavGroups } from '@/hooks/useSettingsNavGroups';

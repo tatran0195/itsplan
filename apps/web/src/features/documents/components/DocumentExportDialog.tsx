@@ -12,7 +12,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import {
   createPortableDocumentExport,
   DocumentExportLimitError,

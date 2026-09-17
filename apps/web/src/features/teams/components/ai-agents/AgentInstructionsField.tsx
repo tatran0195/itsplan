@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, Code, Copy, Maximize2, Type } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,7 +11,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Textarea } from '@/components/ui/textarea';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import AgentInstructionsEditor from './AgentInstructionsEditor';
 
 // The agent's system-prompt field, written as markdown. An inline editor plus a

@@ -1,5 +1,7 @@
+'use client';
+
 import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import {
   BookOpenText,
   Inbox,

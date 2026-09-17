@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { arrayMove } from '@dnd-kit/sortable';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Dashboard } from '@/lib/api/endpoints/dashboards';
 import {
   createWidget,

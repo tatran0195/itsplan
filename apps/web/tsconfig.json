@@ -9,7 +9,9 @@
     "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"],
-      "@/cloud": ["./src/ce/index.ts"]
+      "@/cloud": ["./src/ce/index.ts"],
+      "next-intl": ["./src/i18n/compat.ts"],
+      "next-intl/server": ["./src/i18n/compat-server.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

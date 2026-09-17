@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useState } from 'react';
 import type { NoteBoardAccessCandidate, NoteBoardVisibility } from '@/lib/api/endpoints/noteBoards';
 import { useSession } from '@/lib/auth-client';

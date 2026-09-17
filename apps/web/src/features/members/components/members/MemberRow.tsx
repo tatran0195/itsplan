@@ -1,7 +1,7 @@
 'use client';
 
 import { LogOut, UserMinus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { MemberRow as Member } from '@/lib/api/endpoints/members';
 import type { Role } from '@/lib/api/endpoints/roles';
 import { formatDateTime } from '@/utils/dates';

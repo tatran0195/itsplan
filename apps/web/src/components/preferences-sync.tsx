@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
-import { useLocale } from 'next-intl';
+import { useLocale } from '@repo/i18n/react';
 import {
   useAccountPreferencesQuery,
   useUpdateAccountPreferences,

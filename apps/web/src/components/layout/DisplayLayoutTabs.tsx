@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { byKey } from '@/utils/messageKey';
 import { useHotkeyFormatter } from '@/context/useHotkeys';
 import { cn } from '@/lib/utils';

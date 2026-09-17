@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Hash } from 'lucide-react';
 import type { IssueSearchHit } from '@/lib/api/endpoints/issues';
@@ -12,7 +14,7 @@ import {
   CommandList,
 } from '@/components/ui/command';
 import ArchivedBadge from '@/components/common/ArchivedBadge';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Picks one of the project's issues, searched server-side (archived included).
 // `exclude` drops the issues this particular pick cannot accept, so only the

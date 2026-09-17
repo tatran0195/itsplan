@@ -1,6 +1,8 @@
+'use client';
+
 import type { FeedItem } from '@/lib/api/endpoints/activity';
 import ActivityItemList from './ActivityItemList';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The read-only timeline of a shared issue: comments and change events rendered
 // from a fixed feed list (no composer, no pagination, no session).

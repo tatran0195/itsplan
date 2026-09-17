@@ -10,7 +10,7 @@ import { useProjectFeatures } from '@/hooks/useProjectFeatures';
 import { useFeatureLabel } from '@/hooks/useFeatureLabel';
 import { Button } from '@/components/ui/button';
 import { EmptyState } from '@/components/common/page/EmptyState';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Gates a section that an owner can turn off for the project (Settings ->
 // General). With the feature on it renders the section; with it off it explains

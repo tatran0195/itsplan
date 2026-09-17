@@ -2,7 +2,7 @@
 
 import { MutationCache, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useRef, useState, type ReactNode } from 'react';
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from '@repo/i18n/react';
 import { Direction } from 'radix-ui';
 import { toast } from 'sonner';
 import { ApiError } from '@/lib/api/core/client';

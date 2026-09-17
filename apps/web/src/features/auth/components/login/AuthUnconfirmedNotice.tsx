@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { FieldDescription } from '@/components/ui/field';
 
 // Shown when a sign-in was refused because the address is still unconfirmed: point at

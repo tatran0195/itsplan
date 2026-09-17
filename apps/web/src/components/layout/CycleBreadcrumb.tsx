@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { cyclesPath } from '@/utils/paths';
 import { useCycleQuery } from '@/services/cycles.service';
 

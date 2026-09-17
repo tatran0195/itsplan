@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { IssueTemplate } from '@/lib/api/endpoints/issueTemplates';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import SettingsConfirmDeleteDialog from '../crud/SettingsConfirmDeleteDialog';

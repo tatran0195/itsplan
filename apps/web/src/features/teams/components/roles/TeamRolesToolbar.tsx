@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { ClipboardPaste, Copy, Plus } from 'lucide-react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import type { PermissionCatalog, Role } from '@/lib/api/endpoints/roles';

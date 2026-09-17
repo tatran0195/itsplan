@@ -1,9 +1,11 @@
+'use client';
+
 import { Tag } from 'lucide-react';
 import type { Label, LabelGroup } from '@/lib/api/endpoints/labels';
 import { Pill } from './Pill';
 import ReadOnlyPill from './ReadOnlyPill';
 import LabelPicker from './LabelPicker';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export default function LabelsSelect({
   labels,

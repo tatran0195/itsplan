@@ -1,3 +1,5 @@
+'use client';
+
 import { useId, useState } from 'react';
 import { CalendarClock } from 'lucide-react';
 import {
@@ -14,7 +16,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 import { Pill } from './Pill';
 import ReadOnlyPill from './ReadOnlyPill';
 import TimeInput from './TimeInput';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The times a first pick lands on while the field is still empty.
 const DEFAULT_START = '09:00';

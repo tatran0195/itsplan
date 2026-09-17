@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectFeatures } from '@/lib/api/endpoints/settings';
 import { useFeatureLabel } from '@/hooks/useFeatureLabel';
 import SettingsCard from '@/components/common/page/SettingsCard';

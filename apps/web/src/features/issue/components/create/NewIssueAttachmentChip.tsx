@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { X } from 'lucide-react';
 import { type PendingAttachment } from '../../hooks/useNewIssueAttachments';
@@ -8,7 +10,7 @@ import AttachmentThumb from '@/components/common/attachments/AttachmentThumb';
 import IssueImageAnnotator from '../IssueImageAnnotator';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One pending file in the footer strip: the thumbnail opens a larger preview to
 // insert the file from, the corner button drops it. That button overhangs the

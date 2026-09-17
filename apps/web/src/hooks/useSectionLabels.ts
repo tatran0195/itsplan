@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { GodGroup } from '@/utils/godSections';
 import { byKey } from '@/utils/messageKey';
 

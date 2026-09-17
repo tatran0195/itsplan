@@ -1,7 +1,7 @@
 'use client';
 
 import { Pencil } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InstanceTeam } from '@/lib/api/endpoints/god';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';

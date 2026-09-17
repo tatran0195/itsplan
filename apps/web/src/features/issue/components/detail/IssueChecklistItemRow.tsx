@@ -1,3 +1,5 @@
+'use client';
+
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { X } from 'lucide-react';
@@ -8,7 +10,7 @@ import { cn } from '@/lib/utils';
 import { CHECKLIST_ITEM_MAX } from '../../utils/checklists';
 import IssueChecklistEditableText from './IssueChecklistEditableText';
 import IssueChecklistGrip from './IssueChecklistGrip';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One checkbox line. The row is the sortable node and the grip is its handle, so
 // the checkbox and the text stay clickable while dragging is possible.

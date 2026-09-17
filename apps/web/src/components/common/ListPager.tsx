@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import PageNav from '@/components/common/PageNav';
 import type { Paging } from '@/hooks/usePaging';
 import {

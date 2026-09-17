@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Sign-in method labels. better-auth stores the password provider as "credential";
 // anything else is a social or passkey provider and keeps its own id, which the

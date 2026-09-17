@@ -4,7 +4,7 @@ import { useRef, type RefObject } from 'react';
 import type { Editor } from '@tiptap/react';
 import type { ProjectDocument } from '@/lib/api/endpoints/documents';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import DocumentMarkdownEditor, { insertDocumentImage } from './DocumentMarkdownEditor';
 import DocumentPageTitle from './DocumentPageTitle';
 import { type DocumentSelection } from './DocumentSelectionActions';

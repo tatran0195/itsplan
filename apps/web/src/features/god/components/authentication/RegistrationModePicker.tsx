@@ -1,5 +1,7 @@
+'use client';
+
 import { Check } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { RegistrationMode } from '@/lib/api/endpoints/god';
 import { cn } from '@/lib/utils';
 

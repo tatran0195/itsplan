@@ -5,7 +5,7 @@ import { Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SettingsSection from '@/components/common/page/SettingsSection';
 import { useTelegramAccountLabel, useTelegramAccountQuery } from '@/services/telegram.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Where the member's Telegram notifications go. There is nothing to fill in here:
 // the chat comes from the Telegram account connected to their profile, which is the

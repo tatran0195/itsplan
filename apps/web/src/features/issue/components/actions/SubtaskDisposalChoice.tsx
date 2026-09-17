@@ -1,9 +1,11 @@
+'use client';
+
 import { useState } from 'react';
 import type { SubtaskDisposition, SubtaskMode } from '@/lib/api/endpoints/issues';
 import { cn } from '@/lib/utils';
 import IssuePickerDialog from '@/components/common/overlay/IssuePickerDialog';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // What happens to the subtasks of the issues being removed. Shown inside the
 // delete and archive confirmations whenever the selection has any: nothing is

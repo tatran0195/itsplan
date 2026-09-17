@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { KeyRound, Trash2 } from 'lucide-react';
 import { formatDate } from '@/utils/dates';
 import { Badge } from '@/components/ui/badge';

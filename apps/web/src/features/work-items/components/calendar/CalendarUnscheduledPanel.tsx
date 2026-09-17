@@ -1,5 +1,7 @@
+'use client';
+
 import { useDroppable } from '@dnd-kit/core';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { Issue } from '@/lib/api/endpoints/issues';
 import { cn } from '@/lib/utils';

@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Some auth failures reach the sign-in screen as a redirect rather than a rejected
 // promise, and carry their reason in ?error=<code> (plus ?error_description=<text>

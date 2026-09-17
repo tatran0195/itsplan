@@ -1,7 +1,7 @@
 'use client';
 
 import { useQuery } from '@tanstack/react-query';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { getSharedViewIssue } from '@/lib/api/endpoints/share';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import IssueDetailSkeleton from '@/features/issue/components/detail/IssueDetailSkeleton';

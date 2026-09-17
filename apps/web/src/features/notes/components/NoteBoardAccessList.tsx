@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useShell } from '@/context/shellContext';
 import Avatar from '@/components/common/Avatar';
 import { Badge } from '@/components/ui/badge';

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InviteRow as Invite } from '@/lib/api/endpoints/invites';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';
 import { ItemGroup } from '@/components/ui/item';

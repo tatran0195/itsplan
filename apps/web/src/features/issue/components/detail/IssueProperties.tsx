@@ -1,3 +1,5 @@
+'use client';
+
 import { Fragment, type ReactNode } from 'react';
 import { RefreshCw, Target } from 'lucide-react';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
@@ -31,7 +33,7 @@ import IssuePropertyGroupHeading from './IssuePropertyGroupHeading';
 import { type Embeddable } from '@/components/common/editor/attachmentEmbed';
 import { parseDate } from '@/utils/dates';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The Properties grid of the issue detail: built-in fields and non-markdown
 // custom fields, each editable inline. Shaped like the Attachments and Links

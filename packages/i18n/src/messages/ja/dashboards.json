@@ -1,0 +1,208 @@
+{
+  "noAccess": "ダッシュボードへのアクセス権がありません。",
+  "defaultName": "概要",
+  "newDashboard": "新規ダッシュボード",
+  "renameDashboard": "ダッシュボード名を変更",
+  "namePlaceholder": "ダッシュボード名",
+  "options": "ダッシュボードの操作",
+  "rename": "名前を変更",
+  "editLayout": "レイアウトを編集",
+  "discard": "破棄",
+  "saveDashboard": "ダッシュボードを保存",
+  "saveChanges": "変更を保存",
+  "noWidgets": "ウィジェットがまだありません。追加してダッシュボードを作成しましょう。",
+  "addWidget": "ウィジェットを追加",
+  "addWidgetTitle": "ウィジェットを追加",
+  "addWidgetDescription": "このダッシュボードに追加するウィジェットを選択してください。",
+  "searchWidgets": "ウィジェットを検索",
+  "clearSearch": "検索をクリア",
+  "noWidgetMatches": "「{query}」に一致するウィジェットはありません。",
+  "dragToMove": "ドラッグして移動",
+  "widgetName": "ウィジェット名",
+  "widgetSettings": "ウィジェット設定",
+  "widgetOptions": "ウィジェットの操作",
+  "removeWidget": "ウィジェットを削除",
+  "lastDays": "過去 {days} 日間",
+  "showRows": "{count} 件表示",
+  "widgetGroups": {
+    "issues": "イシュー",
+    "agents": "AIエージェント & Webhook"
+  },
+  "widgets": {
+    "stat": {
+      "label": "数値",
+      "description": "フィルターに一致するイシューの総数"
+    },
+    "recent_issues": {
+      "label": "最近のイシュー",
+      "description": "作成または更新日時順の最新イシュー"
+    },
+    "activity_feed": {
+      "label": "アクティビティフィード",
+      "description": "ユーザーや操作で絞り込み可能なプロジェクト変更履歴"
+    },
+    "pulse": {
+      "label": "アクティビティ（パルス）",
+      "description": "日別のアクティビティを示すGitHub風ヒートマップ"
+    },
+    "throughput": {
+      "label": "スループット",
+      "description": "週ごとの作成イシュー数と完了イシュー数"
+    },
+    "breakdown": {
+      "label": "内訳",
+      "description": "ステータス、優先度、種別、担当者ごとのイシュー集計"
+    },
+    "agent_runs": {
+      "label": "エージェント実行履歴",
+      "description": "最近のAIエージェント実行とその結果"
+    },
+    "agent_health": {
+      "label": "エージェント健全性",
+      "description": "指定期間内のエージェント成功率と失敗数"
+    },
+    "webhook_health": {
+      "label": "Webhook健全性",
+      "description": "Webhookの配信結果と無効化されたエンドポイント"
+    },
+    "agent_workload": {
+      "label": "エージェント負荷",
+      "description": "エージェントごとの委任イシュー数と実行結果"
+    }
+  },
+  "breakdown": {
+    "empty": "イシューがまだありません。",
+    "by": {
+      "status": "ステータス",
+      "priority": "優先度",
+      "type": "種別",
+      "assignee": "担当者",
+      "delegate": "委任先"
+    },
+    "caption": {
+      "status": "ステータス別",
+      "priority": "優先度別",
+      "type": "種別別",
+      "assignee": "担当者別",
+      "delegate": "委任先別"
+    }
+  },
+  "recentIssues": {
+    "empty": "このフィルターに一致するイシューはありません。",
+    "captionCreated": "新しい順",
+    "captionUpdated": "最近更新された順",
+    "filterCount": "{count, plural, other {# 件のフィルター}}",
+    "sort": {
+      "created": "作成日時順",
+      "updated": "更新日時順"
+    }
+  },
+  "activityFeed": {
+    "empty": "このフィルターに一致するアクティビティはありません。",
+    "someone": "誰か",
+    "filterCount": "{count, plural, other {# 件のフィルター}}",
+    "actions": {
+      "all": "すべてのアクティビティ",
+      "status": "ステータス変更",
+      "assignee": "担当者の変更",
+      "priority": "優先度の変更",
+      "created": "作成"
+    },
+    "verbs": {
+      "comment": "コメントしました:",
+      "created": "作成しました:",
+      "title": "名前を変更しました:",
+      "description": "説明を更新しました:",
+      "status": "ステータスを変更しました:",
+      "assignee": "担当者を変更しました:",
+      "priority": "優先度を変更しました:",
+      "type": "種別を変更しました:",
+      "start_date": "開始日を変更しました:",
+      "due_date": "期限を変更しました:",
+      "label_add": "ラベルを追加しました:",
+      "label_remove": "ラベルを削除しました:",
+      "field": "項目を更新しました:",
+      "other": "更新しました:"
+    }
+  },
+  "pulse": {
+    "caption": {
+      "hour": "時間別",
+      "day": "日別",
+      "week": "週別"
+    },
+    "unit": {
+      "hour": "時間",
+      "day": "日",
+      "week": "週"
+    },
+    "events": "{count, plural, other {# 件のイベント}}",
+    "eventNoun": "{count, plural, other {イベント}}",
+    "active": "{count} 件のアクティビティ",
+    "less": "少",
+    "more": "多",
+    "scope": {
+      "project": "プロジェクト全体",
+      "me": "自分のアクティビティ"
+    }
+  },
+  "throughput": {
+    "empty": "この期間のアクティビティはありません。",
+    "lastWeeks": "過去 {weeks} 週間",
+    "created": "作成",
+    "closed": "クローズ"
+  },
+  "agentRuns": {
+    "empty": "エージェント実行履歴はまだありません。",
+    "filters": {
+      "all": "すべての実行",
+      "failed": "失敗",
+      "pending": "キュー待機中",
+      "success": "成功"
+    },
+    "status": {
+      "pending": "キュー待機中",
+      "success": "成功",
+      "failed": "失敗",
+      "canceled": "キャンセル"
+    },
+    "trigger": {
+      "mention": "メンションにより実行:",
+      "delegation": "委任により実行:",
+      "field": "項目の変更により実行:",
+      "manual": "手動実行",
+      "schedule": "スケジュール実行"
+    }
+  },
+  "agentHealth": {
+    "empty": "エージェント実行履歴はありません。",
+    "successRate": "成功率",
+    "runs": "{count, plural, other {# 回の実行}}",
+    "failed": "{count} 件失敗",
+    "queued": "{count} 件待機中"
+  },
+  "webhookHealth": {
+    "deliveries": "配信数",
+    "failed": "{count} 件失敗",
+    "pending": "{count} 件保留中",
+    "allDelivered": "すべて配信済み",
+    "disabled": "{count, plural, other {# 件の無効化されたエンドポイント}}"
+  },
+  "agentWorkload": {
+    "empty": "このプロジェクトにエージェントはいません。",
+    "agent": "エージェント",
+    "delegated": "委任",
+    "runs": "実行数",
+    "failed": "{count} 件失敗",
+    "kind": {
+      "external": "外部",
+      "internal": "内部"
+    }
+  },
+  "defaultWidgets": {
+    "open": "未完了",
+    "inProgress": "進行中",
+    "backlog": "バックログ",
+    "unassigned": "未割り当て"
+  }
+}

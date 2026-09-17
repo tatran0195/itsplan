@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useTeamQuery } from '@/services/teams.service';
 import Avatar from '@/components/common/Avatar';
 import SettingsCard from '@/components/common/page/SettingsCard';

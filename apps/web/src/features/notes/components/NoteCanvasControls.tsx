@@ -1,7 +1,7 @@
 'use client';
 
 import { Maximize2, Minimize2, Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { NoteBoardVisibility } from '@/lib/api/endpoints/noteBoards';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';

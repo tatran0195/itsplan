@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { GitBranch } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { GitConnectionProvider } from '@/lib/api/endpoints/git';
 import ListSkeleton from '@/components/common/skeleton/ListSkeleton';
 import SettingsSection from '@/components/common/page/SettingsSection';

@@ -1,7 +1,7 @@
 'use client';
 
 import { CheckCheck, ListFilter, MoreHorizontal, SlidersHorizontal, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { NotificationFilters, NotificationType } from '@/lib/api/endpoints/notifications';
 import { Button } from '@/components/ui/button';
 import {

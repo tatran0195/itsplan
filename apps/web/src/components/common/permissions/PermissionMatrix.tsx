@@ -3,7 +3,7 @@
 import { Fragment, useMemo } from 'react';
 import { Check, Minus } from 'lucide-react';
 import type { PermissionCatalog, Permissions } from '@/lib/api/endpoints/roles';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { catalogSupport, groupResources, orderActions } from '@/utils/permissions';
 import { usePermissionLabels } from '@/hooks/usePermissionLabels';
 

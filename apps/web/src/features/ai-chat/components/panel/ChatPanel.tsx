@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { Maximize2, Minimize2, Pin, PinOff, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Direction } from 'radix-ui';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { usePersistedWidth } from '@/hooks/usePersistedWidth';

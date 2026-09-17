@@ -1,5 +1,7 @@
+'use client';
+
 import { type ReactNode } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';
 
 // Confirmation before an irreversible delete. The caller supplies the warning

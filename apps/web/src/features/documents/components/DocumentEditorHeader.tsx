@@ -1,3 +1,5 @@
+'use client';
+
 import {
   ArrowLeft,
   Check,
@@ -7,7 +9,7 @@ import {
   MessageSquare,
   RefreshCw,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDocument, ProjectDocumentSummary } from '@/lib/api/endpoints/documents';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';

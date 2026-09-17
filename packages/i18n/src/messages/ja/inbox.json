@@ -1,0 +1,37 @@
+{
+  "title": "受信トレイ",
+  "empty": "通知はありません",
+  "selectNotification": "通知を選択してください",
+  "backToList": "受信トレイ",
+  "filter": "フィルター",
+  "display": "表示",
+  "notificationType": "通知種別",
+  "showRead": "既読を表示",
+  "showSnoozed": "スヌーズ中を表示",
+  "markAllRead": "すべて既読にする",
+  "deleteAllRead": "既読をすべて削除",
+  "deleteAllReadCompleted": "完了したイシューの既読通知をすべて削除",
+  "types": {
+    "assigned": "割り当て",
+    "mentioned": "メンション",
+    "commented": "コメント",
+    "state_changed": "ステータス変更"
+  },
+  "actions": {
+    "markRead": "既読にする",
+    "markUnread": "未読にする",
+    "snooze": "スヌーズ",
+    "unsnooze": "スヌーズ解除",
+    "tomorrow": "明日",
+    "inAWeek": "1週間後",
+    "pickDate": "日付を指定…"
+  },
+  "event": {
+    "someone": "誰か",
+    "assigned": "{who} があなたにイシューを割り当てました",
+    "mentioned": "{who} があなたをメンションしました",
+    "commented": "{who} がコメントしました",
+    "stateChanged": "{who} がステータスを {from} から {to} に変更しました",
+    "stateChangedPlain": "{who} がステータスを変更しました"
+  }
+}

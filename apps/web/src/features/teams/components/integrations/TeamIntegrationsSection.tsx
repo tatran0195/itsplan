@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useTeamQuery } from '@/services/teams.service';
 import { useIntegrationCatalogQuery } from '@/services/integrations.service';
 import SectionPageView from '@/components/common/page/SectionPageView';

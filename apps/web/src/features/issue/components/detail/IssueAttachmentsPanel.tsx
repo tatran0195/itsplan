@@ -1,3 +1,5 @@
+'use client';
+
 import { useRef, useState } from 'react';
 import { Download, Plus } from 'lucide-react';
 import type { Attachment } from '@/lib/api/endpoints/attachments';
@@ -17,7 +19,7 @@ import IssueSectionHeading from './IssueSectionHeading';
 import { useStorageSettingsQuery } from '@/services/storage.service';
 import { attachmentAccept, attachmentError, attachmentLimitHint } from '@/utils/uploadLimits';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Attachments for one issue, as a grid of preview cards: upload, look at,
 // annotate, download, delete, and insert into the description. onInsert hands the

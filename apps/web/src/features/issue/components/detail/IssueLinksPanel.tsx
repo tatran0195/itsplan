@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { IssueLinkInputKind, IssueRelations } from '@/lib/api/endpoints/issues';
@@ -11,7 +13,7 @@ import IssueLinkDialog from './IssueLinkDialog';
 import IssueLinksAddMenu from './IssueLinksAddMenu';
 import IssueRefRow from './IssueRefRow';
 import IssueSectionHeading from './IssueSectionHeading';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The issue's relations to other issues, grouped by how each reads from this
 // issue (Blocked by, Blocks, Duplicates, Duplicated by, Related). The links come

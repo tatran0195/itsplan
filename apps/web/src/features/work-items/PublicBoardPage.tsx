@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { getSharedView } from '@/lib/api/endpoints/share';
 import PublicShareFrame from '@/components/common/page/PublicShareFrame';
 import ListSkeleton from '@/components/common/skeleton/ListSkeleton';

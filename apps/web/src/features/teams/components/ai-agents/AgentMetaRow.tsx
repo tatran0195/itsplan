@@ -1,7 +1,9 @@
+'use client';
+
 import { BookOpen, Sparkles, Wrench, Zap } from 'lucide-react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import { AgentMetaChip } from './AgentMetaChip';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The configuration chips for an internal agent: its model and provider, and the counts
 // of granted actions, configured tools, and enabled skills. `providerLabel` maps the

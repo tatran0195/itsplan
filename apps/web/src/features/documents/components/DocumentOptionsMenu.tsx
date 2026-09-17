@@ -26,7 +26,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import DocumentExportDialog from './DocumentExportDialog';
 
 export default function DocumentOptionsMenu({

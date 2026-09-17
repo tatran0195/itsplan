@@ -1,7 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InstanceEmailSettings } from '@/lib/api/endpoints/god';
 import { Button } from '@/components/ui/button';
 import GodEmailSettings from './components/email/GodEmailSettings';

@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useSyncExternalStore, type ReactNode } from 'react';
-import { useFormatter, useNow } from 'next-intl';
+import { useFormatter, useNow } from '@repo/i18n/react';
 
 const UPDATE_INTERVAL_MS = 60_000;
 

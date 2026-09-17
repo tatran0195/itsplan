@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { DndContext, closestCenter, type DragEndEvent } from '@dnd-kit/core';
 import { SortableContext, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
@@ -19,7 +21,7 @@ import {
 import IssueChecklistAddInput from './IssueChecklistAddInput';
 import IssueChecklistHeader from './IssueChecklistHeader';
 import IssueChecklistItemRow from './IssueChecklistItemRow';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One checklist: its title row and its items. The items are sortable within this
 // checklist only — the SortableContext holds just its own item ids, so a row

@@ -1,8 +1,10 @@
+'use client';
+
 import { useRef, useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
 import type { Editor } from '@tiptap/react';
 import type { SelectionBookmark } from '@tiptap/pm/state';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { type Issue, createIssue } from '@/lib/api/endpoints/issues';
 import { listDocumentIssueLinks, linkDocumentIssue } from '@/lib/api/endpoints/documents';
 import { useShell } from '@/context/shellContext';

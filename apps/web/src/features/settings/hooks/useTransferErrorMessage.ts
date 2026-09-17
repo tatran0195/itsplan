@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A clipboard parse failure, in words. The parsers throw a code; anything else —
 // or a code the messages do not carry — falls back to the section's own message.

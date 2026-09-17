@@ -10,7 +10,7 @@ import {
   UserRound,
   type LucideIcon,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Notification, NotificationType } from '@/lib/api/endpoints/notifications';
 import { formatDurationShort } from '@/utils/dates';
 import { cn } from '@/lib/utils';

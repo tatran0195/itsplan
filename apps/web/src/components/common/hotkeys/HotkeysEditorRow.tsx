@@ -1,9 +1,11 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { RotateCcw } from 'lucide-react';
 import { comboFromEvent, formatCombo, type HotkeyDef } from '@/utils/hotkeys';
 import { useIsMac } from '@/context/useHotkeys';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One shortcut in the editor: what it does, the combination in effect, and the
 // controls to rebind or reset it. Pressing "Change" listens for the next key press

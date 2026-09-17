@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { cn } from '@/lib/utils';
 import type { WidgetConfig } from '@/utils/dashboardWidgets';
 import { BY_OPTIONS } from './BreakdownWidget';

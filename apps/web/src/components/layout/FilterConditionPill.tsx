@@ -1,5 +1,7 @@
+'use client';
+
 import { X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { FilterCondition, FilterOperator, FilterValue } from '@/utils/filters';
 import { OPERATORS_BY_KIND, type FieldSpec } from '@/utils/filterFields';

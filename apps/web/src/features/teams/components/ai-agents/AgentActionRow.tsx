@@ -1,7 +1,9 @@
+'use client';
+
 import type { AgentTool } from '@/lib/api/endpoints/agents';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One action in the Actions checklist. A read-only action is shown checked and
 // disabled, with a tooltip saying why it cannot be turned off.

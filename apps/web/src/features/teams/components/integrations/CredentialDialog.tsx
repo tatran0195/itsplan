@@ -1,9 +1,11 @@
+'use client';
+
 import { useState } from 'react';
 import type { IntegrationCredential, IntegrationMeta } from '@/lib/api/endpoints/integrations';
 import Modal from '@/components/common/overlay/Modal';
 import { IntegrationPicker } from './IntegrationPicker';
 import { CredentialForm } from './CredentialForm';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Add or edit an integration credential. Adding is two steps: pick the integration from
 // the searchable, grouped catalog (IntegrationPicker), then fill its credential form

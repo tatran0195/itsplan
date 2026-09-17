@@ -1,5 +1,7 @@
+'use client';
+
 import { ChevronRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import { FIELD_TYPE_ICONS, useFieldTypeLabel } from '../../utils/fieldTypes';
 

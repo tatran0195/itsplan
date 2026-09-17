@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Team } from '@/lib/api/endpoints/teams';
 import { cn } from '@/lib/utils';
 import { teamPath } from '@/utils/paths';

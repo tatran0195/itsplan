@@ -1,5 +1,7 @@
+'use client';
+
 import { Switch } from '@/components/ui/switch';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export default function EnabledSwitch({
   checked,

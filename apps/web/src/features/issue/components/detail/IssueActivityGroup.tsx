@@ -1,9 +1,11 @@
+'use client';
+
 import type { FeedGroup } from '@/lib/api/endpoints/activity';
 import { formatDateTime } from '@/utils/dates';
 import { durationLabel } from '../../utils/timeline';
 import ActivityItemList from './ActivityItemList';
 import { type ComposerContext } from './CommentComposer';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One stretch of the grouped activity log: a header carrying the status, how long the
 // issue stayed in it and when, over the entries written while it was there.

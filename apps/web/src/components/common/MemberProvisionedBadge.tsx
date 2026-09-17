@@ -1,7 +1,7 @@
 'use client';
 
 import { UsersRound } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Badge } from '@/components/ui/badge';
 
 export default function MemberProvisionedBadge() {

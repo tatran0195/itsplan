@@ -1,0 +1,15 @@
+{
+  "all": "すべて",
+  "newView": "新規ビュー",
+  "switchView": "ビューを切り替え",
+  "searchViews": "ビューを検索…",
+  "noViews": "ビューが見つかりません。",
+  "options": "表示オプション",
+  "share": "共有",
+  "shared": "共有済み",
+  "favorite": "お気に入りに追加",
+  "unfavorite": "お気に入りから削除",
+  "shareBoard": "ボードを共有",
+  "newViewHint": "現在のフィルターと表示設定からビューを作成",
+  "filter": "フィルター"
+}

@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { PRIVACY_POLICY_URL, TERMS_URL } from '@/utils/app';
 
 const linkClass = 'underline underline-offset-4 hover:text-foreground';

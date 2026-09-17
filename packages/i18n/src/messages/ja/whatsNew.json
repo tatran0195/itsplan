@@ -1,0 +1,25 @@
+{
+  "eyebrow": "アップデート完了",
+  "title": "{version} の新機能",
+  "done": "閉じる",
+  "backup": {
+    "title": "アップデート前にバックアップが作成されました",
+    "body": "このリリースのマイグレーション実行前にデータベースがダンプされました: {size}、{expires} まで保持された後、自動的に削除されます。以前のリリースに戻す場合はこれを復元してください。",
+    "credentialsHint": "ユーザー名とデータベース名は、.env の POSTGRES_USER と POSTGRES_DB です。"
+  },
+  "report": {
+    "title": "データの変更点",
+    "subtitle": "プロジェクトはチームに属するようになり、ロール、スキル、エージェント、連携認証情報の一覧がチーム内で共有されます。",
+    "teamsHeading": "チームと所有プロジェクト",
+    "renamedRoles": "名前が変更されたロール",
+    "renamedSkills": "名前が変更されたスキル",
+    "renamedAgents": "名前が変更されたエージェントハンドル",
+    "renamedCredentials": "ラベルが変更された連携認証情報",
+    "mergedHeading": "統合および移動",
+    "mergedRoles": "{count, plural, one {# 個の重複したデフォルトロールが統合されました} other {# 個の重複したデフォルトロールが統合されました}}",
+    "mergedTools": "{count, plural, one {# 個の重複した設定済みツールが統合されました} other {# 個の重複した設定済みツールが統合されました}}",
+    "movedInvites": "{count, plural, one {# 件の保留中の招待がチームに移動しました} other {# 件の保留中の招待がチームに移動しました}}",
+    "notificationsHeading": "通知プロバイダー",
+    "notificationsBody": "チームで保持する通知プロバイダー設定は1つのみとなるため、直近に保存されたものが維持されました。以下のプロジェクトの設定を再確認してください: {projects}。"
+  }
+}

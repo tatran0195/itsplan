@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Check } from 'lucide-react';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
@@ -18,7 +20,7 @@ import DatePill from '@/components/common/fields/DatePill';
 import DateTimePill from '@/components/common/fields/DateTimePill';
 import { Pill } from '@/components/common/fields/Pill';
 import MemberSelect from './MemberSelect';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A pill + popover editor for a single non-markdown custom field, used in the
 // new-issue modal where the value is collected before the issue exists.

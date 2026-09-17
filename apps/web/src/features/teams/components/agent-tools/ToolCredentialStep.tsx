@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import type { IntegrationOption } from '@/lib/api/endpoints/integrations';
@@ -18,7 +20,7 @@ import {
 import { useIntegrationOptionsQuery } from '@/services/integrations.service';
 import { IntegrationIcon } from '@/components/common/IntegrationIcon';
 import type { ToolOption } from './ToolConfigDialog';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The id is the fallback so several unlabelled credentials of the same integration
 // can still be told apart.

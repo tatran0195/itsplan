@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useState, type FormEvent } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { toast } from 'sonner';
 import type { GitConnectionProvider } from '@/lib/api/endpoints/git';
 import { Button } from '@/components/ui/button';

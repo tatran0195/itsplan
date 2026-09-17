@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { formatDate } from '@/utils/dates';
 
 // The member's profile, shown inside the opened row. The description is empty until

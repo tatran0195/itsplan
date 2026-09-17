@@ -4,7 +4,7 @@ import { ItemGroup } from '@/components/ui/item';
 import { Skeleton } from '@/components/ui/skeleton';
 import AccountSecurityPasskeyItem from './AccountSecurityPasskeyItem';
 import type { PasskeyRow } from '../../services/passkeys.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export default function AccountSecurityPasskeyList({
   passkeys,

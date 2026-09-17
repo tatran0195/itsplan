@@ -1,5 +1,7 @@
+'use client';
+
 import { Input } from '@/components/ui/input';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // How long a triggered run waits before the agent may pick it up, in minutes. Both
 // the delegation trigger and each field trigger carry one.

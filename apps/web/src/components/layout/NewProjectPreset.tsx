@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { PRESETS, type PresetKey } from '@/utils/projectPresets';
 
 // Picks the set of issue types a new project starts with and previews the result.

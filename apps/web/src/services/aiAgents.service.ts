@@ -1,3 +1,5 @@
+'use client';
+
 // An agent belongs to a team, so the hooks that manage one are keyed by the team. Its
 // chat history stays keyed by the project, where a conversation is held. An agent is
 // also an assignee, so writes here invalidate the project detail as well, keeping the
@@ -12,7 +14,7 @@ import {
   type QueryClient,
 } from '@tanstack/react-query';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import {
   type AiChatThread,
   type AiChatThreadPage,

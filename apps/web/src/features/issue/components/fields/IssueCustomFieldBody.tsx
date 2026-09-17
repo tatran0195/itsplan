@@ -1,10 +1,12 @@
+'use client';
+
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import type { Assignee } from '@/lib/api/endpoints/projects';
 import type { IssueFieldValue, IssueFieldValueInput } from '@/lib/api/endpoints/issues';
 import MarkdownEditor from '@/components/common/editor/MarkdownEditor';
 import { type Embeddable } from '@/components/common/editor/attachmentEmbed';
 import IssueCustomFieldControl from './IssueCustomFieldControl';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One custom field rendered in the issue body (under the description) rather than
 // as a Properties row: a heading with the field name, then the value editor. A

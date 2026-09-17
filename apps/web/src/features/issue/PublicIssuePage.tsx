@@ -6,7 +6,7 @@ import PublicShareFrame from '@/components/common/page/PublicShareFrame';
 import PublicShareHeader from '@/components/common/page/PublicShareHeader';
 import IssueDetailSkeleton from './components/detail/IssueDetailSkeleton';
 import ReadOnlyIssueDetail from './components/detail/ReadOnlyIssueDetail';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The public read-only page for a shared issue (/share/issue/:token). Fetches the
 // self-contained bundle by token and renders it with no session. A missing or

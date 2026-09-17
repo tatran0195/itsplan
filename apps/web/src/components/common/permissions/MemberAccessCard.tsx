@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { Bot } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { PermissionCatalog, Permissions } from '@/lib/api/endpoints/roles';
 import Avatar from '@/components/common/Avatar';
 import { Badge } from '@/components/ui/badge';

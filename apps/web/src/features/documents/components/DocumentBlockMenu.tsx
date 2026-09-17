@@ -1,8 +1,10 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import type { Editor } from '@tiptap/react';
 import { ArrowDown, ArrowUp, Copy, GripVertical, Link2, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,

@@ -1,9 +1,11 @@
+'use client';
+
 import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import type { IntegrationMeta } from '@/lib/api/endpoints/integrations';
 import { Input } from '@/components/ui/input';
 import { IntegrationIcon } from '@/components/common/IntegrationIcon';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The two kinds of integration, in picker order. Their name and blurb are messages
 // under `teams.integrations.groups`.

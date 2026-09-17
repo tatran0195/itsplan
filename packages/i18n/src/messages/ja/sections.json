@@ -1,0 +1,109 @@
+{
+  "account": {
+    "profile": "プロフィール",
+    "preferences": "環境設定",
+    "accounts": "アカウント連携",
+    "security": "セキュリティ",
+    "api-keys": "APIキー"
+  },
+  "godGroups": {
+    "management": "管理",
+    "instance": "インスタンス"
+  },
+  "god": {
+    "users": {
+      "label": "ユーザー",
+      "description": "このインスタンスの全アカウント: グローバルロール、メール確認状況、アクセス可能なプロジェクト。"
+    },
+    "teams": {
+      "label": "チーム",
+      "description": "このインスタンスの全チーム: 所有するプロジェクトと所属メンバー。"
+    },
+    "projects": {
+      "label": "プロジェクト",
+      "description": "このインスタンスの全プロジェクト: 保持内容、最終アクティビティ、アクセス権を持つユーザー。"
+    },
+    "general": {
+      "label": "一般",
+      "description": "新規プロジェクトのデフォルト設定。"
+    },
+    "authentication": {
+      "label": "認証",
+      "description": "新規登録の可否、メールアドレスの確認方法、ログインプロバイダーの設定。"
+    },
+    "hotkeys": {
+      "label": "キーボードショートカット",
+      "description": "全ユーザー共通のコマンドキー割り当て。各自の環境設定で上書き可能です。"
+    },
+    "storage": {
+      "label": "ストレージ",
+      "description": "アップロード制限: 単一ファイルサイズ、許可されるファイル種別、プロジェクトごとの容量。"
+    },
+    "telegram": {
+      "label": "Telegram",
+      "description": "連携用ボットの設定およびプロジェクト個別のボットがない場合の通知ボット。"
+    },
+    "email": {
+      "label": "メールプロバイダー",
+      "description": "パスワードリセット、メールアドレス確認、サインインリンクの送信に使用するメールプロバイダー。"
+    },
+    "auth-provider": {
+      "label": "認証プロバイダー",
+      "description": "サインインに使用できる外部アカウント設定。"
+    },
+    "scim": {
+      "label": "SCIM",
+      "description": "IdPによるアカウントの作成・更新・無効化およびグループを通じたプロジェクト権限のプロビジョニング。"
+    }
+  },
+  "settings": {
+    "general": {
+      "label": "一般",
+      "description": "プロジェクト名、説明、および表示セクションの設定。"
+    },
+    "states": {
+      "label": "ステータス",
+      "description": "イシューが遷移するワークフローステータス（カンバンボードの各列）。"
+    },
+    "issue-types": {
+      "label": "イシュー種別",
+      "description": "プロジェクトで扱えるイシューの種類とそれぞれのカスタム項目。"
+    },
+    "labels": {
+      "label": "ラベル",
+      "description": "プロジェクト全体でイシューを整理・絞り込むためのタグ。"
+    },
+    "custom-fields": {
+      "label": "カスタム項目",
+      "description": "イシューに追加する独自の項目（全体または特定種別ごと）。"
+    },
+    "issue-templates": {
+      "label": "テンプレート",
+      "description": "新規イシュー作成用のプリセット（タイトル、本文、プロパティ）。"
+    },
+    "configuration": {
+      "label": "詳細設定",
+      "description": "親イシュー完了時のサブタスク処理や、古いイシューのアーカイブ設定。"
+    },
+    "actions": {
+      "label": "アクション",
+      "description": "1クリックで特定の項目を設定できるイシュー画面のボタン。"
+    },
+    "schedules": {
+      "label": "スケジュール",
+      "description": "定期的なスケジュールでエージェントタスクを実行します。"
+    },
+    "webhooks": {
+      "label": "Webhook",
+      "description": "プロジェクトのイベントをシークレット付きで外部URLに送信します。"
+    },
+    "git": {
+      "label": "リポジトリ連携",
+      "description": "GitHub、GitLab、Gitea、Forgejo、BitbucketでPRがマージされた際にイシューを自動クローズします。"
+    },
+    "ai-agents": {
+      "label": "AIエージェント",
+      "description": "このプロジェクトで作業するAIエージェントの設定。"
+    }
+  }
+}

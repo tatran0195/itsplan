@@ -1,3 +1,5 @@
+'use client';
+
 import { type ReactNode, useState } from 'react';
 import { SlidersHorizontal, Sparkles, Wrench } from 'lucide-react';
 import type { TeamProjectOption } from '@/lib/api/endpoints/teams';
@@ -20,7 +22,7 @@ import AgentActionsSection from './AgentActionsSection';
 import AgentTriggersSection from './AgentTriggersSection';
 import { AgentInstructionsField } from './AgentInstructionsField';
 import AgentRunnerSection from './AgentRunnerSection';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Which sections open when an existing agent is opened for editing, so the form reads
 // as a short list of sections instead of a wall of fields. Basics is not in it because

@@ -17,7 +17,7 @@ import { AgentChatPanel } from '@/components/common/agent-chat/AgentChatPanel';
 import { useAgentChat } from '@/hooks/useAgentChat';
 import { useAgentSection } from '../../context/agentSection';
 import { AgentSheetForm } from './AgentSheetForm';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Full-width sheet for one agent. Opened for create (agent null) or to edit an
 // existing one. Create and edit share the same form (AgentSheetForm): on create the

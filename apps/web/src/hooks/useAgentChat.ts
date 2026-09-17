@@ -5,7 +5,7 @@ import { streamAiAgentChat, streamAiAgentRun } from '@/lib/api/endpoints/agentCh
 import { ApiError } from '@/lib/api/core/client';
 import type { AiChatMessage, AiChatPart, AiChatToolPart } from '@/lib/api/endpoints/agentChat';
 import { uuid } from '@/utils/uuid';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // `error` is what a stream that failed left behind. It is not part of a stored
 // transcript: a restored thread holds the answer the agent produced, not the run that

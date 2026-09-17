@@ -1,6 +1,8 @@
+'use client';
+
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import { useDroppable } from '@dnd-kit/core';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { DEFAULT_COLOR, type IssueGroup } from '@/utils/project';
 import { cn } from '@/lib/utils';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';

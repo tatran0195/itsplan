@@ -1,6 +1,5 @@
 import path from 'node:path';
 import type { NextConfig } from 'next';
-import createNextIntlPlugin from 'next-intl/plugin';
 
 // Two paths that hold only while this repository is the workspace root. A build that
 // nests it under another one overrides them; unset, they are what they have always been.
@@ -29,6 +28,9 @@ const SECURITY_HEADERS = [
   },
 ];
 
+const compatClient = path.resolve(import.meta.dirname, 'src/i18n/compat.ts');
+const compatServer = path.resolve(import.meta.dirname, 'src/i18n/compat-server.ts');
+
 const nextConfig: NextConfig = {
   // standalone build for a lean docker image.
   output: 'standalone',
@@ -47,7 +49,22 @@ const nextConfig: NextConfig = {
   // a local image unless its path is listed here; the attachments panel stamps a
   // replaced attachment's URL with one so the optimizer refetches it.
   images: { localPatterns: [{ pathname: '/media/**' }] },
-  ...(cloudUiEntry ? { turbopack: { resolveAlias: { '@/cloud': cloudUiEntry } } } : {}),
+  turbopack: {
+    resolveAlias: {
+      'next-intl': './src/i18n/compat.ts',
+      'next-intl/server': './src/i18n/compat-server.ts',
+      ...(cloudUiEntry ? { '@/cloud': cloudUiEntry } : {}),
+    },
+  },
+  webpack(config) {
+    config.resolve = config.resolve ?? {};
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'next-intl$': compatClient,
+      'next-intl/server$': compatServer,
+    };
+    return config;
+  },
 };
 
-export default createNextIntlPlugin('./src/i18n/request.ts')(nextConfig);
+export default nextConfig;

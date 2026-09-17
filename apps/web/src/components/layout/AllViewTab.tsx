@@ -1,6 +1,8 @@
+'use client';
+
 import { useDroppable } from '@dnd-kit/core';
 import { Layers } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { cn } from '@/lib/utils';
 import ViewTabChrome from '@/components/layout/ViewTabChrome';
 

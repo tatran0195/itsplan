@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
-import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getTranslations } from 'next-intl/server';
+import { I18nProvider } from '@repo/i18n/react';
 import { Providers } from '@/components/providers';
 import RuntimeEnvScript from '@/components/runtime-env-script';
 import WhatsNew from '@/features/whats-new/WhatsNew';
 import { localeDirection, type Locale } from '@/i18n/locales';
+import { getLocale, getTranslations } from '@/i18n/server';
 import './globals.css';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -22,7 +22,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={localeDirection(locale as Locale)} suppressHydrationWarning>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning>
         <RuntimeEnvScript />
         <ThemeProvider
           attribute="class"
@@ -34,12 +34,12 @@ export default async function RootLayout({
           // apps fight over the value through cross-tab storage events.
           storageKey="itsaplan-theme"
         >
-          <NextIntlClientProvider>
+          <I18nProvider locale={locale}>
             <Providers>
               {children}
               <WhatsNew />
             </Providers>
-          </NextIntlClientProvider>
+          </I18nProvider>
         </ThemeProvider>
       </body>
     </html>

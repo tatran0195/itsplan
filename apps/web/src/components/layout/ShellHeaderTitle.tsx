@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { SETTINGS_SECTIONS } from '@/utils/settingsSections';
 import type { IssueRef } from '@/lib/api/endpoints/issues';
 import type { ShellRoute } from '@/hooks/useShellRoute';

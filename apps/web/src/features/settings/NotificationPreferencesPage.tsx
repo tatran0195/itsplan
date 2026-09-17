@@ -9,7 +9,7 @@ import ListSkeleton from '@/components/common/skeleton/ListSkeleton';
 import NotificationPreferences from './components/notifications/NotificationPreferences';
 import { useNotificationPreferencesQuery } from './services/settings.service';
 import { useNotificationPreferencesForm } from './hooks/useNotificationPreferencesForm';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The member's own notification preferences (/project/:projectKey/notifications).
 // A main-nav Configuration destination, open to any member: choose which issue events

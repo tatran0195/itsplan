@@ -1,6 +1,8 @@
+'use client';
+
 import { useContext, useState, type ReactNode } from 'react';
 import { toast } from 'sonner';
-import { useFormatter, useTranslations } from 'next-intl';
+import { useFormatter, useTranslations } from '@repo/i18n/react';
 import {
   Archive,
   ArchiveRestore,

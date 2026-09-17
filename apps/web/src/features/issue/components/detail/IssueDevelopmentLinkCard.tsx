@@ -1,5 +1,7 @@
+'use client';
+
 import { ExternalLink, GitBranch, GitPullRequest, Unlink } from 'lucide-react';
-import { useFormatter, useTranslations } from 'next-intl';
+import { useFormatter, useTranslations } from '@repo/i18n/react';
 import type { DevelopmentLink } from '@/lib/api/endpoints/git';
 import IssueDevelopmentChecks from './IssueDevelopmentChecks';
 import IssueDevelopmentCiBadge from './IssueDevelopmentCiBadge';

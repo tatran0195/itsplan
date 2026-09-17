@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { CopyProjectIncludeKey } from '@/lib/api/endpoints/teams';
 import { Checkbox } from '@/components/ui/checkbox';
 

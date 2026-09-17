@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react';
 import type { Editor } from '@tiptap/react';
 import { ImagePlus, Loader2, Upload } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';

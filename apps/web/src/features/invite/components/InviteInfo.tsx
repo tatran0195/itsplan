@@ -1,6 +1,8 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import { FolderKanban, Mail, Users } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InviteView } from '@/lib/api/endpoints/invites';
 import { Badge } from '@/components/ui/badge';
 

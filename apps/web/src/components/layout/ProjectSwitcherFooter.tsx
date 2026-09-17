@@ -1,6 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { Users } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { manageTeamsPath } from '@/utils/paths';
 import { Button } from '@/components/ui/button';
 

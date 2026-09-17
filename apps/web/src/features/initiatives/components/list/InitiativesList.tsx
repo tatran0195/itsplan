@@ -1,5 +1,7 @@
+'use client';
+
 import { ChevronDown, ChevronUp, Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { Initiative, InitiativeSort } from '@/lib/api/endpoints/initiatives';
 import type { InitiativesTab } from '@/utils/paths';

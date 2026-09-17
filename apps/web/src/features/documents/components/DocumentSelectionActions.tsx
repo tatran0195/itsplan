@@ -1,8 +1,10 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import type { Editor } from '@tiptap/react';
 import type { SelectionBookmark } from '@tiptap/pm/state';
 import { ListPlus, MessageSquarePlus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { usePermissions } from '@/hooks/usePermissions';
 import { Button } from '@/components/ui/button';
 import DocumentCreateIssueDialog from './DocumentCreateIssueDialog';

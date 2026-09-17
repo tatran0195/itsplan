@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useState } from 'react';
 import { toast } from 'sonner';
 import GoogleIcon from '@/components/common/GoogleIcon';

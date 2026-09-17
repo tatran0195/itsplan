@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import {
   DndContext,
@@ -8,7 +10,7 @@ import {
 } from '@dnd-kit/core';
 import { SortableContext, horizontalListSortingStrategy } from '@dnd-kit/sortable';
 import { LayoutDashboard, Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Dashboard } from '@/lib/api/endpoints/dashboards';
 import { useStripSortSensors } from '@/lib/dnd';
 import { usePermissions } from '@/hooks/usePermissions';

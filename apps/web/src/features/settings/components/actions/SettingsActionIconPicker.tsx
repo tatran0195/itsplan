@@ -1,5 +1,7 @@
+'use client';
+
 import { useMemo, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { ACTION_ICON_KEYS, ACTION_ICONS, actionIcon } from '@/utils/actionIcons';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';

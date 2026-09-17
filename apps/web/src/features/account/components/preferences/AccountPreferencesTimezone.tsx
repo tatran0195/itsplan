@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useMemo } from 'react';
 import { canonicalTimezone } from '@/utils/dates';
 import {

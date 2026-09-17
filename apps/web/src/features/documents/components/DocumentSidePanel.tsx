@@ -26,7 +26,7 @@ import { formatDateTime } from '@/utils/dates';
 import { issuePath } from '@/utils/paths';
 import IssuePickerDialog from '@/components/common/overlay/IssuePickerDialog';
 import ArchivedBadge from '@/components/common/ArchivedBadge';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import {
   useDeleteDocumentAsset,
   useDocumentAssetsQuery,

@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { cn } from '@/lib/utils';
 
 // 'system' is the instance provider a team can send through; it carries no

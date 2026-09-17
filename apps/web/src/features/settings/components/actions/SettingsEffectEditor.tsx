@@ -1,6 +1,8 @@
+'use client';
+
 import { Fragment, useState } from 'react';
 import { Plus, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ActionEffect } from '@/lib/api/endpoints/actions';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import { EFFECT_FIELD_KEYS, effectFieldKeys, type EffectFieldKey } from '@/utils/actions';

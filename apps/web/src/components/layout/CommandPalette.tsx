@@ -1,5 +1,7 @@
+'use client';
+
 import { Fragment, useEffect, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useDebouncedValue } from '@/hooks/useDebouncedValue';
 import { useIssueSearchQuery } from '@/services/issues.service';
 import type { Command, CommandPage, CommandSection } from '@/utils/commands';

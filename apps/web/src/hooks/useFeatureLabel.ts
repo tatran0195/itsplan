@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectFeatures } from '@/lib/api/endpoints/settings';
 
 // What each optional section is called. Shared by the switches that turn a section

@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import {
   customFieldKey,

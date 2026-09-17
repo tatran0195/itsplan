@@ -1,7 +1,9 @@
+'use client';
+
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { GripVertical, Pencil, Trash2, UserPlus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Column } from '@/lib/api/endpoints/columns';
 import type { Assignee } from '@/lib/api/endpoints/projects';
 import { cn } from '@/lib/utils';

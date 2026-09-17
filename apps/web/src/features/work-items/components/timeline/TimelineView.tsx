@@ -1,6 +1,8 @@
+'use client';
+
 import { useRef, useState } from 'react';
 import { DndContext } from '@dnd-kit/core';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { buildMaps, issueColor, type WorkItemsViewProps } from '@/utils/project';
 import { usePermissions } from '@/hooks/usePermissions';
 import { useGroupLabels } from '@/hooks/useGroupLabels';

@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { PermissionAction, PermissionResource } from '@/lib/api/endpoints/roles';
 
 // The labels of the permission matrix: one resource, one action, one display group.

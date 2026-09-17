@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ResourcePermissions } from '@/lib/api/endpoints/roles';
 import type { AgentSkill } from '@/lib/api/endpoints/agentSkills';
 import { useSkillsPageQuery, useDeleteSkill } from '@/services/agentSkills.service';

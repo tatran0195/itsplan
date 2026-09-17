@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import type { Issue, SubtaskDisposition } from '@/lib/api/endpoints/issues';
@@ -5,7 +7,7 @@ import { dispositionReady, subtaskCount } from '@/utils/subtasks';
 import { useArchiveIssue } from '@/services/issues.service';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';
 import SubtaskDisposalChoice from './SubtaskDisposalChoice';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Confirm and run an archive. Only mounted for an issue that has subtasks — one
 // without them is archived straight from its menu, with nothing to ask.

@@ -1,3 +1,5 @@
+'use client';
+
 import { useMemo, useState } from 'react';
 import { Search, TriangleAlert, X } from 'lucide-react';
 import type { GithubSkillCandidate, NewSkillInput } from '@/lib/api/endpoints/agentSkills';
@@ -9,7 +11,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { useCreateSkill, useDiscoverGithubSkills } from '@/services/agentSkills.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 type Source = 'inline' | 'upload' | 'github';
 

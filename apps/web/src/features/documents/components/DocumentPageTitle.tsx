@@ -1,5 +1,7 @@
+'use client';
+
 import { forwardRef } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import DocumentIconPicker from './DocumentIconPicker';
 
 const DocumentPageTitle = forwardRef<

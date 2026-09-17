@@ -1,5 +1,7 @@
+'use client';
+
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Cycle } from '@/lib/api/endpoints/cycles';
 import { formatShortDate } from '@/utils/dates';
 import { unfinishedCount } from '@/utils/progress';

@@ -1,10 +1,12 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import PageHeader from './PageHeader';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The chrome for a standalone full-height page rendered outside the app shell:
 // its own top bar with a back link and a label, and a centered column with a

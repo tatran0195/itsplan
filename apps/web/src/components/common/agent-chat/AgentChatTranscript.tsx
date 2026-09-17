@@ -15,7 +15,7 @@ import {
   MessageScrollerItem,
   MessageScrollerViewport,
 } from '@/components/ui/message-scroller';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 const loadThreshold = 48;
 

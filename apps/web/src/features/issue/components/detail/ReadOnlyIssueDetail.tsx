@@ -1,3 +1,5 @@
+'use client';
+
 import type { SharedIssueBundle } from '@/lib/api/endpoints/share';
 import { toPublicProjectDetail } from '@/utils/publicProject';
 import { usePersistedOpen, usePersistedOpenGroups } from '../../hooks/usePersistedOpen';
@@ -8,7 +10,7 @@ import IssueProperties from './IssueProperties';
 import IssueSubtasksPanel from './IssueSubtasksPanel';
 import IssueLinksPanel from './IssueLinksPanel';
 import ReadOnlyActivityFeed from './ReadOnlyActivityFeed';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 const noop = () => {};
 

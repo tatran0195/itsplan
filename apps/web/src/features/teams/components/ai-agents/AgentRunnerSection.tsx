@@ -1,5 +1,7 @@
+'use client';
+
 import { Code2, Package, Terminal } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import { AgentRunnerStatus } from '@/components/common/agent-chat/AgentRunnerStatus';
 import { AgentFormSection } from './AgentFormSection';

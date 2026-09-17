@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { PermissionCatalog } from '@/lib/api/endpoints/roles';
 import type { InstanceUserProject } from '@/lib/api/endpoints/god';
 import { formatShortDate } from '@/utils/dates';

@@ -1,3 +1,5 @@
+'use client';
+
 import type { AgentSchedule } from '@/lib/api/endpoints/agentSchedules';
 import {
   useAgentScheduleRuns,
@@ -16,7 +18,7 @@ import {
 import { useSettingsCan } from '../../context/settingsPermission';
 import { formatUtc, parseScheduleInput } from '../../utils/cronSchedule';
 import { SettingsScheduleRunRow } from './SettingsScheduleRunRow';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export function SettingsScheduleRunsSheet({
   projectKey,

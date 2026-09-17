@@ -1,9 +1,11 @@
+'use client';
+
 import { useState } from 'react';
 import { Check } from 'lucide-react';
 import { Pill } from '@/components/common/fields/Pill';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Text/number custom field: shows the value as a ghost pill and switches to
 // an input on click, so an unset field reads as a compact "Empty" rather than a

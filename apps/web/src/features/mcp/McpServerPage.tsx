@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useShell } from '@/context/shellContext';
 import SectionPageView from '@/components/common/page/SectionPageView';
 import McpAccessNotice from './components/McpAccessNotice';

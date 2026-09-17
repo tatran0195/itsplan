@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import { ArrowLeft, Plug, Shield } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { godPath } from '@/utils/paths';
 import { GOD_GROUPS, godIntegrationsIn, godSectionsIn } from '@/utils/godSections';
 import { useGodSectionText } from '@/hooks/useSectionLabels';

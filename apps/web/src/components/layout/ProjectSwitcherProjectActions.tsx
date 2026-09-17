@@ -1,5 +1,7 @@
+'use client';
+
 import { Archive, ArchiveRestore, MoreHorizontal, Star } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Project } from '@/lib/api/endpoints/projects';
 import { useUpdateProjectPreferences } from '@/services/projects.service';
 import { Button } from '@/components/ui/button';

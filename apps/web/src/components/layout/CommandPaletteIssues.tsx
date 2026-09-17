@@ -1,5 +1,7 @@
+'use client';
+
 import { Hash } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { IssueSearchHit } from '@/lib/api/endpoints/issues';
 import { ISSUE_PREFIX } from '@/utils/commandFilter';
 import { CommandGroup, CommandItem, CommandSeparator } from '@/components/ui/command';

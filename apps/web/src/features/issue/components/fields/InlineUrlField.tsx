@@ -1,9 +1,11 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, ExternalLink } from 'lucide-react';
 import { Pill } from '@/components/common/fields/Pill';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A bare domain typed without a scheme is treated as https; the API accepts only
 // absolute http(s) URLs.

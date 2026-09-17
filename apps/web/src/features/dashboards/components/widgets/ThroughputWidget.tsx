@@ -1,5 +1,7 @@
+'use client';
+
 import { Bar, BarChart, CartesianGrid, XAxis } from 'recharts';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { WidgetConfig } from '@/utils/dashboardWidgets';
 import { formatShortDate } from '@/utils/dates';
 import { Skeleton } from '@/components/ui/skeleton';

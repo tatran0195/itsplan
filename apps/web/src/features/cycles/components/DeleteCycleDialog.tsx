@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { Cycle } from '@/lib/api/endpoints/cycles';
 import { useDeleteCycle } from '@/services/cycles.service';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';

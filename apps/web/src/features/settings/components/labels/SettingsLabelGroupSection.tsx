@@ -1,7 +1,9 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import { ChevronRight, Pencil, Plus, Trash2 } from 'lucide-react';
 import { useDroppable } from '@dnd-kit/core';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { LabelGroup } from '@/lib/api/endpoints/labels';
 import { cn } from '@/lib/utils';
 import { colorDot } from '@/components/common/fields/colorDot';

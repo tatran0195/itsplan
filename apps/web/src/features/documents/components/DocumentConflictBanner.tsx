@@ -1,6 +1,8 @@
+'use client';
+
 import { RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 export default function DocumentConflictBanner({ onReload }: { onReload: () => void }) {
   const t = useTranslations('documents');

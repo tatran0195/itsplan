@@ -1,0 +1,107 @@
+{
+  "title": "メンバー",
+  "description": "このプロジェクトにアクセスできるユーザーとエージェント。",
+  "add": {
+    "action": "メンバーを追加",
+    "title": "メンバーを追加",
+    "personLabel": "チームメンバーまたはメールアドレス",
+    "pickPlaceholder": "メンバーを選択",
+    "searchPlaceholder": "チーム内を検索またはメールアドレスを入力",
+    "searchTeamPlaceholder": "チーム内を検索",
+    "fromTeam": "チームメンバーから追加",
+    "byEmail": "メールで招待",
+    "inviteEmail": "{email} を招待",
+    "alreadyInvited": "{email} はすでに招待されています",
+    "alreadyMember": "{email} はすでにこのプロジェクトのメンバーです",
+    "alreadyInTeam": "{email} はすでにチームに参加しています。上のリストから選択してください",
+    "refused": "{email} を追加できませんでした",
+    "typeEmail": "見つかりません。完全なメールアドレスを入力して招待してください。",
+    "noCandidates": "チームの全メンバーがすでにこのプロジェクトに参加しています。",
+    "willJoinTeam": "{teamName} チームとこのプロジェクトに参加します",
+    "roleLabel": "プロジェクトでのロール",
+    "rolePlaceholder": "ロール",
+    "submit": "プロジェクトに追加",
+    "sendInvite": "招待を送信"
+  },
+  "columns": {
+    "member": "メンバー",
+    "role": "ロール",
+    "timezone": "タイムゾーン",
+    "joined": "参加日時",
+    "actions": "操作"
+  },
+  "profileHeading": "プロフィール",
+  "you": "（あなた）",
+  "aiAgent": "AIエージェント",
+  "tabs": {
+    "all": "すべて",
+    "people": "ユーザー",
+    "agents": "AIエージェント",
+    "label": "表示"
+  },
+  "leaveProject": "プロジェクトから退出",
+  "revokeAccess": "アクセス権を取り消す",
+  "lastOwner": "プロジェクトには少なくとも1人のオーナーが必要です",
+  "leaveTitle": "このプロジェクトから退出しますか？",
+  "leaveDescription": "このプロジェクトとそのイシューへのアクセス権を失います。オーナーから再度招待してもらうことができます。",
+  "revokeTitle": "{name} のアクセス権を取り消しますか？",
+  "revokeDescription": "{name} はこのプロジェクトへのアクセス権を失います。後で再度招待できます。",
+  "selectRole": "ロールを選択",
+  "editDescription": "説明を編集",
+  "descriptionQuestionSelf": "このプロジェクトでどのような役割を担当していますか？",
+  "descriptionQuestionOther": "このユーザーはこのプロジェクトでどのような役割を担当していますか？",
+  "descriptionPlaceholder": "例: バックエンドエンジニア、APIおよびインテグレーション担当",
+  "invites": {
+    "pendingCount": "{count, plural, other {# 件の保留中の招待}}",
+    "copyLink": "リンクをコピー",
+    "copied": "コピーしました",
+    "emailQueued": "招待メールをキューに追加しました",
+    "emailUnavailable": "招待は作成されましたが、メール送信はキューに追加されませんでした。リンクをコピーして共有してください。",
+    "resendUnavailable": "メールが設定されていません。招待リンクをコピーして共有してください。",
+    "resendEmail": "メールを送信",
+    "resendingEmail": "キューに追加中…",
+    "revokeAction": "招待を取り消す",
+    "removeAction": "招待を削除",
+    "invitedBy": "{name} が招待 · ",
+    "createdAt": "作成: {date}",
+    "respondedAt": "{status, select, accepted {承認} rejected {拒否} other {更新}}: {date}",
+    "status": {
+      "pending": "保留中",
+      "accepted": "承認済み",
+      "rejected": "拒否済み"
+    },
+    "revokeTitle": "{email} の招待を取り消しますか？",
+    "revokeConfirm": "招待を取り消す",
+    "revokeDescription": "招待リンクは無効になります。後でこのメールアドレスを再度招待できます。"
+  },
+  "promoted": "メンバーをオーナーに昇格しました",
+  "roleUpdated": "メンバーのロールを更新しました",
+  "descriptionUpdated": "メンバーの説明を更新しました",
+  "added": "メンバーを追加しました",
+  "provisioned": "SCIMにより管理",
+  "search": {
+    "all": "メンバーを検索",
+    "people": "ユーザーを検索",
+    "agents": "AIエージェントを検索"
+  },
+  "empty": {
+    "all": {
+      "title": "メンバーがまだいません",
+      "description": "ユーザーやAIエージェントが参加するとここに表示されます。"
+    },
+    "human": {
+      "title": "ユーザーがまだいません",
+      "description": "ユーザーが参加するとここに表示されます。"
+    },
+    "agent": {
+      "title": "AIエージェントがまだいません",
+      "description": "AIエージェントが追加されるとここに表示されます。"
+    },
+    "search": {
+      "title": "見つかりません",
+      "all": "検索条件に一致するメンバーはいません。",
+      "human": "検索条件に一致するユーザーはいません。",
+      "agent": "検索条件に一致するAIエージェントはいません。"
+    }
+  }
+}

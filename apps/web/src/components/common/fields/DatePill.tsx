@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, type ComponentProps, type ReactNode } from 'react';
 import { Calendar as CalendarIcon } from 'lucide-react';
 import { formatDate, parseDate, toDateStr } from '@/utils/dates';
@@ -6,7 +8,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Pill } from './Pill';
 import ReadOnlyPill from './ReadOnlyPill';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A date value as a "MMM d, yyyy" pill opening a calendar. Value is a
 // "YYYY-MM-DD" string or null; onChange(null) clears it. `trigger` replaces the

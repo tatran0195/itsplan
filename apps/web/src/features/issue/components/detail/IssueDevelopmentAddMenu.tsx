@@ -1,5 +1,7 @@
+'use client';
+
 import { GitPullRequest, Link2, Plus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,

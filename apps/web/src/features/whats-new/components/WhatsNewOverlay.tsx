@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { DatabaseBackup } from 'lucide-react';
 import type { WhatsNew } from '@/lib/api/endpoints/updates';
 import TakeoverScreen, { type TakeoverSection } from '@/components/common/page/TakeoverScreen';

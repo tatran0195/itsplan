@@ -1,0 +1,76 @@
+{
+  "title": "サイクル",
+  "newCycle": "新規サイクル",
+  "status": {
+    "upcoming": "予定",
+    "active": "進行中",
+    "completed": "完了"
+  },
+  "views": {
+    "table": "テーブル",
+    "timeline": "タイムライン"
+  },
+  "columns": {
+    "name": "名前",
+    "dates": "期間",
+    "length": "期間長",
+    "issues": "イシュー",
+    "progress": "進捗"
+  },
+  "emptyTitle": "サイクルがまだありません",
+  "emptyDescription": "サイクルとは、チームがイシューを計画して実行する期間（スプリント）です。",
+  "nothingPlannedTitle": "予定がありません",
+  "nothingPlannedDescription": "タイムラインには進行中と予定のサイクルが表示されます。完了分はテーブルにあります。",
+  "options": "サイクルの操作",
+  "transferIssues": "{count, plural, other {# 件の未完了イシューを移動}}",
+  "finishedEarly": "早期終了（予定終了日: {date}）",
+  "form": {
+    "editTitle": "サイクルを編集",
+    "newTitle": "新規サイクル",
+    "name": "名前",
+    "goal": "ゴール",
+    "goalPlaceholder": "このサイクルで何を達成しますか？",
+    "length": "期間",
+    "starts": "開始日",
+    "ends": "終了日",
+    "create": "サイクルを作成",
+    "saveFailed": "サイクルを保存できませんでした"
+  },
+  "weeks": "{count, plural, other {# 週間}}",
+  "transfer": {
+    "title": "未完了イシューの移動",
+    "description": "未完了のイシューを選択したサイクルに移動します。完了・キャンセル済みのイシューはここに残ります。",
+    "moveTo": "移動先",
+    "noCycle": "サイクルなし",
+    "submit": "イシューを移動",
+    "moving": "移動中…",
+    "moved": "{count, plural, other {# 件のイシューを移動しました}}",
+    "failed": "イシューを移動できませんでした"
+  },
+  "finish": {
+    "action": "サイクルを終了",
+    "title": "サイクルを早期終了",
+    "description": "{cycle} は {date} ではなく本日で終了します。再開することはできません。{count, plural, =0 {未完了のイシューはありません。} other {# 件の未完了イシューがこのサイクルに残ります。}}",
+    "submit": "サイクルを終了"
+  },
+  "startNext": {
+    "action": "次のサイクルを本日開始",
+    "title": "次のサイクルを本日開始します",
+    "description": "{cycle} は本日で終了し再開できません。{next} は本日開始し予定通り {date} に終了します。{count, plural, =0 {引き継ぐイシューはありません。} other {# 件の未完了イシューが移行されます。}} 完了およびキャンセルされたイシューは {cycle} に残ります。",
+    "submit": "次のサイクルを開始",
+    "started": "{cycle} を開始しました。{count, plural, =0 {引き継いだイシューはありません。} other {# 件のイシューを引き継ぎました。}}"
+  },
+  "delete": {
+    "title": "サイクルを削除",
+    "description": "{cycle} を完全に削除します。{count, plural, =0 {イシューは含まれていません。} other {# 件のイシューはサイクル未割り当てとしてプロジェクトに残ります。}}"
+  },
+  "details": "サイクルの詳細",
+  "goal": "ゴール",
+  "noGoal": "ゴールは設定されていません。",
+  "progress": "進捗",
+  "openCycle": "サイクルを開く",
+  "dragFailed": "サイクルを移動できませんでした",
+  "notFound": "サイクルが見つかりません。",
+  "defaultName": "スプリント {n}",
+  "issuesDone": "完了イシュー"
+}

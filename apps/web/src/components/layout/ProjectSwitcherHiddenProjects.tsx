@@ -1,6 +1,8 @@
+'use client';
+
 import { useId } from 'react';
 import { Archive, ChevronDown } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Project } from '@/lib/api/endpoints/projects';
 import { Button } from '@/components/ui/button';
 import { CommandGroup } from '@/components/ui/command';

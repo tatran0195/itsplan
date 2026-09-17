@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useAgentWorkloadQuery } from '../../services/analytics.service';
 

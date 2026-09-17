@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import Modal from '@/components/common/overlay/Modal';
 import { Button } from '@/components/ui/button';
 

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Check, ChevronDown, Mail } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { MemberCandidate } from '@/lib/api/endpoints/members';
 import Avatar from '@/components/common/Avatar';
 import { Button } from '@/components/ui/button';

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { UserMinus } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { PermissionCatalog, Role } from '@/lib/api/endpoints/roles';
 import type { TeamProjectMember } from '@/lib/api/endpoints/teams';
 import { membershipPermissions } from '@/utils/permissions';

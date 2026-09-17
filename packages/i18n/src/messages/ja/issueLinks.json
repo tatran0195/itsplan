@@ -1,0 +1,16 @@
+{
+  "relations": {
+    "blocked_by": "次によりブロック",
+    "blocks": "ブロック中",
+    "duplicates": "重複",
+    "duplicated_by": "次により重複",
+    "relates": "関連"
+  },
+  "phrases": {
+    "blocked_by": "次によりブロック",
+    "blocks": "次をブロック",
+    "duplicates": "次の重複",
+    "duplicated_by": "次により重複",
+    "relates": "次に関連"
+  }
+}

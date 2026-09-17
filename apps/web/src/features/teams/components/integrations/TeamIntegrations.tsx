@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ResourcePermissions } from '@/lib/api/endpoints/roles';
 import type { IntegrationCredential, IntegrationMeta } from '@/lib/api/endpoints/integrations';
 import { useCredentialsPageQuery, useDeleteCredential } from '@/services/integrations.service';

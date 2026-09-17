@@ -1,7 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import SettingsCard from '@/components/common/page/SettingsCard';
 import SettingsRow from '@/components/common/page/SettingsRow';
 import SettingsSection from '@/components/common/page/SettingsSection';

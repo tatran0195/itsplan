@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { KeyRound, TriangleAlert, X } from 'lucide-react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
@@ -7,7 +9,7 @@ import { useAgentCan, useAgentSection } from '../../context/agentSection';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';
 import { AgentFormSection } from './AgentFormSection';
 import AgentKeyValue from './AgentKeyValue';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The API key of an external agent. The server keeps only a hash and the key's first
 // characters, so the secret exists for the one moment it is issued: the section shows

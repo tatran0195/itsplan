@@ -1,5 +1,7 @@
+'use client';
+
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { formatDateTime } from '@/utils/dates';
 import { issuePath } from '@/utils/paths';
 import type { AgentRunFeedItem } from '@/lib/api/endpoints/analytics';

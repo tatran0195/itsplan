@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { NotificationEncryption } from '@/lib/api/endpoints/notificationSettings';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';

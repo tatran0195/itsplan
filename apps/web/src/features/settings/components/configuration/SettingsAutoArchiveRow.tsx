@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import SettingsRow from '@/components/common/page/SettingsRow';
 import { Input } from '@/components/ui/input';
 import { Switch } from '@/components/ui/switch';

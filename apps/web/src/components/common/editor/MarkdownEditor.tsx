@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useEditor, EditorContent, type Editor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
@@ -21,7 +23,7 @@ import EditorSelectionMenu from './EditorSelectionMenu';
 import EditorTableMenu from './EditorTableMenu';
 import EditorLinkPreview from './EditorLinkPreview';
 import { useMentionCandidates } from '@/hooks/useMentionCandidates';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Shared by every editor instance. A block with no language is detected by
 // highlightAuto, so there is no language picker.

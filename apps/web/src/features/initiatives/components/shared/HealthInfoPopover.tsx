@@ -1,6 +1,8 @@
+'use client';
+
 import { Fragment } from 'react';
 import { ChevronRight, HelpCircle } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { InitiativeHealth } from '@/lib/api/endpoints/initiatives';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';

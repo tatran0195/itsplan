@@ -1,7 +1,9 @@
+'use client';
+
 import { useRouter } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
 import { FileText, LockKeyhole } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { listDocuments } from '@/lib/api/endpoints/documents';
 import { qk } from '@/services/queryKeys';
 import { usePermissions } from '@/hooks/usePermissions';

@@ -1,3 +1,5 @@
+'use client';
+
 import type { NotificationEncryption } from '@/lib/api/endpoints/notificationSettings';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -13,7 +15,7 @@ import EnabledSwitch from '@/components/common/inputs/EnabledSwitch';
 import ProviderToggle from '@/components/common/inputs/ProviderToggle';
 import SecretInput from '@/components/common/inputs/SecretInput';
 import type { EmailForm } from '../../hooks/useEmailForm';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 const ENCRYPTION_OPTIONS: NotificationEncryption[] = ['none', 'ssl', 'tls'];
 

@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { SlidersHorizontal } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import type { IssueType } from '@/lib/api/endpoints/issueTypes';
 import type { ViewSettings } from '@/utils/viewSettings';

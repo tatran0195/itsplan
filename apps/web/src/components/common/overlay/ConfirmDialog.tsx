@@ -1,7 +1,9 @@
+'use client';
+
 import { type ReactNode, useState } from 'react';
 import Modal from './Modal';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A modal with a destructive confirm button that owns the busy state and the
 // try/catch around the action. Callers put the dialog-specific body in `children`

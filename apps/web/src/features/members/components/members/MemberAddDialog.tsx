@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Mail, Users } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { ApiError } from '@/lib/api/core/client';
 import Modal from '@/components/common/overlay/Modal';
 import { Button } from '@/components/ui/button';

@@ -1,5 +1,7 @@
+'use client';
+
 import { CircleDashed } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Column } from '@/lib/api/endpoints/columns';
 import { colorDot } from '@/components/common/fields/colorDot';
 import { Pill } from '@/components/common/fields/Pill';

@@ -1,7 +1,7 @@
 'use client';
 
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { apiKey } from '@/lib/auth-client';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';
 import type { ApiKeyRow } from '../services/apiKeys.service';

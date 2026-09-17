@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { MoreHorizontal, Pencil, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Initiative } from '@/lib/api/endpoints/initiatives';
 import { initiativesPath } from '@/utils/paths';
 import { usePermissions } from '@/hooks/usePermissions';

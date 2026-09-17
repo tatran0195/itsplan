@@ -1,7 +1,7 @@
 'use client';
 
 import { Bot } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { formatShortDate } from '@/utils/dates';
 import { useSearchTerm } from '@/hooks/useSearchTerm';
 import Avatar from '@/components/common/Avatar';

@@ -1,7 +1,7 @@
 'use client';
 
 import { Fragment, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Cycle } from '@/lib/api/endpoints/cycles';
 import { usePersistedSet } from '@/hooks/usePersistedSet';
 import { groupCycles } from '../../utils/cycleGroups';

@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { TimelineScale, ViewSettings } from '@/utils/viewSettings';
 import { byKey } from '@/utils/messageKey';
 import { Checkbox } from '@/components/ui/checkbox';

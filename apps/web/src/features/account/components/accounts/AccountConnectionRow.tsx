@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { Button } from '@/components/ui/button';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One external account: the service on the left with what it is connected to, and
 // the connect or disconnect action on the right.

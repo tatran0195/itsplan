@@ -1,3 +1,5 @@
+'use client';
+
 import {
   CalendarArrowUp,
   CalendarClock,
@@ -7,7 +9,7 @@ import {
   Target,
   Timer,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { BoardIssue } from '@/lib/api/endpoints/issues';
 import { type Maps } from '@/utils/project';
 import { cn } from '@/lib/utils';

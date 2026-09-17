@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import ListSkeleton from '@/components/common/skeleton/ListSkeleton';
 import SettingsCard from '@/components/common/page/SettingsCard';

@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, type ReactNode } from 'react';
 import { Maximize2, Minimize2, X } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -10,7 +12,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Thin wrapper over shadcn Dialog that keeps the mount/unmount call style used
 // across the app: callers render `{show && <Modal .../>}`, so the dialog is

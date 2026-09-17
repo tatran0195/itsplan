@@ -1,5 +1,7 @@
+'use client';
+
 import { User } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { cn } from '@/lib/utils';
 import { columnKey, TITLE_COLUMN_KEY, type OrderedColumn } from '../../utils/table';
 import { TableColumnResizer } from './TableColumnResizer';

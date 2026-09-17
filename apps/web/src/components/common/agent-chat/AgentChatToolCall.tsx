@@ -1,7 +1,7 @@
 'use client';
 
 import { Wrench } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { AiChatToolPart } from '@/lib/api/endpoints/agentChat';
 import { Marker, MarkerContent, MarkerIcon } from '@/components/ui/marker';
 import AgentChatToolBlock from './AgentChatToolBlock';

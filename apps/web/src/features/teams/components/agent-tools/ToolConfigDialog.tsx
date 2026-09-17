@@ -1,9 +1,11 @@
+'use client';
+
 import { useMemo, useState } from 'react';
 import type { IntegrationMeta } from '@/lib/api/endpoints/integrations';
 import Modal from '@/components/common/overlay/Modal';
 import { ToolPicker } from './ToolPicker';
 import { ToolCredentialStep } from './ToolCredentialStep';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One catalog tool tagged with the integration it belongs to.
 export interface ToolOption {

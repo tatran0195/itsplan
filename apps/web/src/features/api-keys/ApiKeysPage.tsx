@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useSession } from '@/lib/auth-client';
 import { qk } from '@/services/queryKeys';
 import FullPageView from '@/components/common/page/FullPageView';

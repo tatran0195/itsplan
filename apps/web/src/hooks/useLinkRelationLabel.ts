@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { IssueLinkInputKind } from '@/lib/api/endpoints/issues';
 
 // How one issue relates to another, named for the reader. Used wherever a

@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { AnalyticsStats } from '@/lib/api/endpoints/analytics';
 
 // How the project's issues stand, in the order a team owner reads them: what is left

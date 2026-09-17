@@ -1,3 +1,5 @@
+'use client';
+
 import { type Editor } from '@tiptap/react';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import type { Assignee } from '@/lib/api/endpoints/projects';
@@ -9,7 +11,7 @@ import { hasFieldValue } from '../../utils/fieldValues';
 import MarkdownEditor from '@/components/common/editor/MarkdownEditor';
 import NewIssueBodyFields from './NewIssueBodyFields';
 import NewIssueBodySwitcher from './NewIssueBodySwitcher';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The written part of a new issue: the description, plus the custom fields the
 // project shows in the body. A switcher keeps one markdown field on screen at a

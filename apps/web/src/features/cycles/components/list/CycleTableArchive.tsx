@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Cycle } from '@/lib/api/endpoints/cycles';
 import ShowMoreButton from '@/components/common/ShowMoreButton';
 import { CYCLE_STATUS_META } from '@/utils/cycleMeta';

@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { TeamProject } from '@/lib/api/endpoints/teams';
 import { useLeaveProject } from '@/services/projects.service';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';

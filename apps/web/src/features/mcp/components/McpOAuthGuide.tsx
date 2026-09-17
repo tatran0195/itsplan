@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import SettingsCard from '@/components/common/page/SettingsCard';
 import CodeBlock from '@/components/common/CodeBlock';
 

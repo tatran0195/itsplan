@@ -1,6 +1,8 @@
+'use client';
+
 import { FileText, Trash2, Upload } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One entry in the skill's file explorer. SKILL.md is pinned and cannot be
 // deleted; reference files carry a size and a delete action.

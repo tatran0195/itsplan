@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { Label as LabelRow, LabelGroup } from '@/lib/api/endpoints/labels';
 import SettingsConfirmDeleteDialog from '../crud/SettingsConfirmDeleteDialog';
 

@@ -1,7 +1,9 @@
+'use client';
+
 import { type Editor } from '@tiptap/react';
 import { BubbleMenu } from '@tiptap/react/menus';
 import { BetweenHorizontalEnd, BetweenVerticalEnd, Columns3, Rows3, Trash2 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import EditorToolbarButton from './EditorToolbarButton';
 
 const ITEMS = [

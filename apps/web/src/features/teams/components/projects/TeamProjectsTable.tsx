@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { TeamProject } from '@/lib/api/endpoints/teams';
 import { formatDate } from '@/utils/dates';
 import { projectPath } from '@/utils/paths';

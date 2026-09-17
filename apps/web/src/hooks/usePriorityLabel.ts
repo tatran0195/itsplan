@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { PRIORITY_ORDER, type Priority } from '@/utils/fieldOptions';
 
 // The label of a priority value, with '' (and null) the explicit "no priority"

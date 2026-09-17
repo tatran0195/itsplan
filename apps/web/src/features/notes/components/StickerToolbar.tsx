@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { type Editor } from '@tiptap/react';
 import { Bold, Italic, ListChecks, SquarePlus, Trash2 } from 'lucide-react';
 import { cn } from '@/lib/utils';

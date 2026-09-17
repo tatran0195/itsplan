@@ -1,0 +1,50 @@
+{
+  "name": "名前",
+  "key": "キー（短縮形、例: MKT）",
+  "copyKey": "キー",
+  "description": "説明",
+  "issueTypes": "イシュー種別",
+  "typesCreated": "{count, plural, other {# 件のイシュー種別}} が作成されます",
+  "defaultType": "新規イシューにはデフォルトで {type} が設定されます。種別は設定で変更可能です。",
+  "presets": {
+    "general": "一般",
+    "software": "ソフトウェア",
+    "product": "プロダクト",
+    "content": "コンテンツ",
+    "marketing": "マーケティング",
+    "design": "デザイン",
+    "sales": "営業",
+    "operations": "オペレーション",
+    "support": "サポート",
+    "recruiting": "採用"
+  },
+  "copyConfiguration": "設定をコピー",
+  "selectAll": "すべて選択",
+  "clearAll": "すべて解除",
+  "copyGroups": {
+    "workflow": "ワークフロー",
+    "automation": "自動化",
+    "views": "ビュー",
+    "aiTeam": "AIチーム",
+    "knowledge": "ナレッジ"
+  },
+  "copyItems": {
+    "states": "ステータス",
+    "issueTypes": "イシュー種別",
+    "labels": "ラベル",
+    "customFields": "カスタム項目",
+    "views": "ビュー",
+    "dashboards": "ダッシュボード",
+    "documents": "ドキュメント",
+    "actions": "アクション",
+    "configuration": "詳細設定",
+    "webhooks": "Webhook",
+    "agents": "エージェント",
+    "schedules": "スケジュール"
+  },
+  "title": "新規プロジェクト",
+  "copyTitle": "プロジェクト「{name}」を複製",
+  "create": "プロジェクトを作成",
+  "copyAction": "プロジェクトを複製",
+  "copyName": "{name} のコピー"
+}

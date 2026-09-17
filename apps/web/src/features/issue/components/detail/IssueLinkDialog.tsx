@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useState } from 'react';
 import { Hash } from 'lucide-react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
@@ -16,7 +18,7 @@ import ArchivedBadge from '@/components/common/ArchivedBadge';
 import { byKey } from '@/utils/messageKey';
 import { useLinkRelationLabel } from '@/hooks/useLinkRelationLabel';
 import { useLinkIssues } from '../../services/links.service';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Searches for the issue on the other end of a new relation, server-side across
 // the project (archived included). The relation itself is already chosen — the

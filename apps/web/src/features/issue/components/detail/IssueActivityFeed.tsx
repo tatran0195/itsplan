@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import type { IssueActivityView } from '@/lib/api/endpoints/userPreferences';
 import type { Column } from '@/lib/api/endpoints/columns';
@@ -8,7 +10,7 @@ import { useAccountPreferencesQuery } from '@/services/preferences.service';
 import CommentComposer, { type ComposerContext } from './CommentComposer';
 import IssueFeedList from './IssueFeedList';
 import IssueGroupedFeed from './IssueGroupedFeed';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The issue's activity log: a comment composer over the entries, in one of two shapes
 // picked by the tabs between them. Both run newest first and page 25 at a time; the

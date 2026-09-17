@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, CornerDownRight, Pencil, RotateCcw } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { DocumentComment } from '@/lib/api/endpoints/documents';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';

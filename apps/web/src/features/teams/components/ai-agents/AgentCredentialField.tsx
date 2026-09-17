@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Check } from 'lucide-react';
 import type { IntegrationOption } from '@/lib/api/endpoints/integrations';
@@ -10,7 +12,7 @@ import {
   CommandList,
 } from '@/components/ui/command';
 import { Popover, PopoverContent } from '@/components/ui/popover';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { AgentComboboxTrigger } from './AgentComboboxTrigger';
 
 // Provider-key picker for an agent: the project's AI provider credentials, in the

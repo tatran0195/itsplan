@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { toast } from 'sonner';
 import { passkey } from '@/lib/auth-client';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';

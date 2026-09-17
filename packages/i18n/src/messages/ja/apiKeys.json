@@ -1,0 +1,37 @@
+{
+  "label": "APIキー",
+  "title": "APIキー",
+  "description": "パーソナルAPIキーは、あなたのアカウント ({email}) としてAPIへのリクエストを認証します。キーの値は作成時に一度だけ表示されます。",
+  "sectionTitle": "作成済みAPIキー",
+  "create": "APIキーを作成",
+  "empty": "APIキーはまだありません。作成してAPIリクエストの認証に使用してください。",
+  "fallbackName": "APIキー",
+  "createdAt": "作成: {date}",
+  "expiresAt": "有効期限: {date}",
+  "noExpiry": "有効期限なし",
+  "deleteAction": "APIキーを削除",
+  "createDialog": {
+    "title": "APIキーを作成",
+    "nameLabel": "名前",
+    "namePlaceholder": "例: CIパイプライン",
+    "nameHint": "後から識別しやすいラベルを付けてください。",
+    "expiryLabel": "有効期間",
+    "expiresInDays": "{days} 日間",
+    "expiryHint": "期日を過ぎるとキーは無効になります。継続して使用する場合は新しいキーを作成してください。",
+    "submit": "キーを作成",
+    "submitPending": "作成中…",
+    "error": "APIキーを作成できませんでした。"
+  },
+  "createdDialog": {
+    "title": "APIキーを作成しました",
+    "description": "今すぐキーをコピーしてください。セキュリティのため一度しか表示されず、再取得はできません。",
+    "copy": "キーをコピー"
+  },
+  "deleteDialog": {
+    "title": "APIキーを削除しますか？",
+    "confirm": "キーを削除",
+    "description": "このキーを使用したリクエストは即座に停止します。この操作は取り消せません。",
+    "error": "APIキーを削除できませんでした。"
+  },
+  "loadFailed": "APIキーを読み込めませんでした。"
+}

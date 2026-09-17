@@ -1,4 +1,6 @@
-import { useFormatter, useTranslations } from 'next-intl';
+'use client';
+
+import { useFormatter, useTranslations } from '@repo/i18n/react';
 import { colorDot } from '@/components/common/fields/colorDot';
 import { byKey } from '@/utils/messageKey';
 import type { ResolvedLinkPreview } from './resolveLinkPreview';

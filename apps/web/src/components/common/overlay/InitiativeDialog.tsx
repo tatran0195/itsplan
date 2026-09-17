@@ -1,6 +1,8 @@
+'use client';
+
 import { useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Initiative, InitiativeStatus } from '@/lib/api/endpoints/initiatives';
 import { initiativePath } from '@/utils/paths';
 import { parseDate } from '@/utils/dates';

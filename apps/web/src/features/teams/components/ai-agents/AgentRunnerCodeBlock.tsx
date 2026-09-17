@@ -1,6 +1,8 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, Copy } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { Button } from '@/components/ui/button';
 
 // A snippet the reader is meant to run or save, with a copy button.

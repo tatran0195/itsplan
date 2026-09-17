@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
 import { useEditor, EditorContent, type Editor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
@@ -7,7 +9,7 @@ import Placeholder from '@tiptap/extension-placeholder';
 import Link from '@tiptap/extension-link';
 import type { Node as ProseMirrorNode } from '@tiptap/pm/model';
 import { Markdown } from 'tiptap-markdown';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import EditorSelectionMenu from '@/components/common/editor/EditorSelectionMenu';
 import { SlashCommand } from '@/lib/tiptap-slash-command';
 

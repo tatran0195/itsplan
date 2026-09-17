@@ -1,3 +1,5 @@
+'use client';
+
 import {
   ArrowUpRight,
   CircleDot,
@@ -8,7 +10,7 @@ import {
   LoaderCircle,
   StickyNote,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ResolvedLinkPreview } from './resolveLinkPreview';
 import EditorLinkPreviewImage from './EditorLinkPreviewImage';
 import EditorLinkPreviewDetails from './EditorLinkPreviewDetails';

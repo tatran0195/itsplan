@@ -1,7 +1,7 @@
 'use client';
 
 import { GanttChart, Table2, type LucideIcon } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { CyclesView } from '@/utils/paths';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 

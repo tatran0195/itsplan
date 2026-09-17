@@ -1,5 +1,7 @@
+'use client';
+
 import { ChevronDown, ChevronRight, ListTree } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { type Maps } from '@/utils/project';
 import { subtaskProgress } from '@/utils/subtasks';
 import { cn } from '@/lib/utils';

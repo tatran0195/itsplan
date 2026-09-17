@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Team } from '@/lib/api/endpoints/teams';
 import { manageTeamsPath } from '@/utils/paths';
 import { useLeaveTeam } from '@/services/teams.service';

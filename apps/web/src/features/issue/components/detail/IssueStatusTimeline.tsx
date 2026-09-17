@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import type { Column } from '@/lib/api/endpoints/columns';
 import { Button } from '@/components/ui/button';
@@ -7,7 +9,7 @@ import { buildLifecycleMetrics, buildTimelineLayout } from '../../utils/timeline
 import IssueTimelineCompact from './IssueTimelineCompact';
 import IssueTimelineLanes from './IssueTimelineLanes';
 import IssueSectionHeading from './IssueSectionHeading';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // How the issue moved through the statuses, above the activity log. The compact bar
 // shows one share per status with the lifecycle metrics; the header button swaps in

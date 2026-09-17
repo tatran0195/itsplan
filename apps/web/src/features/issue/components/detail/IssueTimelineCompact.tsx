@@ -1,7 +1,9 @@
+'use client';
+
 import { durationLabel, type LifecycleMetrics, type TimelineLane } from '../../utils/timeline';
 import IssueTimelineMetric from './IssueTimelineMetric';
 import IssueTimelineShare from './IssueTimelineShare';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The whole life of the issue as one bar: a share per status, sized by the total time
 // spent in it (repeat visits merged), with the same figures and the lifecycle metrics

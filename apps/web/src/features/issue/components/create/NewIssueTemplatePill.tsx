@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import { FileText } from 'lucide-react';
 import type { IssueTemplate } from '@/lib/api/endpoints/issueTemplates';
 import { Pill } from '@/components/common/fields/Pill';

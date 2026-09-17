@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { SubtaskDisposition } from '@/lib/api/endpoints/issues';
 import { dispositionReady } from '@/utils/subtasks';
 import ConfirmDialog from '@/components/common/overlay/ConfirmDialog';

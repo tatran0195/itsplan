@@ -3,7 +3,7 @@
 import { useState, type RefObject } from 'react';
 import { Download } from 'lucide-react';
 import { toast } from 'sonner';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { ChartSpec } from '@/utils/chartSpec';
 import { chartFileName, chartSvgMarkup, downloadBlob, svgToPng } from '@/utils/chartExport';
 import {

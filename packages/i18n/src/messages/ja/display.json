@@ -1,0 +1,95 @@
+{
+  "title": "表示設定",
+  "layouts": {
+    "kanban": "カンバン",
+    "table": "テーブル",
+    "timeline": "タイムライン",
+    "calendar": "カレンダー"
+  },
+  "sortFields": {
+    "manual": "手動",
+    "title": "タイトル",
+    "identifier": "イシュー番号",
+    "status": "ステータス",
+    "priority": "優先度",
+    "assignee": "担当者",
+    "type": "種別",
+    "startDate": "開始日",
+    "dueDate": "期限",
+    "created": "作成日時",
+    "updated": "更新日時"
+  },
+  "groupFields": {
+    "none": "グループ化なし",
+    "status": "ステータス",
+    "assignee": "担当者",
+    "delegate": "委任先",
+    "priority": "優先度",
+    "type": "種別",
+    "initiative": "イニシアチブ",
+    "cycle": "サイクル"
+  },
+  "properties": {
+    "id": "ID",
+    "status": "ステータス",
+    "priority": "優先度",
+    "type": "種別",
+    "assignee": "担当者",
+    "delegate": "委任先",
+    "initiative": "イニシアチブ",
+    "cycle": "サイクル",
+    "labels": "ラベル",
+    "estimatePoints": "ストーリーポイント",
+    "estimateTime": "見積もり時間",
+    "startDate": "開始日",
+    "dueDate": "期限",
+    "created": "作成日時",
+    "updated": "更新日時",
+    "statusAge": "ステータス滞在時間"
+  },
+  "stateTypes": {
+    "backlog": "バックログ",
+    "unstarted": "未着手",
+    "started": "進行中",
+    "completed": "完了",
+    "canceled": "キャンセル"
+  },
+  "timelineScales": {
+    "week": "週",
+    "month": "月",
+    "quarter": "四半期"
+  },
+  "weekStart": {
+    "0": "日曜日",
+    "1": "月曜日"
+  },
+  "dateFields": {
+    "dueDate": "期限",
+    "startDate": "開始日"
+  },
+  "rows": {
+    "columns": "カラム",
+    "grouping": "グループ化",
+    "swimlanes": "スイムレーン",
+    "subGrouping": "サブグループ化",
+    "ordering": "並び順",
+    "ascending": "昇順",
+    "descending": "降順",
+    "showEmptyColumns": "空のカラムを表示",
+    "showEmptyGroups": "空のグループを表示",
+    "showLinks": "リンクを表示",
+    "separateSubtaskCards": "サブタスクを個別カードとして表示",
+    "separateSubtaskRows": "サブタスクを個別行として表示",
+    "startSubtasksCollapsed": "サブタスクを折りたたんだ状態で開始",
+    "showNestedSubtasks": "ネストされたサブタスクを表示",
+    "nestedSubtasks": "ネストされたサブタスク",
+    "displayProperties": "表示プロパティ",
+    "placeBy": "配置基準",
+    "startWeekOn": "週の開始曜日",
+    "startCollapsed": "グループを折りたたんで開始",
+    "scale": "スケール",
+    "addCustomField": "カスタム項目を追加",
+    "viewIcon": "ビューアイコン"
+  },
+  "layoutCommand": "{layout} レイアウト"
+}

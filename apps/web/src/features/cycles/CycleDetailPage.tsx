@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useShell } from '@/context/shellContext';
 import { Skeleton } from '@/components/ui/skeleton';
 import { useCycleQuery } from '@/services/cycles.service';

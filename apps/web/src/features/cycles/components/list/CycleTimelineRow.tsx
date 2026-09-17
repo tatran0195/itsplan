@@ -1,3 +1,5 @@
+'use client';
+
 import { CalendarRange, CircleDashed } from 'lucide-react';
 import type { Cycle } from '@/lib/api/endpoints/cycles';
 import { CYCLE_STATUS_META } from '@/utils/cycleMeta';
@@ -8,7 +10,7 @@ import type { CycleDragMode } from '../../hooks/useCycleDrag';
 import { cycleLength, movableEnds } from '../../utils/cycleDates';
 import { CYCLE_ROW_H } from '../../utils/cycleTimeline';
 import CycleInfoPopover from './CycleInfoPopover';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One cycle row: the sticky label on the left and its bar on the day track. The bar
 // moves the cycle or resizes one end, within what the cycle's status still allows.

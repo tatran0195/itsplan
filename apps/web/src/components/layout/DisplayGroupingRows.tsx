@@ -1,5 +1,7 @@
+'use client';
+
 import { ArrowDownNarrowWide, ArrowUpNarrowWide } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { CustomField } from '@/lib/api/endpoints/customFields';
 import { SORT_FIELDS, type SortField, type WorkItemsView } from '@/utils/viewTypes';
 import {

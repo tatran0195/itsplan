@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { MemberKind } from '@/lib/api/endpoints/members';
 import { EmptyState } from '@/components/common/page/EmptyState';
 

@@ -1,10 +1,12 @@
+'use client';
+
 import { useRef } from 'react';
 import { Paperclip } from 'lucide-react';
 import { useStorageSettingsQuery } from '@/services/storage.service';
 import { attachmentAccept, attachmentLimitHint } from '@/utils/uploadLimits';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // Attaches files to an issue being created; the picked files are listed by
 // NewIssueAttachmentStrip and uploaded once the issue exists.

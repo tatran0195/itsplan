@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { Check, Copy } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { apiKey } from '@/lib/auth-client';
 import Modal from '@/components/common/overlay/Modal';
 import { Button } from '@/components/ui/button';

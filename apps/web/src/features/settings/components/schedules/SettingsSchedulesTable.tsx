@@ -1,7 +1,9 @@
+'use client';
+
 import type { AgentSchedule } from '@/lib/api/endpoints/agentSchedules';
 import { Table, TableBody, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { SettingsScheduleRow } from './SettingsScheduleRow';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 interface SettingsSchedulesTableProps {
   schedules: AgentSchedule[];

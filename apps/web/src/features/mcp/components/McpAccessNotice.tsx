@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { TeamRole } from '@/lib/api/endpoints/teams';
 import { teamSectionPath } from '@/utils/paths';
 import { useTeamQuery } from '@/services/teams.service';

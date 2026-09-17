@@ -1,6 +1,8 @@
+'use client';
+
 import { LayoutGrid, ListChecks, MessagesSquare, Plus, SquarePlus, Target } from 'lucide-react';
 import type { Project } from '@/lib/api/endpoints/projects';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { VIEWS, type WorkItemsView } from '@/utils/viewTypes';
 import { byKey } from '@/utils/messageKey';
 import { usePermissions } from '@/hooks/usePermissions';

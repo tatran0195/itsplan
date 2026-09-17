@@ -1,5 +1,7 @@
+'use client';
+
 import { CircleCheck, CircleDashed, CircleX, LoaderCircle } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { PipelineStatus } from '@/lib/api/endpoints/git';
 import { Badge } from '@/components/ui/badge';
 import { issueDevelopmentBadgeClassName } from './issueDevelopmentBadgeStyles';

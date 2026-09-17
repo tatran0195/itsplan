@@ -1,5 +1,7 @@
+'use client';
+
 import { useRef, useState } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { Project } from '@/lib/api/endpoints/projects';
 import type { Team } from '@/lib/api/endpoints/teams';
 import { useSidebarSide } from '@/hooks/useSidebarSide';

@@ -1,0 +1,12 @@
+{
+  "updateAvailable": "アップデートがあります",
+  "releaseHistory": "リリース履歴",
+  "running": "現在のバージョン: {current}",
+  "badgeRunning": "実行中",
+  "badgeNew": "最新",
+  "check": "アップデートを確認",
+  "checking": "確認中",
+  "lastChecked": "最終確認",
+  "allReleases": "すべてのリリース",
+  "noNotes": "このリリースにはノートがありません。"
+}

@@ -1,10 +1,12 @@
+'use client';
+
 import { CircleDashed } from 'lucide-react';
 import type { Assignee } from '@/lib/api/endpoints/projects';
 import { useSession } from '@/lib/auth-client';
 import Avatar from '@/components/common/Avatar';
 import { Pill } from './Pill';
 import PopoverPick, { type PickItem } from './PopoverPick';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // The assignee of an issue is a project member. `assignees` is the project's full
 // candidate list (members and agents); this control filters it to members. Agents

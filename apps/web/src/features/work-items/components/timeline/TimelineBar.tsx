@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { BoardIssue, Issue } from '@/lib/api/endpoints/issues';
 import { isBlocked } from '@/utils/issueLinks';
 import { cn } from '@/lib/utils';

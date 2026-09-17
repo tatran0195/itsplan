@@ -1,0 +1,23 @@
+{
+  "editAction": "プロジェクトを編集",
+  "copyAction": "プロジェクトを複製",
+  "deleteAction": "プロジェクトを削除",
+  "leaveAction": "プロジェクトから退出",
+  "deleteDialog": {
+    "title": "{name} を削除しますか？",
+    "confirm": "完全に削除",
+    "description": "<strong>{name}</strong> とその中のすべてのデータ（イシュー、コメント、添付ファイル、設定）を完全に削除します。この操作は取り消せません。",
+    "typeToConfirm": "確認のため <code>{key}</code> と入力してください。"
+  },
+  "leaveDialog": {
+    "title": "{name} から退出しますか？",
+    "confirm": "プロジェクトから退出",
+    "description": "<strong>{name}</strong> とそのワークアイテムへのアクセス権を失います。再度参加するにはオーナーからの新しい招待が必要です。"
+  },
+  "editDialog": {
+    "title": "プロジェクトを編集",
+    "name": "名前",
+    "description": "説明",
+    "submit": "保存"
+  }
+}

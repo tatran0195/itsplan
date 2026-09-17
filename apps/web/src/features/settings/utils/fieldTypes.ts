@@ -1,3 +1,5 @@
+'use client';
+
 import {
   AlignLeft,
   Calendar,
@@ -12,7 +14,7 @@ import {
   UserRound,
   type LucideIcon,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { CustomFieldType, MemberScope } from '@/lib/api/endpoints/customFields';
 
 // Every field type, in the order the picker shows them. Also the list a pasted

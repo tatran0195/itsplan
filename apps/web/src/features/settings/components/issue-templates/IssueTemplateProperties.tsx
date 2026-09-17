@@ -1,4 +1,6 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
+import { useTranslations } from '@repo/i18n/react';
 import type { ProjectDetail } from '@/lib/api/endpoints/projects';
 import AssigneeSelect from '@/components/common/fields/AssigneeSelect';
 import LabelsSelect from '@/components/common/fields/LabelsSelect';

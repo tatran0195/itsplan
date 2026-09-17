@@ -1,7 +1,7 @@
 'use client';
 
 import { type ReactNode } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { FeedItem } from '@/lib/api/endpoints/activity';
 import { formatDate } from '@/utils/dates';
 import { isLinkRelation } from '@/utils/issueLinks';

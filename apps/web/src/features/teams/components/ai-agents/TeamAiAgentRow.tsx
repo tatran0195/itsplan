@@ -1,3 +1,5 @@
+'use client';
+
 import { History, MessageSquare, MoreHorizontal, Pencil, Trash2 } from 'lucide-react';
 import type { AiAgent } from '@/lib/api/endpoints/agents';
 import { AgentRunnerStatus } from '@/components/common/agent-chat/AgentRunnerStatus';
@@ -16,7 +18,7 @@ import { AGENT_KIND_ICON } from '../../utils/agentKindIcon';
 import { useAgentCan } from '../../context/agentSection';
 import { AgentMetaRow } from './AgentMetaRow';
 import { AgentTriggers } from './AgentTriggers';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // One agent as a table row: the Agent cell holds the name, @username, an icon for the
 // kind, and the projects the agent works in; the Configuration cell shows an

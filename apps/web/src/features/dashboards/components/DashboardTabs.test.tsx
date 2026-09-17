@@ -2,11 +2,12 @@ import assert from 'node:assert/strict';
 import { afterEach, beforeEach, describe, it } from 'node:test';
 import { act } from 'react';
 import type { Root } from 'react-dom/client';
-import { NextIntlClientProvider } from 'next-intl';
+import { NextIntlClientProvider } from '@repo/i18n/react';
 import { JSDOM } from 'jsdom';
-import dashboards from '../../../../messages/en/dashboards.json';
-import common from '../../../../messages/en/common.json';
+import { messages } from '@repo/i18n';
 import DashboardTabs from './DashboardTabs';
+
+const { dashboards, common } = messages.en;
 
 const replacedGlobals = [
   'window',

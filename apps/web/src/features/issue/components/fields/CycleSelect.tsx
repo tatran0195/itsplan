@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Check, CircleDashed, RefreshCw } from 'lucide-react';
 import type { CycleRef } from '@/lib/api/endpoints/issues';
@@ -14,7 +16,7 @@ import {
 } from '@/components/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Pill } from '@/components/common/fields/Pill';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 
 // A Pill trigger opening the cycles an issue can be planned into: the ones that have
 // not finished. A completed cycle is not offered — it records what it delivered — but

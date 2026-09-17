@@ -1,7 +1,7 @@
 'use client';
 
 import { Bell, Bot, Clock, Compass, Keyboard, ListChecks, Palette } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { SectionNav, type SectionNavItem } from '@/components/common/page/SectionNav';
 import { useSectionScrollSpy } from '@/hooks/useSectionScrollSpy';
 

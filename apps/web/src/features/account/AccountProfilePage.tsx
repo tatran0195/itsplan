@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import { useSession } from '@/lib/auth-client';
 import FullPageView from '@/components/common/page/FullPageView';
 import AccountProfileAvatar from './components/profile/AccountProfileAvatar';

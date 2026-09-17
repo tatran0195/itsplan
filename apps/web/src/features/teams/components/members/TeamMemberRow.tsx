@@ -1,7 +1,7 @@
 'use client';
 
 import { X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { TeamMember } from '@/lib/api/endpoints/teams';
 import { formatDate } from '@/utils/dates';
 import Avatar from '@/components/common/Avatar';

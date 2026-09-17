@@ -36,23 +36,23 @@ describe('user preferences', () => {
     const u = await signUpTestUser();
 
     const res = await authedApi(u.cookie, {
-      'accept-language': 'ru;q=0.4,zh-CN;q=0.9,en;q=0.8',
+      'accept-language': 'ru;q=0.4,ja;q=0.9,en;q=0.8',
     }).account.preferences.get();
 
     expect(res.status).toBe(200);
-    expect(res.data?.locale).toBe('zh-CN');
+    expect(res.data?.locale).toBe('ja');
   });
 
   it('saves the preferred browser language with the first preference update', async () => {
     const u = await signUpTestUser();
     const client = authedApi(u.cookie, {
-      'accept-language': 'uk-UA,uk;q=0.9,en;q=0.8',
+      'accept-language': 'ja-JP,ja;q=0.9,en;q=0.8',
     });
 
     await client.account.preferences.patch({ theme: 'dark' });
 
     const stored = await authedApi(u.cookie, { 'accept-language': 'en' }).account.preferences.get();
-    expect(stored.data).toMatchObject({ locale: 'uk', theme: 'dark' });
+    expect(stored.data).toMatchObject({ locale: 'ja', theme: 'dark' });
   });
 
   it('saves a full update and reads it back', async () => {
@@ -61,7 +61,7 @@ describe('user preferences', () => {
 
     const res = await client.account.preferences.patch({
       timezone: 'Europe/Berlin',
-      locale: 'uk',
+      locale: 'ja',
       theme: 'dark',
       issueOpenMode: 'page',
       startPage: 'inbox',
@@ -77,7 +77,7 @@ describe('user preferences', () => {
     const stored = await client.account.preferences.get();
     expect(stored.data).toEqual({
       timezone: 'Europe/Berlin',
-      locale: 'uk',
+      locale: 'ja',
       theme: 'dark',
       issueOpenMode: 'page',
       startPage: 'inbox',
@@ -124,7 +124,7 @@ describe('user preferences', () => {
     const u = await signUpTestUser();
 
     const res = await authedApi(u.cookie).account.preferences.patch({
-      locale: 'de' as 'uk',
+      locale: 'de' as 'ja',
     });
 
     expect(res.status).toBe(400);

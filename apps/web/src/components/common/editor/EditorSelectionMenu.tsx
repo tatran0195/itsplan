@@ -1,3 +1,5 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import { type Editor } from '@tiptap/react';
 import { BubbleMenu } from '@tiptap/react/menus';
@@ -15,7 +17,7 @@ import {
   Strikethrough,
   type LucideIcon,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import EditorToolbarButton from './EditorToolbarButton';
 
 function setLink(editor: Editor, prompt: string) {

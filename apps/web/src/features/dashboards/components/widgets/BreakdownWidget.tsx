@@ -1,5 +1,7 @@
+'use client';
+
 import { Cell, Pie, PieChart } from 'recharts';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@repo/i18n/react';
 import type { BreakdownBy, WidgetConfig } from '@/utils/dashboardWidgets';
 import { CHART_PALETTE } from '@/utils/chartSpec';
 import { Skeleton } from '@/components/ui/skeleton';
