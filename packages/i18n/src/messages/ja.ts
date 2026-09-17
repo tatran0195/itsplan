@@ -7,6 +7,7 @@ import cycles from './ja/cycles.json';
 import dashboards from './ja/dashboards.json';
 import display from './ja/display.json';
 import documents from './ja/documents.json';
+import email from './ja/email.json';
 import filters from './ja/filters.json';
 import god from './ja/god.json';
 import inbox from './ja/inbox.json';
@@ -42,6 +43,7 @@ export const ja = {
   dashboards,
   display,
   documents,
+  email,
   filters,
   god,
   inbox,

@@ -7,6 +7,7 @@ import cycles from './en/cycles.json';
 import dashboards from './en/dashboards.json';
 import display from './en/display.json';
 import documents from './en/documents.json';
+import email from './en/email.json';
 import filters from './en/filters.json';
 import god from './en/god.json';
 import inbox from './en/inbox.json';
@@ -42,6 +43,7 @@ export const en = {
   dashboards,
   display,
   documents,
+  email,
   filters,
   god,
   inbox,

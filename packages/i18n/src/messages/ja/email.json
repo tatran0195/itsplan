@@ -1,0 +1,85 @@
+{
+  "brand": {
+    "name": "It's a Plan",
+    "footer": "この自動送信メールは It's a Plan から送信されました。心当たりがない場合は、このメールを破棄してください。",
+    "fallbackLink": "ボタンが機能しない場合は、次のリンクをブラウザにコピー＆ペーストしてください："
+  },
+  "otp": {
+    "signIn": {
+      "subject": "サインイン確認コード",
+      "preview": "サインインするには、この確認コードを使用してください。",
+      "message": "サインインするには、この確認コードを使用してください。"
+    },
+    "changeEmail": {
+      "subject": "メールアドレス変更の確認コード",
+      "preview": "メールアドレスを変更するには、この確認コードを使用してください。",
+      "message": "メールアドレスを変更するには、この確認コードを使用してください。"
+    },
+    "verifyEmail": {
+      "subject": "メールアドレス確認コード",
+      "preview": "メールアドレスを確認するには、この確認コードを使用してください。",
+      "message": "メールアドレスを確認するには、この確認コードを使用してください。"
+    },
+    "forgotPassword": {
+      "subject": "パスワード再設定コード",
+      "preview": "パスワードを再設定するには、この確認コードを使用してください。",
+      "message": "パスワードを再設定するには、この確認コードを使用してください。"
+    },
+    "title": "認証コード",
+    "expiry": "コードの有効期限は{minutes}分で、1回のみ使用できます。"
+  },
+  "verifyEmail": {
+    "subject": "メールアドレスの確認",
+    "preview": "メールアドレスを確認して、アカウントの設定を完了してください。",
+    "title": "メールアドレスをご確認ください",
+    "message": "メールアドレスを確認して、アカウントの設定を完了してください。",
+    "action": "メールアドレスを確認",
+    "detail": "この確認リンクは1回のみ有効です。有効期限が切れた場合は、サインイン画面から再リクエストしてください。"
+  },
+  "memberJoined": {
+    "subject": "{memberName} が {organizationName} に参加しました",
+    "preview": "{memberName} が {organizationName} に参加しました。",
+    "title": "{organizationName} に新しいメンバーが参加しました",
+    "message": "{memberName} が {organizationName} に参加しました。"
+  },
+  "newSignIn": {
+    "subject": "アカウントへの新しいサインイン",
+    "preview": "新しいデバイスまたは場所からのサインインが検出されました。",
+    "title": "新しいサインインが検出されました",
+    "withIp": "新しい場所（IP: {ipAddress}）からアカウントへのサインインが検出されました。",
+    "withoutIp": "新しいデバイスからアカウントへのサインインが検出されました。",
+    "detail": "心当たりがない場合は、直ちにパスワードを変更してください。"
+  },
+  "invite": {
+    "subject": "{inviterName} があなたを {organizationName} に招待しました",
+    "preview": "{organizationName} への招待を受け取る。",
+    "title": "{organizationName} への招待",
+    "message": "{inviterName} があなたを {organizationName} の {role} として招待しました。",
+    "action": "招待を承諾",
+    "expiry": "この招待の有効期限は {days} 日です。"
+  },
+  "readerInvite": {
+    "subject": "{projectName} へのアクセス権",
+    "preview": "{projectName} へのアクセスに招待されました。",
+    "title": "プロジェクトアクセスの招待",
+    "message": "{projectName} へのアクセスに招待されました。",
+    "action": "アクセスを有効化",
+    "expiry": "このリンクの有効期限は {days} 日です。"
+  },
+  "deployment": {
+    "ready": {
+      "subject": "{projectName} ビルド完了 — v{version}",
+      "preview": "{projectName} バージョン {version} のビルドが成功しました。",
+      "title": "{projectName} の準備が完了しました",
+      "message": "{projectName} バージョン v{version} が正常に完了しました。",
+      "action": "プロジェクトを表示"
+    },
+    "failed": {
+      "subject": "{projectName} ビルド失敗 (v{version})",
+      "preview": "{projectName} バージョン {version} のビルドに失敗しました。",
+      "title": "{projectName} のビルドに失敗しました",
+      "message": "{projectName} バージョン v{version} のビルドに失敗しました。",
+      "detail": "エラー: {error}"
+    }
+  }
+}

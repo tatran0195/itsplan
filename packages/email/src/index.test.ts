@@ -9,7 +9,7 @@ describe('localized transactional email rendering', () => {
   it('renders an English verification code with a plain-text body', async () => {
     const email = await renderVerificationCodeEmail({ code: '123456', purpose: 'sign-in' });
 
-    expect(email.subject).toBe('Your Nibleaf sign-in code');
+    expect(email.subject).toBe('Your sign-in code');
     expect(email.html).toContain('lang="en"');
     expect(email.html).toContain('123456');
     expect(email.text).toContain('123456');
@@ -18,7 +18,7 @@ describe('localized transactional email rendering', () => {
   it('renders Japanese email chrome with ja lang', async () => {
     const email = await renderNewSignInEmail({ language: 'ja' });
 
-    expect(email.subject).toBe('New sign-in to your Nibleaf account');
+    expect(email.subject).toBe('アカウントへの新しいサインイン');
     expect(email.html).toContain('lang="ja"');
   });
 

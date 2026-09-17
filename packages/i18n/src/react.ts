@@ -5,8 +5,7 @@ import { createTranslator, type TranslationFunction } from './core';
 import { createFormatter, type Formatter } from './formatter';
 import type { Locale } from './locales';
 import { getClientLocale, getCurrentLocale, subscribeClientLocale } from './locale-store';
-import type { MessageKey } from './message-ids';
-import type { MessageVariables } from './runtime';
+import type { MessageVariables } from './message-types';
 import { translateFn } from './translate';
 
 export { translateFn } from './translate';
@@ -35,7 +34,7 @@ export function useFormatter(): Formatter {
   return createFormatter(locale);
 }
 
-export function useT(): (key: MessageKey, variables?: MessageVariables) => string {
+export function useT(): (key: string, variables?: MessageVariables) => string {
   const locale = useReactiveLocale();
-  return (key: MessageKey, variables?: MessageVariables) => translateFn(key, variables, locale);
+  return (key: string, variables?: MessageVariables) => translateFn(key, variables, locale);
 }

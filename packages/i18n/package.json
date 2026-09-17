@@ -12,20 +12,12 @@
     "./format": "./src/format.ts",
     "./formatter": "./src/formatter.ts",
     "./app-messages": "./src/messages/index.ts",
-    "./standalone": "./src/standalone.ts",
-    "./email": "./src/email.ts",
-    "./site": "./src/site.ts",
-    "./messages": "./src/paraglide/messages.js",
-    "./runtime": "./src/paraglide/runtime.js"
+    "./email": "./src/email.ts"
   },
   "scripts": {
-    "setup": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide --strategy cookie preferredLanguage baseLocale --output-structure message-modules --emit-ts-declarations",
-    "clean": "git clean -xdf .cache .turbo dist node_modules src/paraglide",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
     "typecheck": "tsc --noEmit",
     "test": "bun test"
-  },
-  "dependencies": {
-    "@inlang/paraglide-js": "2.25.0"
   },
   "peerDependencies": {
     "react": "^19.2.8"
